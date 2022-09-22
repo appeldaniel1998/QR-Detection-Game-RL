@@ -1,10 +1,16 @@
-# import the necessary packages
 import numpy as np
-import argparse
 import cv2
-import sys
 
-if __name__ == '__main__':
+
+def createQRAndSaveToFiles(path: str, size: int = 400, whiteBorder: int = 20) -> None:
+    """
+    function to generate aruco codes with white borders around, and save them to a folder specified (has to exist)
+    Aruco IDs are consecutive from 1
+    :param path: Path to save the images
+    :param size: Size of Images
+    :param whiteBorder: Size of white border around Arucos
+    :return:
+    """
     ARUCO_DICT = {
         "DICT_4X4_50": cv2.aruco.DICT_4X4_50,
         "DICT_4X4_100": cv2.aruco.DICT_4X4_100,
@@ -29,9 +35,7 @@ if __name__ == '__main__':
         "DICT_APRILTAG_36h11": cv2.aruco.DICT_APRILTAG_36h11
     }
 
-    currId = 1
-    size = 400
-    border = 20
+    currId = 1  # Starting aruco ID
 
     # load the ArUCo dictionary
     arucoDict = cv2.aruco.Dictionary_get(ARUCO_DICT["DICT_4X4_100"])
@@ -39,10 +43,12 @@ if __name__ == '__main__':
     for i in range(currId, currId + 20):
         tag = np.zeros((size, size), dtype="uint8")
         cv2.aruco.drawMarker(arucoDict, i, size, tag, 1)
-        tagWithBorder = np.zeros((size + 2 * border, size + 2 * border), dtype="uint8")
+        tagWithBorder = np.zeros((size + 2 * whiteBorder, size + 2 * whiteBorder), dtype="uint8")
         tagWithBorder[:, :] = 255
-        tagWithBorder[border:size + border, border:size + border] = tag
+        tagWithBorder[whiteBorder:size + whiteBorder, whiteBorder:size + whiteBorder] = tag
 
-        # write the generated ArUCo tag to disk and then display it to our
-        # screen
-        cv2.imwrite('C:/Users/appel/PycharmProjects/pythonProject6/data' + str(i) + '.jpg', tagWithBorder)
+        cv2.imwrite(path + '/aruco' + str(i) + '.jpg', tagWithBorder)
+
+
+if __name__ == '__main__':
+    createQRAndSaveToFiles("C:/Users/appel/PycharmProjects/pythonProject6/ArucoImages")
