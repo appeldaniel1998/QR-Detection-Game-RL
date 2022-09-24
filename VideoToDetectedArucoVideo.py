@@ -41,7 +41,7 @@ def detectArucoAndSaveVideoToFile(srcVideoPath: str, video_name: str) -> None:
         # recognize qr codes
 
         try:
-            (corners, ids, rejected) = cv2.aruco.detectMarkers(images[i], arucoDict, parameters=arucoParams)
+            corners, ids, rejected = cv2.aruco.detectMarkers(images[i], arucoDict, parameters=arucoParams)
             print(ids)
 
             corners = np.array(corners)
