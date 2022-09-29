@@ -10,12 +10,12 @@ def videoToImageList(srcVideoPath: str) -> list[np.ndarray]:
     :return:
     """
     imageLst = []
-    vidcap = cv2.VideoCapture(srcVideoPath)
-    success, currImg = vidcap.read()
+    videoCapture = cv2.VideoCapture(srcVideoPath)
+    success, currImg = videoCapture.read()
     count = 0
     while success:
         imageLst.append(currImg)
-        success, currImg = vidcap.read()
+        success, currImg = videoCapture.read()
         count += 1
     print("Done reading video!")
     return imageLst
