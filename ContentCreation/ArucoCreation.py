@@ -51,4 +51,4 @@ def createQRAndSaveToFiles(path: str, size: int = 400, whiteBorder: int = 20) ->
 
 
 if __name__ == '__main__':
-    createQRAndSaveToFiles("C:/Users/appel/PycharmProjects/pythonProject6/ArucoImages")
+    createQRAndSaveToFiles("/ArucoImages")
