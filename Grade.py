@@ -17,7 +17,7 @@ class Grade:
         self.pointsForQRDetected: float = gradeConfig["pointsForQRDetected"]  # The number of points the agent receives upon detecting correctly an Aruco QR code
 
         self.currentPoints = self.pointsAtStartOfGame
-        self.unseenQR = list(range(1, numberOfAruco))
+        self.unseenQR = list(range(1, numberOfAruco + 1))
         self.seenQR = []
 
     def getCurrentGrade(self) -> float:
@@ -37,3 +37,4 @@ class Grade:
                     self.seenQR.append(recognizedId)
                     self.currentPoints += self.pointsForQRDetected
 
+        state = self.client.getMultirotorState()
