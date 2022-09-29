@@ -1,5 +1,6 @@
 {
     "pointsAtStartOfGame": 0,
     "gameTime": 300,
-    "timeForHeatZoneKill": 5
+    "timeForHeatZoneKill": 5,
+    "pointsForQRDetected": 10
 }
