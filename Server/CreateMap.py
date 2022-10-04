@@ -1,3 +1,5 @@
+import logging
+
 import airsim
 import random
 import json
@@ -50,9 +52,10 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
     return client
 
 
-def createMap(client: airsim.MultirotorClient) -> airsim.MultirotorClient:
+def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsim.MultirotorClient, float):
     """
     Main function of the file. Calls relevant functions and passes them the relevant information, which is parsed from the "mapConfig.json" file
+    :param logger: Logger object to enable logging
     :param client: Airsim's client, imported from the main function where the connection to Airsim was made
     :return: client upon which the changes are made
     """
@@ -61,4 +64,6 @@ def createMap(client: airsim.MultirotorClient) -> airsim.MultirotorClient:
 
     loadWeather(client, mapConfig["weather"])
     placeAruco(client, mapConfig["numberOfArucoToSpawn"], mapConfig["PossibleCubePositions"], mapConfig["existingCubeNames"])
-    return client
+
+    logger.info("Created map")  # Logging
+    return client, mapConfig["numberOfArucoToSpawn"]

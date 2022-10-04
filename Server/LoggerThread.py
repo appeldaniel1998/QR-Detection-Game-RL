@@ -8,7 +8,7 @@ class LoggerThread(threading.Thread):
     A Thread class to handle the logging of the program to file
     """
 
-    def __init__(self, client):
+    def __init__(self, client=None):
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
         self.client = client
@@ -35,12 +35,12 @@ class LoggerThread(threading.Thread):
 
     def run(self):
         """
-        Method to be executed be the thread. Logs info from Airsim
+        Method to be executed by the thread. Logs info from Airsim
         :return:
         """
         while not self.stopped():  # Thread stops upon call to stop() method above
-            state = self.client.getMultirotorState()
-            collision = self.client.simGetCollisionInfo()
+            state = self.client.getMultirotorState()  # Get Airsim state data
+            collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
             self.logger.info("State:\n" + str(state))
             self.logger.info("Collision:\n" + str(collision))
             time.sleep(1)
