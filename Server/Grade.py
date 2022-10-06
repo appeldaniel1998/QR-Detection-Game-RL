@@ -56,7 +56,7 @@ class Grade(threading.Thread):
             self.logger.info("The grade was sent to client")
             time.sleep(0.1)
 
-    def grade(self, frame: np.ndarray) -> float:
+    def grade(self, frame: np.ndarray) -> float:  # TODO: improve and finish grade() func
         arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_1000)
         arucoParams = cv2.aruco.DetectorParameters_create()
 

@@ -14,10 +14,10 @@ if __name__ == '__main__':
     serverThread.logger = logger  # Assignment of logger to server thread (to be able to log from it to the same file and with the same settings)
     logger.info("Connected to instance of Airsim")  # Logging
 
-    client, numOfArucoOnMap = createMap(client, logger)
-
-    grade = Grade(client, numOfArucoOnMap)
-    serverThread.grade = grade
+    # client, numOfArucoOnMap = createMap(client, logger)
+    #
+    # grade = Grade(client, numOfArucoOnMap)
+    # serverThread.grade = grade
 
     logger.info("Simulation ready to start...\n")  # Logging
 
@@ -36,10 +36,3 @@ if __name__ == '__main__':
     # client.moveToPositionAsync(0, 0, -1, 1).join()
     # client.hoverAsync().join()
     #
-    # xSpeed = 0
-    # ySpeed = 5
-    # zSpeed = 0  # Vertical
-    # camera_heading = 180
-    # client.moveByVelocityAsync(xSpeed, ySpeed, zSpeed, 1, airsim.DrivetrainType.MaxDegreeOfFreedom,
-    #                            airsim.YawMode(False, camera_heading)).join()
-    # client.hoverAsync().join()
