@@ -8,15 +8,15 @@ class LoggerThread(threading.Thread):
     A Thread class to handle the logging of the program to file
     """
 
-    def __init__(self, client=None):
+    def __init__(self, client, name: str):
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
         self.client = client
 
         #  Initiating logger -->
-        self.logger = logging.getLogger("mainLogger")
+        self.logger = logging.getLogger("ServerLogger")
         self.logger.setLevel(logging.DEBUG)
-        f_handler = logging.FileHandler('controlAPI.log', 'w', encoding="utf-8")
+        f_handler = logging.FileHandler(str(name) + '.log', 'w', encoding="utf-8")
         logFormat = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         f_handler.setFormatter(logFormat)
         self.logger.addHandler(f_handler)  # <--

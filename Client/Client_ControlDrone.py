@@ -1,48 +1,64 @@
+import logging
 import socket
 import keyboard
+import pickle
 
 
 def forward():
     UDPClientSocket.sendto(str.encode("forward"), serverAddressPort)
-    print("forward sent")
+    logger.info("forward sent")
 
 
 def back():
     UDPClientSocket.sendto(str.encode("back"), serverAddressPort)
-    print("back sent")
+    logger.info("back sent")
 
 
 def left():
     UDPClientSocket.sendto(str.encode("left"), serverAddressPort)
-    print("left sent")
+    logger.info("left sent")
 
 
 def right():
     UDPClientSocket.sendto(str.encode("right"), serverAddressPort)
-    print("right sent")
+    logger.info("right sent")
 
 
 def turnRight():
     UDPClientSocket.sendto(str.encode("turnRight"), serverAddressPort)
-    print("turnRight sent")
+    logger.info("turnRight sent")
 
 
 def turnLeft():
     UDPClientSocket.sendto(str.encode("turnLeft"), serverAddressPort)
-    print("turnLeft sent")
+    logger.info("turnLeft sent")
 
 
 def up():
     UDPClientSocket.sendto(str.encode("up"), serverAddressPort)
-    print("up sent")
+    logger.info("up sent")
 
 
 def down():
     UDPClientSocket.sendto(str.encode("down"), serverAddressPort)
-    print("down sent")
+    logger.info("down sent")
+
+
+def hover():
+    UDPClientSocket.sendto(str.encode("hover"), serverAddressPort)
+    logger.info("hover sent")
 
 
 if __name__ == '__main__':
+    #  Initiating logger -->
+    logger = logging.getLogger("clientLogger")
+    logger.setLevel(logging.DEBUG)
+    f_handler = logging.FileHandler('Client.log', 'w', encoding="utf-8")
+    logFormat = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    f_handler.setFormatter(logFormat)
+    logger.addHandler(f_handler)  # <--
+    logger.info("Logging initiated")
+
     msgFromClient = "Hello UDP Server"
     bytesToSend = str.encode(msgFromClient)
     serverAddressPort = ("192.168.1.246", 20001)
@@ -65,5 +81,6 @@ if __name__ == '__main__':
     keyboard.add_hotkey('q', turnLeft, timeout=0)
     keyboard.add_hotkey('page up', up, timeout=0)
     keyboard.add_hotkey('page down', down, timeout=0)
+    keyboard.add_hotkey('space', hover, timeout=0)
 
     keyboard.wait()  # infinite wait

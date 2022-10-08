@@ -9,23 +9,20 @@ if __name__ == '__main__':
     serverThread = ServerThread()  # Initiating connection to clientPC
 
     client: airsim.MultirotorClient = serverThread.client
-    loggerThread = LoggerThread(client)  # Initiate logger class instance
+    loggerThread = LoggerThread(client, "Server")  # Initiate logger class instance
     logger: logging.Logger = loggerThread.getLogger()  # Getting logger from the loggerThread instance
     serverThread.logger = logger  # Assignment of logger to server thread (to be able to log from it to the same file and with the same settings)
     logger.info("Connected to instance of Airsim")  # Logging
 
     # client, numOfArucoOnMap = createMap(client, logger)
     #
-    # grade = Grade(client, numOfArucoOnMap)
+    # grade = Grade(client, numOfArucoOnMap, serverThread.UDPServerSocket, serverThread.clientAddress, logger)
     # serverThread.grade = grade
 
     logger.info("Simulation ready to start...\n")  # Logging
 
     loggerThread.start()  # Starting continuous logging of Airsim data to file and console
-    serverThread.start()
-    #  Init complete
-
-    """..........................."""
+    serverThread.start()  # Start continuous receiving of commands to the drone
 
     serverThread.join()
     loggerThread.stop()
@@ -33,6 +30,6 @@ if __name__ == '__main__':
     # client.simSetObjectMaterialFromTexture("testCube1_2", "C:/Users/appel/PycharmProjects/AirsimSimulation/ArucoImages/aruco1.jpg")
 
     # client.takeoffAsync().join()  # let drone take-off
-    # client.moveToPositionAsync(0, 0, -1, 1).join()
+    client.moveToPositionAsync(5, 5, -1, 5).join()
     # client.hoverAsync().join()
     #
