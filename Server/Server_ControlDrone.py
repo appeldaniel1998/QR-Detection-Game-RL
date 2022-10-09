@@ -7,8 +7,7 @@ import numpy as np
 
 from Grade import Grade
 from Parameters import *
-
-
+import pickle
 
 
 class ServerThread(threading.Thread):
@@ -76,10 +75,12 @@ class ServerThread(threading.Thread):
         while not self.stopped():  # Thread stops upon call to stop() method above
             try:
                 bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving via socket
-                commandReceived = bytesAddressPair[0].decode()  # Received data - movement request of drone
+                dataReceived = pickle.loads(bytesAddressPair[0])  # Received data - movement request of drone
+                commandReceived = dataReceived[0]
 
                 if commandReceived == "forward":
                     self.logger.info("Command received: Move Forward")
+                    horizontalSpeedMultiplier = dataReceived[1]
                     xSpeed = np.cos(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     ySpeed = np.sin(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     zSpeed = 0  # Vertical
@@ -88,6 +89,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "back":
                     self.logger.info("Command received: Move Back")
+                    horizontalSpeedMultiplier = dataReceived[1]
                     xSpeed = -np.cos(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     ySpeed = -np.sin(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     zSpeed = 0  # Vertical
@@ -96,6 +98,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "up":
                     self.logger.info("Command received: Move Up")
+                    verticalSpeed = dataReceived[1]
                     xSpeed = 0
                     ySpeed = 0
                     zSpeed = -verticalSpeed  # Vertical
@@ -104,6 +107,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "down":
                     self.logger.info("Command received: Move Down")
+                    verticalSpeed = dataReceived[1]
                     xSpeed = 0
                     ySpeed = 0
                     zSpeed = verticalSpeed  # Vertical
@@ -112,6 +116,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "left":
                     self.logger.info("Command received: Move Left")
+                    horizontalSpeedMultiplier = dataReceived[1]
                     xSpeed = -np.sin(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     ySpeed = -np.cos(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     zSpeed = 0  # Vertical
@@ -120,6 +125,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "right":
                     self.logger.info("Command received: Move Right")
+                    horizontalSpeedMultiplier = dataReceived[1]
                     xSpeed = np.sin(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     ySpeed = np.cos(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
                     zSpeed = 0  # Vertical
@@ -128,6 +134,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "turnRight":
                     self.logger.info("Command received: Turn right by 5 degrees")
+                    anglesToTurn = dataReceived[1]
                     self.cameraAngleDeg += anglesToTurn
                     xSpeed = 0
                     ySpeed = 0
@@ -137,6 +144,7 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "turnLeft":
                     self.logger.info("Command received: Turn left by 5 degrees")
+                    anglesToTurn = dataReceived[1]
                     self.cameraAngleDeg -= anglesToTurn
                     xSpeed = 0
                     ySpeed = 0
@@ -147,6 +155,22 @@ class ServerThread(threading.Thread):
                 elif commandReceived == "hover":
                     self.logger.info("Command received: Hover")
                     self.client.hoverAsync()
+
+                elif commandReceived == "goto":
+                    self.logger.info("Command received: goto")
+                    x = dataReceived[1]  # x destination coordinate
+                    y = dataReceived[2]  # y destination coordinate
+                    z = dataReceived[3]  # z destination coordinate
+                    velocity = dataReceived[4]  # speed of movement
+                    hasToFinish = dataReceived[5]  # Whether the action should be stoppable while running
+                    if hasToFinish:  # yes
+                        self.client.moveToPositionAsync(x, y, z, velocity)
+                    else:  # no
+                        self.client.moveToPositionAsync(x, y, z, velocity).join()
+
+                elif commandReceived == "finishedSim":
+                    self.logger.info("Command received: Finish Simulation")
+                    break
 
                 else:
                     self.logger.error("Command doesn't exist!")  # Should never occur

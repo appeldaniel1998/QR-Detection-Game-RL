@@ -4,49 +4,97 @@ import keyboard
 import pickle
 
 
-def forward():
-    UDPClientSocket.sendto(str.encode("forward"), serverAddressPort)
+def forward(horizontalSpeedMultiplier: int = 5):
+    data = pickle.dumps([
+        "forward",  # direction of movement
+        horizontalSpeedMultiplier  # speed multiplier
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("forward sent")
 
 
-def back():
-    UDPClientSocket.sendto(str.encode("back"), serverAddressPort)
+def back(horizontalSpeedMultiplier: int = 5):
+    data = pickle.dumps([
+        "back",  # direction of movement
+        horizontalSpeedMultiplier  # speed multiplier
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("back sent")
 
 
-def left():
-    UDPClientSocket.sendto(str.encode("left"), serverAddressPort)
+def left(horizontalSpeedMultiplier: float = 5):
+    data = pickle.dumps([
+        "left",  # direction of movement
+        horizontalSpeedMultiplier  # speed multiplier
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("left sent")
 
 
-def right():
-    UDPClientSocket.sendto(str.encode("right"), serverAddressPort)
+def right(horizontalSpeedMultiplier: float = 5):
+    data = pickle.dumps([
+        "right",  # direction of movement
+        horizontalSpeedMultiplier  # speed multiplier
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("right sent")
 
 
-def turnRight():
-    UDPClientSocket.sendto(str.encode("turnRight"), serverAddressPort)
+def turnRight(angleToTurn: float = 5):
+    data = pickle.dumps([
+        "turnRight",  # direction of movement
+        angleToTurn  # by how many degrees
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("turnRight sent")
 
 
-def turnLeft():
-    UDPClientSocket.sendto(str.encode("turnLeft"), serverAddressPort)
+def turnLeft(angleToTurn: float = 5):
+    data = pickle.dumps([
+        "turnLeft",  # direction of movement
+        angleToTurn  # by how many degrees
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("turnLeft sent")
 
 
-def up():
-    UDPClientSocket.sendto(str.encode("up"), serverAddressPort)
+def up(verticalSpeed: float = 2):
+    data = pickle.dumps([
+        "up",  # direction of movement
+        verticalSpeed  # speed
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("up sent")
 
 
-def down():
-    UDPClientSocket.sendto(str.encode("down"), serverAddressPort)
+def down(verticalSpeed: float = 2):
+    data = pickle.dumps([
+        "down",  # direction of movement
+        verticalSpeed  # speed
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("down sent")
 
 
 def hover():
-    UDPClientSocket.sendto(str.encode("hover"), serverAddressPort)
+    data = pickle.dumps([
+        "hover"  # direction of movement
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
     logger.info("hover sent")
+
+
+def goto(x: float, y: float, z: float, velocity: float, hasToFinish: bool):
+    data = pickle.dumps([
+        "goto",  # direction of movement
+        x,  # x destination coordinate
+        y,  # y destination coordinate
+        z,  # z destination coordinate
+        velocity,  # speed of movement
+        hasToFinish  # Whether the action should be stoppable while running, or the drone has to get to the specified point until any further movement is performed (True == yes, False == no)
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
+    logger.info("goto sent")
 
 
 if __name__ == '__main__':
@@ -83,4 +131,15 @@ if __name__ == '__main__':
     keyboard.add_hotkey('page down', down, timeout=0)
     keyboard.add_hotkey('space', hover, timeout=0)
 
-    keyboard.wait()  # infinite wait
+    # goto(x=-5.5, y=-5.9, z=-1.1, velocity=5.4, hasToFinish=True)
+    # goto function is available but not bound to key
+
+    keyboard.wait('esc')  # wait while esc not pressed
+
+    data = pickle.dumps([
+        "finishedSim"
+    ])
+    UDPClientSocket.sendto(data, serverAddressPort)
+    logger.info("finishedSim sent")
+
+    UDPClientSocket.close()

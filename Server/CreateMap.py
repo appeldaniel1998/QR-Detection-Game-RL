@@ -21,7 +21,7 @@ def loadWeather(client: airsim.MultirotorClient, weatherDict: dict) -> airsim.Mu
     return client
 
 
-def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possibleLocations: list, ueIds: dict) -> airsim.MultirotorClient:
+def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possibleLocations: list, ueIds: dict, playerStartPos: list) -> airsim.MultirotorClient:
     """
     Function to randomly place a number (numberOfArucoToPlace) of aruco codes upon the map.
     The aruco codes placed are in range [1, numberOfArucoToPlace + 1], with no aruco having the same ID twice
@@ -31,6 +31,7 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
     Each place specified has a scale to of aruco which is to be spawned
     :param ueIds: The IDs of the cubes upon which the aruco codes are located. Must match exactly to the IDs of the cubes in Unreal Engine
     (The IDs in UE are revealed upon mouse-hover over the name of the cube in the "World Outliner" section)
+    :param playerStartPos: starting position of player. To be used to transfer coordinates to Airsim units
     :return: client upon which the changes are made
     """
     random.seed(0)  # random Seed
@@ -38,17 +39,17 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
         currRandomizedLocationID = random.randint(0, len(possibleLocations) - 1)  # Both inclusive
         chosenLocation = possibleLocations.pop(currRandomizedLocationID)
 
-        position = client.simGetObjectPose(ueIds[arucoId])  # Get current position of object. needed to keep the format identical
-        position.position.x_val = chosenLocation["xPos"]  # Changing location -->
-        position.position.y_val = chosenLocation["yPos"]
-        position.position.z_val = chosenLocation["zPos"]  # <--
-        client.simSetObjectPose(ueIds[arucoId], position)  # Set new location
+        position = client.simGetObjectPose(ueIds[str(arucoId)])  # Get current position of object. needed to keep the format identical
+        position.position.x_val = (chosenLocation["xPos"] - playerStartPos[0]) / 100  # Changing location -->
+        position.position.y_val = (chosenLocation["yPos"] - playerStartPos[1]) / 100
+        position.position.z_val = (chosenLocation["zPos"] - playerStartPos[2]) / -100  # <--
+        client.simSetObjectPose(ueIds[str(arucoId)], position)  # Set new location
 
-        scale = client.simGetObjectScale(ueIds[arucoId])  # Get old scale
+        scale = client.simGetObjectScale(ueIds[str(arucoId)])  # Get old scale
         scale.x_val = chosenLocation["scaleX"]  # Change scale -->
         scale.y_val = chosenLocation["scaleY"]
         scale.z_val = chosenLocation["scaleZ"]  # <--
-        client.simSetObjectScale(ueIds[arucoId], scale)  # Set new scale
+        client.simSetObjectScale(ueIds[str(arucoId)], scale)  # Set new scale
     return client
 
 
@@ -63,7 +64,7 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
         mapConfig = json.load(file)
 
     loadWeather(client, mapConfig["weather"])
-    placeAruco(client, mapConfig["numberOfArucoToSpawn"], mapConfig["PossibleCubePositions"], mapConfig["existingCubeNames"])
+    placeAruco(client, mapConfig["numberOfArucoToSpawn"], mapConfig["PossibleCubePositions"], mapConfig["existingCubeNames"], mapConfig["PlayerStartPosition"])
 
     logger.info("Created map")  # Logging
     return client, mapConfig["numberOfArucoToSpawn"]
