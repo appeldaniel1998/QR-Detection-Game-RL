@@ -46,15 +46,18 @@ class Grade(threading.Thread):
 
     def run(self):
         while not self.stopped():
-            airsimResponse = self.client.simGetImages([airsim.ImageRequest("0", airsim.ImageType.Scene, False, False)])[0]
-            img1d = np.frombuffer(airsimResponse.image_data_uint8, dtype=np.uint8)  # get numpy array
-            frame = img1d.reshape((airsimResponse.height, airsimResponse.width, 3))  # reshape array to 4 channel image array H X W X 4
-            currPoints = self.grade(frame)
-            self.logger.info("The frame was graded. The current grade is: " + str(currPoints))
+            try:
+                airsimResponse = self.client.simGetImages([airsim.ImageRequest("0", airsim.ImageType.Scene, False, False)])[0]
+                img1d = np.frombuffer(airsimResponse.image_data_uint8, dtype=np.uint8)  # get numpy array
+                frame = img1d.reshape((airsimResponse.height, airsimResponse.width, 3))  # reshape array to 4 channel image array H X W X 4
+                currPoints = self.grade(frame)
+                self.logger.info("The frame was graded. The current grade is: " + str(currPoints))
 
-            self.clientSocket.sendto(str.encode(str(currPoints)), self.clientAddress)
-            self.logger.info("The grade was sent to client")
-            time.sleep(1)  # 0.1
+                self.clientSocket.sendto(str.encode(str(currPoints)), self.clientAddress)
+                self.logger.info("The grade was sent to client")
+                time.sleep(1)  # 0.1
+            except:
+                pass
 
     def grade(self, frame: np.ndarray) -> float:  # TODO: improve and finish grade() func
         arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_1000)
