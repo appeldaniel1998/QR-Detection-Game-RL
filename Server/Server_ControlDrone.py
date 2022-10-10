@@ -45,7 +45,7 @@ class ServerThread(threading.Thread):
         self.client.reset()
         self.client.enableApiControl(True)  # enable API control on Drone
         self.client.armDisarm(True)  # arm Drone
-        time.sleep(0.3)
+        time.sleep(1)
         self.client.takeoffAsync().join()  # let drone take-off
 
         bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving "Hello" from client
@@ -70,8 +70,8 @@ class ServerThread(threading.Thread):
         Method to be executed by the thread.
         :return:
         """
-        # self.grade = Grade(self.client, self.numOfAruco, self.UDPServerSocket, self.clientAddress)
-        # self.grade.start()
+        self.grade = Grade(self.client, self.numOfAruco, self.UDPServerSocket, self.clientAddress, self.logger)
+        self.grade.start()
         while not self.stopped():  # Thread stops upon call to stop() method above
             try:
                 bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving via socket
@@ -177,5 +177,5 @@ class ServerThread(threading.Thread):
                     self.client.hoverAsync()
             except:
                 pass
-
+        self.grade.stop()
         self.UDPServerSocket.close()

@@ -1,7 +1,9 @@
 {
     "pointsAtStartOfGame": 0,
     "gameTime": 300,
-    "timeForHeatZoneKill": 5,
     "pointsForQRDetected": 10,
-    "numberOfLives": 5
+    "numberOfLives": 5,
+    "minusPointsPerSecInHeatZone": 1,
+    "heatZoneRadius": 30,
+    "droneRecognitionRadius": 30
 }

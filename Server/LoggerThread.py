@@ -39,11 +39,14 @@ class LoggerThread(threading.Thread):
         :return:
         """
         while not self.stopped():  # Thread stops upon call to stop() method above
-            state = self.client.getMultirotorState()  # Get Airsim state data
-            collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
-            self.logger.info("State:\n" + str(state))
-            self.logger.info("Collision:\n" + str(collision))
-            time.sleep(1)
+            try:
+                state = self.client.getMultirotorState()  # Get Airsim state data
+                collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
+                self.logger.info("State:\n" + str(state))
+                self.logger.info("Collision:\n" + str(collision))
+                time.sleep(1)
+            except:
+                pass
 
     def getLogger(self):
         """

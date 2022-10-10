@@ -15,6 +15,7 @@ if __name__ == '__main__':
     logger.info("Connected to instance of Airsim")  # Logging
 
     client, numOfArucoOnMap = createMap(client, logger)
+    serverThread.numOfAruco = numOfArucoOnMap
 
     # grade = Grade(client, numOfArucoOnMap, serverThread.UDPServerSocket, serverThread.clientAddress, logger)
     # serverThread.grade = grade
@@ -27,9 +28,10 @@ if __name__ == '__main__':
     serverThread.join()
     loggerThread.stop()
 
+
+
+
+
+
     # client.simSetObjectMaterialFromTexture("testCube1_2", "C:/Users/appel/PycharmProjects/AirsimSimulation/ArucoImages/aruco1.jpg")
 
-    # client.takeoffAsync().join()  # let drone take-off
-    # client.moveToPositionAsync(5, 5, -1, 5).join()
-    # client.hoverAsync().join()
-    #

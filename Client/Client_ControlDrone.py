@@ -2,6 +2,7 @@ import logging
 import socket
 import keyboard
 import pickle
+from Client_GradeReceiveThread import GradeReceiverThread
 
 
 def forward(horizontalSpeedMultiplier: int = 5):
@@ -97,16 +98,22 @@ def goto(x: float, y: float, z: float, velocity: float, hasToFinish: bool):
     logger.info("goto sent")
 
 
-if __name__ == '__main__':
+def initLogger():
     #  Initiating logger -->
-    logger = logging.getLogger("clientLogger")
-    logger.setLevel(logging.DEBUG)
+    newLogger = logging.getLogger("clientLogger")
+    newLogger.setLevel(logging.DEBUG)
     f_handler = logging.FileHandler('Client.log', 'w', encoding="utf-8")
     logFormat = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     f_handler.setFormatter(logFormat)
-    logger.addHandler(f_handler)  # <--
-    logger.info("Logging initiated")
+    newLogger.addHandler(f_handler)  # <--
+    newLogger.info("Logging initiated")
+    return newLogger
 
+
+if __name__ == '__main__':
+    logger: logging.Logger = initLogger()
+
+    # Sending Hello to server
     msgFromClient = "Hello UDP Server"
     bytesToSend = str.encode(msgFromClient)
     serverAddressPort = ("192.168.1.246", 20001)
@@ -115,11 +122,11 @@ if __name__ == '__main__':
     # Create a UDP socket at client side
     UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
+    gradeReceiverThread = GradeReceiverThread(logger, UDPClientSocket, bufferSize)
+    gradeReceiverThread.start()
+
     # Send to server using created UDP socket
     UDPClientSocket.sendto(bytesToSend, serverAddressPort)
-    # msgFromServer = UDPClientSocket.recvfrom(bufferSize)  # Receiving that the connection was successful and the client is permitted to start sending commands to drone
-    # msg = "Message from Server: {}".format(msgFromServer[0])
-    # print(msg)
 
     keyboard.add_hotkey('w', forward, timeout=0)
     keyboard.add_hotkey('s', back, timeout=0)
@@ -136,10 +143,11 @@ if __name__ == '__main__':
 
     keyboard.wait('esc')  # wait while esc not pressed
 
-    data = pickle.dumps([
+    finishSimMessage = pickle.dumps([
         "finishedSim"
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPClientSocket.sendto(finishSimMessage, serverAddressPort)
     logger.info("finishedSim sent")
 
+    gradeReceiverThread.stop()
     UDPClientSocket.close()

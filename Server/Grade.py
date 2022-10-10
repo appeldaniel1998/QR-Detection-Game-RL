@@ -25,7 +25,7 @@ class Grade(threading.Thread):
         # Params from JSON file
         self.currentPoints: float = gradeConfig["pointsAtStartOfGame"]
         self.gameTime: float = gradeConfig["gameTime"]  # In seconds
-        self.timeForHeatZoneKill: float = gradeConfig["timeForHeatZoneKill"]  # In seconds
+        # self.timeForHeatZoneKill: float = gradeConfig["timeForHeatZoneKill"]  # In seconds
         self.pointsForQRDetected: float = gradeConfig["pointsForQRDetected"]  # The number of points the agent receives upon detecting correctly an Aruco QR code
 
         self.unseenQR = list(range(1, numberOfAruco + 1))
@@ -54,7 +54,7 @@ class Grade(threading.Thread):
 
             self.clientSocket.sendto(str.encode(str(currPoints)), self.clientAddress)
             self.logger.info("The grade was sent to client")
-            time.sleep(0.1)
+            time.sleep(1)  # 0.1
 
     def grade(self, frame: np.ndarray) -> float:  # TODO: improve and finish grade() func
         arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_1000)
@@ -69,8 +69,10 @@ class Grade(threading.Thread):
                     self.unseenQR.remove(recognizedId)
                     self.seenQR.append(recognizedId)
                     self.currentPoints += self.pointsForQRDetected
-
-        state = self.client.getMultirotorState()  # Get Airsim state data
-        collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
+        try:
+            state = self.client.getMultirotorState()  # Get Airsim state data
+            collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
+        except:
+            pass
 
         return self.currentPoints
