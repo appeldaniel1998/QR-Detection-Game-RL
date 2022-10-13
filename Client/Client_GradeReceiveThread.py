@@ -36,6 +36,6 @@ class GradeReceiverThread(threading.Thread):
         """
         while not self.stopped():  # Thread stops upon call to stop() method above
             bytesAddressPair = self.UDPClientSocket.recvfrom(self.bufferSize)
-            grade = float(bytesAddressPair[0])
+            grade = float(bytesAddressPair[0].decode())
             self.logger.info("Grade received: " + str(grade))
             self.grades.append(grade)
