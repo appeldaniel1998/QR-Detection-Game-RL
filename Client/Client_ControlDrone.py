@@ -122,15 +122,12 @@ if __name__ == '__main__':
 
     # Create a UDP socket at client side
     UDPSocketSend = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Socket to send commands
-    UDPSocketRecv = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Socket to receive grades
 
-    # gradeReceiverThread = GradeReceiverThread(logger, UDPSocketRecv, bufferSize)
+    # gradeReceiverThread = GradeReceiverThread(logger, UDPSocketSend, bufferSize)
     # gradeReceiverThread.start()
 
     # Send to server using created UDP socket
     UDPSocketSend.sendto(bytesToSend, serverAddressPortSend)
-    UDPSocketRecv.sendto(bytesToSend, serverAddressPortRecv)
-
 
     keyboard.add_hotkey('w', forward, timeout=0)
     keyboard.add_hotkey('s', back, timeout=0)

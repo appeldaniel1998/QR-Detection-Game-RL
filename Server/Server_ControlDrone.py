@@ -54,10 +54,6 @@ class ServerThread(threading.Thread):
         bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving "Hello" from client
         self.clientAddressRecv = bytesAddressPair[1]  # socket for receiving commands
 
-        bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving "Hello" from client
-        self.clientAddressSend = bytesAddressPair[1]  # Socket for sending grades
-
-
     def stop(self):
         """
         Method to be called when the thread should be stopped
@@ -75,7 +71,7 @@ class ServerThread(threading.Thread):
         Method to be executed by the thread.
         :return:
         """
-        self.grade = Grade(self.client, self.numOfAruco, localIP, localPort, self.clientAddressSend, self.logger)
+        self.grade = Grade(self.numOfAruco, self.UDPServerSocket, self.clientAddressRecv, self.logger)
         self.grade.start()
         while not self.stopped():  # Thread stops upon call to stop() method above
             try:
