@@ -10,7 +10,7 @@ def forward(horizontalSpeedMultiplier: int = 5):
         "forward",  # direction of movement
         horizontalSpeedMultiplier  # speed multiplier
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("forward sent")
 
 
@@ -19,7 +19,7 @@ def back(horizontalSpeedMultiplier: int = 5):
         "back",  # direction of movement
         horizontalSpeedMultiplier  # speed multiplier
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("back sent")
 
 
@@ -28,7 +28,7 @@ def left(horizontalSpeedMultiplier: float = 5):
         "left",  # direction of movement
         horizontalSpeedMultiplier  # speed multiplier
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("left sent")
 
 
@@ -37,7 +37,7 @@ def right(horizontalSpeedMultiplier: float = 5):
         "right",  # direction of movement
         horizontalSpeedMultiplier  # speed multiplier
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("right sent")
 
 
@@ -46,7 +46,7 @@ def turnRight(angleToTurn: float = 5):
         "turnRight",  # direction of movement
         angleToTurn  # by how many degrees
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("turnRight sent")
 
 
@@ -55,7 +55,7 @@ def turnLeft(angleToTurn: float = 5):
         "turnLeft",  # direction of movement
         angleToTurn  # by how many degrees
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("turnLeft sent")
 
 
@@ -64,7 +64,7 @@ def up(verticalSpeed: float = 2):
         "up",  # direction of movement
         verticalSpeed  # speed
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("up sent")
 
 
@@ -73,7 +73,7 @@ def down(verticalSpeed: float = 2):
         "down",  # direction of movement
         verticalSpeed  # speed
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("down sent")
 
 
@@ -81,7 +81,7 @@ def hover():
     data = pickle.dumps([
         "hover"  # direction of movement
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("hover sent")
 
 
@@ -94,7 +94,7 @@ def goto(x: float, y: float, z: float, velocity: float, hasToFinish: bool):
         velocity,  # speed of movement
         hasToFinish  # Whether the action should be stoppable while running, or the drone has to get to the specified point until any further movement is performed (True == yes, False == no)
     ])
-    UDPClientSocket.sendto(data, serverAddressPort)
+    UDPSocketSend.sendto(data, serverAddressPortSend)
     logger.info("goto sent")
 
 
@@ -116,17 +116,21 @@ if __name__ == '__main__':
     # Sending Hello to server
     msgFromClient = "Hello UDP Server"
     bytesToSend = str.encode(msgFromClient)
-    serverAddressPort = ("192.168.1.246", 20001)
+    serverAddressPortSend = ("192.168.1.246", 20001)
+    serverAddressPortRecv = ("192.168.1.246", 20002)
     bufferSize = 1024
 
     # Create a UDP socket at client side
-    UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    UDPSocketSend = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Socket to send commands
+    UDPSocketRecv = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Socket to receive grades
 
-    gradeReceiverThread = GradeReceiverThread(logger, UDPClientSocket, bufferSize)
-    gradeReceiverThread.start()
+    # gradeReceiverThread = GradeReceiverThread(logger, UDPSocketRecv, bufferSize)
+    # gradeReceiverThread.start()
 
     # Send to server using created UDP socket
-    UDPClientSocket.sendto(bytesToSend, serverAddressPort)
+    UDPSocketSend.sendto(bytesToSend, serverAddressPortSend)
+    UDPSocketRecv.sendto(bytesToSend, serverAddressPortRecv)
+
 
     keyboard.add_hotkey('w', forward, timeout=0)
     keyboard.add_hotkey('s', back, timeout=0)
@@ -146,8 +150,8 @@ if __name__ == '__main__':
     finishSimMessage = pickle.dumps([
         "finishedSim"
     ])
-    UDPClientSocket.sendto(finishSimMessage, serverAddressPort)
+    UDPSocketSend.sendto(finishSimMessage, serverAddressPortSend)
     logger.info("finishedSim sent")
 
-    gradeReceiverThread.stop()
-    UDPClientSocket.close()
+    # gradeReceiverThread.stop()
+    UDPSocketSend.close()

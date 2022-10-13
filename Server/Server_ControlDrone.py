@@ -9,6 +9,9 @@ from Grade import Grade
 from Parameters import *
 import pickle
 
+# localIP = "192.168.1.246"
+# localPort = 20001
+
 
 class ServerThread(threading.Thread):
     """
@@ -35,7 +38,7 @@ class ServerThread(threading.Thread):
         self.numOfAruco = None
         self.cameraAngleDeg = 0
 
-        # connecting to Airsim
+        # Creating sockets for
         self.UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Create a datagram socket
         self.UDPServerSocket.bind((localIP, localPort))  # Bind to address and ip
 
@@ -49,9 +52,11 @@ class ServerThread(threading.Thread):
         self.client.takeoffAsync().join()  # let drone take-off
 
         bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving "Hello" from client
-        self.clientAddress = bytesAddressPair[1]
+        self.clientAddressRecv = bytesAddressPair[1]  # socket for receiving commands
 
-        # self.UDPServerSocket.sendto(str.encode("Connection Successful"), bytesAddressPair[1])
+        bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving "Hello" from client
+        self.clientAddressSend = bytesAddressPair[1]  # Socket for sending grades
+
 
     def stop(self):
         """
@@ -70,7 +75,7 @@ class ServerThread(threading.Thread):
         Method to be executed by the thread.
         :return:
         """
-        self.grade = Grade(self.client, self.numOfAruco, self.UDPServerSocket, self.clientAddress, self.logger)
+        self.grade = Grade(self.client, self.numOfAruco, localIP, localPort, self.clientAddressSend, self.logger)
         self.grade.start()
         while not self.stopped():  # Thread stops upon call to stop() method above
             try:

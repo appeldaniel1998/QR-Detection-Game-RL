@@ -10,12 +10,15 @@ import cv2
 
 
 class Grade(threading.Thread):
-    def __init__(self, client: airsim.MultirotorClient, numberOfAruco: int, clientSocket: socket.socket, clientAddress, logger: logging.Logger):
+    def __init__(self, client: airsim.MultirotorClient, numberOfAruco: int, localIP, localPort, clientAddress, logger: logging.Logger):
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
 
-        self.client = client
-        self.clientSocket = clientSocket
+        # self.client = client
+        self.client = airsim.MultirotorClient()
+        # self.clientSocket = clientSocket
+        self.clientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Create a datagram socket
+        self.clientSocket.bind((localIP, int(localPort) + 1))
         self.clientAddress = clientAddress
         self.logger = logger
 
