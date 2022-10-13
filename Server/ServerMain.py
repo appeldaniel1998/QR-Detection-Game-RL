@@ -17,16 +17,13 @@ if __name__ == '__main__':
     client, numOfArucoOnMap = createMap(client, logger)
     serverThread.numOfAruco = numOfArucoOnMap
 
-    # grade = Grade(client, numOfArucoOnMap, serverThread.UDPServerSocket, serverThread.clientAddress, logger)
-    # serverThread.grade = grade
-
     logger.info("Simulation ready to start...\n")  # Logging
 
-    # loggerThread.start()  # Starting continuous logging of Airsim data to file and console
+    loggerThread.start()  # Starting continuous logging of Airsim data to file and console
     serverThread.start()  # Start continuous receiving of commands to the drone
 
     serverThread.join()
-    # loggerThread.stop()
+    loggerThread.stop()
 
 
 

@@ -3,6 +3,7 @@ import socket
 import keyboard
 import pickle
 from Client_GradeReceiveThread import GradeReceiverThread
+from Parameters import *
 
 
 def forward(horizontalSpeedMultiplier: int = 5):
@@ -116,9 +117,7 @@ if __name__ == '__main__':
     # Sending Hello to server
     msgFromClient = "Hello UDP Server"
     bytesToSend = str.encode(msgFromClient)
-    serverAddressPortSend = ("192.168.1.246", 20001)
-    serverAddressPortRecv = ("192.168.1.246", 20002)
-    bufferSize = 1024
+    serverAddressPortSend = (serverIP, serverPort)
 
     # Create a UDP socket at client side
     UDPSocketSend = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Socket to send commands
@@ -126,9 +125,11 @@ if __name__ == '__main__':
     # Send to server using created UDP socket
     UDPSocketSend.sendto(bytesToSend, serverAddressPortSend)
 
+    # Initialise a thread for receiving grades from server (continuously)
     gradeReceiverThread = GradeReceiverThread(logger, UDPSocketSend, bufferSize)
     gradeReceiverThread.start()
 
+    # using keyboard to control the drone. Can be changed
     keyboard.add_hotkey('w', forward, timeout=0)
     keyboard.add_hotkey('s', back, timeout=0)
     keyboard.add_hotkey('a', left, timeout=0)
@@ -144,11 +145,10 @@ if __name__ == '__main__':
 
     keyboard.wait('esc')  # wait while esc not pressed
 
-    finishSimMessage = pickle.dumps([
-        "finishedSim"
-    ])
+    # Send message to server to end simulation
+    finishSimMessage = pickle.dumps(["finishedSim"])
     UDPSocketSend.sendto(finishSimMessage, serverAddressPortSend)
     logger.info("finishedSim sent")
 
-    # gradeReceiverThread.stop()
+    gradeReceiverThread.stop()
     UDPSocketSend.close()
