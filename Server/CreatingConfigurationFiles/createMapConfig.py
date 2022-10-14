@@ -191,6 +191,11 @@ if __name__ == "__main__":
             8: "Cube8_76",
             9: "Cube9_79",
             10: "Cube10_82"
+        },
+        "originPosOfAruco": {
+            "x": 16810.0,
+            "y": -5530.0,
+            "z": 140.0
         }
     }
     with open("mapConfig.json", "w") as file:

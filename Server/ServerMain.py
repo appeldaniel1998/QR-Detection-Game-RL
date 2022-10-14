@@ -14,16 +14,19 @@ if __name__ == '__main__':
     serverThread.logger = logger  # Assignment of logger to server thread (to be able to log from it to the same file and with the same settings)
     logger.info("Connected to instance of Airsim")  # Logging
 
-    client, numOfArucoOnMap = createMap(client, logger)
+    client, numOfArucoOnMap, geodeticArucoCoordinates, originPosOfAruco, ueIds = createMap(client, logger)
     serverThread.numOfAruco = numOfArucoOnMap
+    serverThread.geodeticArucoCoordinates = geodeticArucoCoordinates
+    serverThread.originPosOfAruco = originPosOfAruco
+    serverThread.ueIds = ueIds
 
     logger.info("Simulation ready to start...\n")  # Logging
 
-    loggerThread.start()  # Starting continuous logging of Airsim data to file and console
+    # loggerThread.start()  # Starting continuous logging of Airsim data to file and console
     serverThread.start()  # Start continuous receiving of commands to the drone
 
     serverThread.join()
-    loggerThread.stop()
+    # loggerThread.stop()
 
 
 

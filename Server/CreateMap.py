@@ -3,6 +3,7 @@ import logging
 import airsim
 import random
 import json
+import pymap3d as pm
 
 
 def loadWeather(client: airsim.MultirotorClient, weatherDict: dict) -> airsim.MultirotorClient:
@@ -21,7 +22,7 @@ def loadWeather(client: airsim.MultirotorClient, weatherDict: dict) -> airsim.Mu
     return client
 
 
-def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possibleLocations: list, ueIds: dict, playerStartPos: list) -> airsim.MultirotorClient:
+def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possibleLocations: list, ueIds: dict, playerStartPos: list) -> (airsim.MultirotorClient, list):
     """
     Function to randomly place a number (numberOfArucoToPlace) of aruco codes upon the map.
     The aruco codes placed are in range [1, numberOfArucoToPlace + 1], with no aruco having the same ID twice
@@ -33,8 +34,14 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
     (The IDs in UE are revealed upon mouse-hover over the name of the cube in the "World Outliner" section)
     :param playerStartPos: starting position of player. To be used to transfer coordinates to Airsim units
     :return: client upon which the changes are made
+
+    +X is north, +Y is east, +Z is down (according to Airsim Doc)
     """
+    geodeticArucoCoordinates = []
+    originGPSCoordinates = client.getHomeGeoPoint()
+
     random.seed(0)  # random Seed
+
     for arucoId in range(1, numberOfArucoToPlace + 1):
         currRandomizedLocationID = random.randint(0, len(possibleLocations) - 1)  # Both inclusive
         chosenLocation = possibleLocations.pop(currRandomizedLocationID)
@@ -45,12 +52,20 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
         position.position.z_val = (chosenLocation["zPos"] - playerStartPos[2]) / -100  # <--
         client.simSetObjectPose(ueIds[str(arucoId)], position)  # Set new location
 
+        gpsCoordinateOfAruco = pm.enu2geodetic(position.position.y_val,  # Converting Airsim coordinate system to GPS coordinates
+                                               position.position.x_val,
+                                               -position.position.z_val,
+                                               originGPSCoordinates.latitude,
+                                               originGPSCoordinates.longitude,
+                                               originGPSCoordinates.altitude)
+        geodeticArucoCoordinates.append(gpsCoordinateOfAruco)
+
         scale = client.simGetObjectScale(ueIds[str(arucoId)])  # Get old scale
         scale.x_val = chosenLocation["scaleX"]  # Change scale -->
         scale.y_val = chosenLocation["scaleY"]
         scale.z_val = chosenLocation["scaleZ"]  # <--
         client.simSetObjectScale(ueIds[str(arucoId)], scale)  # Set new scale
-    return client
+    return client, geodeticArucoCoordinates
 
 
 def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsim.MultirotorClient, float):
@@ -64,7 +79,18 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
         mapConfig = json.load(file)
 
     loadWeather(client, mapConfig["weather"])
-    placeAruco(client, mapConfig["numberOfArucoToSpawn"], mapConfig["PossibleCubePositions"], mapConfig["existingCubeNames"], mapConfig["PlayerStartPosition"])
+
+    client, geodeticArucoCoordinates = placeAruco(client,
+                                                  mapConfig["numberOfArucoToSpawn"],
+                                                  mapConfig["PossibleCubePositions"],
+                                                  mapConfig["existingCubeNames"],
+                                                  mapConfig["PlayerStartPosition"])
 
     logger.info("Created map")  # Logging
-    return client, mapConfig["numberOfArucoToSpawn"]
+
+    originArucoPos = mapConfig["originPosOfAruco"]
+    originArucoPos["x"] = (originArucoPos["x"] - mapConfig["PlayerStartPosition"][0]) / 100
+    originArucoPos["y"] = (originArucoPos["y"] - mapConfig["PlayerStartPosition"][1]) / 100
+    originArucoPos["z"] = (originArucoPos["z"] - mapConfig["PlayerStartPosition"][2]) / -100
+
+    return client, mapConfig["numberOfArucoToSpawn"], geodeticArucoCoordinates, originArucoPos, mapConfig["existingCubeNames"]

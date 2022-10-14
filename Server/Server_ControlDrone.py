@@ -37,6 +37,9 @@ class ServerThread(threading.Thread):
         self.grade = None
         self.numOfAruco = None
         self.cameraAngleDeg = 0
+        self.geodeticArucoCoordinates = None
+        self.originPosOfAruco = None
+        self.ueIds = None
 
         # Creating sockets for
         self.UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)  # Create a datagram socket
@@ -71,7 +74,7 @@ class ServerThread(threading.Thread):
         Method to be executed by the thread.
         :return:
         """
-        self.grade = Grade(self.numOfAruco, self.UDPServerSocket, self.clientAddressRecv, self.logger)
+        self.grade = Grade(self.numOfAruco, self.UDPServerSocket, self.clientAddressRecv, self.logger, self.geodeticArucoCoordinates, self.originPosOfAruco, self.ueIds)
         self.grade.start()
         while not self.stopped():  # Thread stops upon call to stop() method above
             try:
