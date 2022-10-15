@@ -1,5 +1,8 @@
 import logging
 import socket
+import sys
+import time
+
 import keyboard
 import pickle
 from Client_GradeReceiveThread import GradeReceiverThread
@@ -99,6 +102,11 @@ def goto(x: float, y: float, z: float, velocity: float, hasToFinish: bool):
     logger.info("goto sent")
 
 
+def finishExecution():
+    global finishExec
+    finishExec = True
+
+
 def initLogger():
     #  Initiating logger -->
     newLogger = logging.getLogger("clientLogger")
@@ -129,6 +137,8 @@ if __name__ == '__main__':
     gradeReceiverThread = GradeReceiverThread(logger, UDPSocketSend, bufferSize)
     gradeReceiverThread.start()
 
+    finishExec = False
+
     # using keyboard to control the drone. Can be changed
     keyboard.add_hotkey('w', forward, timeout=0)
     keyboard.add_hotkey('s', back, timeout=0)
@@ -139,16 +149,21 @@ if __name__ == '__main__':
     keyboard.add_hotkey('page up', up, timeout=0)
     keyboard.add_hotkey('page down', down, timeout=0)
     keyboard.add_hotkey('space', hover, timeout=0)
+    keyboard.add_hotkey('esc', finishExecution, timeout=0)
 
     # goto(x=-5.5, y=-5.9, z=-1.1, velocity=5.4, hasToFinish=True)
     # goto function is available but not bound to key
 
-    keyboard.wait('esc')  # wait while esc not pressed
+    while True:
+        if finishExec or not gradeReceiverThread.is_alive():
+            # Send message to server to end simulation
+            finishSimMessage = pickle.dumps(["finishedSim"])
+            UDPSocketSend.sendto(finishSimMessage, serverAddressPortSend)
+            logger.info("finishedSim sent")
 
-    # Send message to server to end simulation
-    finishSimMessage = pickle.dumps(["finishedSim"])
-    UDPSocketSend.sendto(finishSimMessage, serverAddressPortSend)
-    logger.info("finishedSim sent")
+            gradeReceiverThread.stop()
+            UDPSocketSend.close()
 
-    gradeReceiverThread.stop()
-    UDPSocketSend.close()
+            break
+
+        time.sleep(2)

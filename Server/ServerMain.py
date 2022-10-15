@@ -26,10 +26,3 @@ if __name__ == '__main__':
     serverThread.join()
     # loggerThread.stop()
 
-
-
-
-
-
-    # client.simSetObjectMaterialFromTexture("testCube1_2", "C:/Users/appel/PycharmProjects/AirsimSimulation/ArucoImages/aruco1.jpg")
-

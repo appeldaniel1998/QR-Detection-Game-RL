@@ -3,7 +3,9 @@
     "gameTime": 300,
     "pointsForQRDetected": 10,
     "numberOfLives": 5,
+    "minusPointsForLifeLost": 50,
     "minusPointsPerSecInHeatZone": 1,
     "heatZoneRadius": 30,
-    "droneRecognitionRadius": 30
+    "droneRecognitionRadius": 30,
+    "pointsToFinishSim": -500
 }

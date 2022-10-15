@@ -19,6 +19,8 @@ class GradeReceiverThread(threading.Thread):
 
         self.logger.info("Grade receiving initiated")
 
+        self.reconnectionTries = 0
+
     def stop(self):
         """
         Method to be called when the thread should be stopped
@@ -35,7 +37,14 @@ class GradeReceiverThread(threading.Thread):
         :return:
         """
         while not self.stopped():  # Thread stops upon call to stop() method above
-            bytesAddressPair = self.UDPClientSocket.recvfrom(self.bufferSize)
-            grade = float(bytesAddressPair[0].decode())
-            self.logger.info("Grade received: " + str(grade))
-            self.grades.append(grade)
+            try:
+                bytesAddressPair = self.UDPClientSocket.recvfrom(self.bufferSize)
+                grade = float(bytesAddressPair[0].decode())
+                self.logger.info("Grade received: " + str(grade))
+                self.grades.append(grade)
+            except:
+                self.reconnectionTries += 1
+                if self.reconnectionTries >= 5:
+                    self.stop()
+                else:
+                    time.sleep(2)

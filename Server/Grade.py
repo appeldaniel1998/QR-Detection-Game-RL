@@ -11,7 +11,7 @@ import pymap3d as pm
 
 
 class Grade(threading.Thread):
-    def __init__(self, numberOfAruco: int, clientSocket, clientAddress, logger: logging.Logger, originPosOfAruco: dict, ueIds: dict):
+    def __init__(self, numberOfAruco: int, clientSocket, clientAddress, logger: logging.Logger, originPosOfAruco: dict, ueIds: dict, currentPoints: float = -1):
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
 
@@ -23,25 +23,29 @@ class Grade(threading.Thread):
         self.ueIds = ueIds
 
         self.timeArucoHeatZoneLastChecked: float = 0
+        self.timeLastLocationRecorded: float = 0
 
         with open("CreatingConfigurationFiles/gradeConfig.json", "r") as file:
             gradeConfig = json.load(file)
 
         # Params from JSON file
-        self.currentPoints: float = gradeConfig["pointsAtStartOfGame"]
+        if currentPoints == -1:
+            self.currentPoints: float = gradeConfig["pointsAtStartOfGame"]
+        else:
+            self.currentPoints: float = currentPoints
         self.gameTime: float = gradeConfig["gameTime"]  # In seconds
         self.pointsForQRDetected: float = gradeConfig["pointsForQRDetected"]  # The number of points the agent receives upon detecting correctly an Aruco QR code
         self.droneRecognitionRadius: float = gradeConfig["droneRecognitionRadius"]
         self.heatZoneRadius: float = gradeConfig["heatZoneRadius"]
         self.minusPointsPerSecInHeatZone: float = gradeConfig["minusPointsPerSecInHeatZone"]
         self.numberOfLives: int = gradeConfig["numberOfLives"]
+        self.minusPointsForLifeLost = gradeConfig["minusPointsForLifeLost"]
+        self.pointsToFinishSim = gradeConfig["pointsToFinishSim"]
 
         self.unseenQR = list(range(1, numberOfAruco + 1))
         self.seenQR = []
 
-        self.lastKnownXPos = 0
-        self.lastKnownYPos = 0
-        self.lastKnownZPos = 0
+        self.lastKnowsDroneGPSLoc = self.client.getMultirotorState().gps_location
 
     def getCurrentGrade(self) -> float:
         return self.currentPoints
@@ -68,6 +72,7 @@ class Grade(threading.Thread):
             self.clientSocket.sendto(str.encode(str(self.currentPoints)), self.clientAddress)
             self.logger.info("The grade was sent to client")
             time.sleep(0.2)  # Max grades given per second: 5
+        return self.currentPoints
 
     def findGPSCoordinatesOfAruco(self, arucoId):
         pos = self.client.simGetObjectPose(self.ueIds[str(arucoId)])
@@ -140,12 +145,44 @@ class Grade(threading.Thread):
             self.currentPoints -= (self.minusPointsPerSecInHeatZone * countMinusPoints)
             self.timeArucoHeatZoneLastChecked = time.time()
 
-    def handleCollisions(self):  # TODO
-        pass
+    def handleCollisions(self):
+        if time.time() - self.timeLastLocationRecorded >= 10:
+            self.lastKnowsDroneGPSLoc = self.client.getMultirotorState().gps_location
+            self.timeLastLocationRecorded = time.time()
 
-    def grade(self, frame: np.ndarray) -> None:  # TODO: improve and finish grade() func
+        collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
+        if collision.has_collided:
+            self.timeLastLocationRecorded = time.time()
+            self.numberOfLives -= 1
+            self.currentPoints -= self.minusPointsForLifeLost
+
+            self.logger.info("The drone has collided! Number of \"lives\" left: " + str(self.numberOfLives) + ". The current grade is: " + str(self.currentPoints))
+            if self.numberOfLives == 0:
+                self.stop()
+
+            originGPSCoordinates = self.client.getHomeGeoPoint()
+
+            # Transform GPS coordinates to ENU (NED in different order) coordinate system (the one Airsim uses)
+            currentDroneCoordinates = pm.geodetic2enu(self.lastKnowsDroneGPSLoc.latitude,
+                                                      self.lastKnowsDroneGPSLoc.longitude,
+                                                      self.lastKnowsDroneGPSLoc.altitude,
+                                                      originGPSCoordinates.latitude,
+                                                      originGPSCoordinates.longitude,
+                                                      originGPSCoordinates.altitude)
+
+            # Initialize position to teleport to (back in time 5 seconds) -->
+            oldDronePos = self.client.simGetVehiclePose()
+            oldDronePos.position.x_val = currentDroneCoordinates[1]
+            oldDronePos.position.y_val = currentDroneCoordinates[0]
+            oldDronePos.position.z_val = -currentDroneCoordinates[2]  # <--
+
+            self.client.simSetVehiclePose(oldDronePos, True)
+            self.client.hoverAsync().join()
+
+    def grade(self, frame: np.ndarray) -> None:
         self.handleSeenArucoCodes(frame)
         self.handleInArucoHeatZone()
         self.handleCollisions()
 
-        # collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
+        if self.pointsToFinishSim >= self.currentPoints:
+            self.stop()

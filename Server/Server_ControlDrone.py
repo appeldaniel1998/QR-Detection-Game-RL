@@ -76,6 +76,9 @@ class ServerThread(threading.Thread):
         self.grade = Grade(self.numOfAruco, self.UDPServerSocket, self.clientAddressRecv, self.logger, self.originPosOfAruco, self.ueIds)
         self.grade.start()
         while not self.stopped():  # Thread stops upon call to stop() method above
+            if not self.grade.is_alive():
+                break
+
             try:
                 bytesAddressPair = self.UDPServerSocket.recvfrom(bufferSize)  # Receiving via socket
                 dataReceived = pickle.loads(bytesAddressPair[0])  # Received data - movement request of drone
@@ -180,5 +183,11 @@ class ServerThread(threading.Thread):
                     self.client.hoverAsync()
             except:
                 pass
-        self.grade.stop()
+
+            if not self.grade.is_alive():
+                break
+
+        if self.grade.is_alive():
+            self.grade.stop()
+
         self.UDPServerSocket.close()
