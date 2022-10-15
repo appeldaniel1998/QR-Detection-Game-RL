@@ -1,9 +1,9 @@
 import logging
-
 import airsim
 import random
 import json
-import pymap3d as pm
+from ArucoCode import ArucoCode
+from DynamicMap import DynamicMap
 
 
 def loadWeather(client: airsim.MultirotorClient, weatherDict: dict) -> airsim.MultirotorClient:
@@ -37,36 +37,28 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
 
     +X is north, +Y is east, +Z is down (according to Airsim Doc)
     """
-    geodeticArucoCoordinates = []
-    originGPSCoordinates = client.getHomeGeoPoint()
 
-    random.seed(0)  # random Seed
+    random.seed(0)  # random Seed TODO: remove this line
+    arucos = []
+    ArucoCode.playerStartPos = playerStartPos
+    ArucoCode.ueIds = ueIds
+    ArucoCode.airsimClient = client
 
     for arucoId in range(1, numberOfArucoToPlace + 1):
         currRandomizedLocationID = random.randint(0, len(possibleLocations) - 1)  # Both inclusive
         chosenLocation = possibleLocations.pop(currRandomizedLocationID)
 
-        position = client.simGetObjectPose(ueIds[str(arucoId)])  # Get current position of object. needed to keep the format identical
-        position.position.x_val = (chosenLocation["xPos"] - playerStartPos[0]) / 100  # Changing location -->
-        position.position.y_val = (chosenLocation["yPos"] - playerStartPos[1]) / 100
-        position.position.z_val = (chosenLocation["zPos"] - playerStartPos[2]) / -100  # <--
-        client.simSetObjectPose(ueIds[str(arucoId)], position)  # Set new location
-
-        # Converting Airsim coordinate system to GPS coordinates
-        gpsCoordinateOfAruco = pm.enu2geodetic(position.position.y_val,
-                                               position.position.x_val,
-                                               -position.position.z_val,
-                                               originGPSCoordinates.latitude,
-                                               originGPSCoordinates.longitude,
-                                               originGPSCoordinates.altitude)
-        geodeticArucoCoordinates.append(gpsCoordinateOfAruco)
+        currAruco = ArucoCode(arucoId, chosenLocation["xPos"], chosenLocation["yPos"], chosenLocation["zPos"],
+                              chosenLocation["movementAxis"], chosenLocation["movementStart"], chosenLocation["movementEnd"])
+        arucos.append(currAruco)
+        currAruco.setAirsimPos(chosenLocation["xPos"], chosenLocation["yPos"], chosenLocation["zPos"])
 
         scale = client.simGetObjectScale(ueIds[str(arucoId)])  # Get old scale
         scale.x_val = chosenLocation["scaleX"]  # Change scale -->
         scale.y_val = chosenLocation["scaleY"]
         scale.z_val = chosenLocation["scaleZ"]  # <--
         client.simSetObjectScale(ueIds[str(arucoId)], scale)  # Set new scale
-    return client
+    return client, arucos
 
 
 def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsim.MultirotorClient, float):
@@ -81,11 +73,11 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
 
     loadWeather(client, mapConfig["weather"])
 
-    client = placeAruco(client,
-                        mapConfig["numberOfArucoToSpawn"],
-                        mapConfig["PossibleCubePositions"],
-                        mapConfig["existingCubeNames"],
-                        mapConfig["PlayerStartPosition"])
+    client, arucos = placeAruco(client,
+                                mapConfig["numberOfArucoToSpawn"],
+                                mapConfig["PossibleCubePositions"],
+                                mapConfig["existingCubeNames"],
+                                mapConfig["PlayerStartPosition"])
 
     logger.info("Created map")  # Logging
 
@@ -94,4 +86,7 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
     originArucoPos["y"] = (originArucoPos["y"] - mapConfig["PlayerStartPosition"][1]) / 100
     originArucoPos["z"] = (originArucoPos["z"] - mapConfig["PlayerStartPosition"][2]) / -100
 
-    return client, mapConfig["numberOfArucoToSpawn"], originArucoPos, mapConfig["existingCubeNames"]
+    dynamicMapThread = DynamicMap(arucos, logger)
+    dynamicMapThread.start()
+
+    return client, mapConfig["numberOfArucoToSpawn"], originArucoPos, mapConfig["existingCubeNames"], dynamicMapThread

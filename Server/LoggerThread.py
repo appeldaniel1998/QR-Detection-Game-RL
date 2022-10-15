@@ -27,7 +27,7 @@ class LoggerThread(threading.Thread):
         """
         Method to be called when the thread should be stopped
         :return: 
-        """""
+        """
         self._stop_event.set()
 
     def stopped(self):

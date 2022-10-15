@@ -1,44 +1,254 @@
-2022-10-15 16:22:31,774 - ServerLogger - INFO - Logging initiated
-2022-10-15 16:22:31,774 - ServerLogger - INFO - Connected to instance of Airsim
-2022-10-15 16:22:31,884 - ServerLogger - INFO - Created map
-2022-10-15 16:22:31,885 - ServerLogger - INFO - Simulation ready to start...
+2022-10-15 23:41:25,438 - ServerLogger - INFO - Logging initiated
+2022-10-15 23:41:25,438 - ServerLogger - INFO - Connected to instance of Airsim
+2022-10-15 23:41:25,533 - ServerLogger - INFO - Created map
+2022-10-15 23:41:25,534 - ServerLogger - INFO - Dynamic map initiated
+2022-10-15 23:41:25,535 - ServerLogger - INFO - Simulation ready to start...
 
-2022-10-15 16:22:32,037 - ServerLogger - INFO - The drone has collided! Number of "lives" left: 4. The current grade is: -50
-2022-10-15 16:22:32,038 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:32,039 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:32,368 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:32,368 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:32,686 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:32,686 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:33,024 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:33,024 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:33,358 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:33,359 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:33,471 - ServerLogger - INFO - Command received: Move Forward
-2022-10-15 16:22:33,705 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:33,705 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:33,901 - ServerLogger - INFO - Command received: Move Back
-2022-10-15 16:22:34,060 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:34,060 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:34,392 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:34,392 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:34,715 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:34,715 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:35,044 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:35,045 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:35,396 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:35,396 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:35,755 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:35,755 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:36,109 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:36,109 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:36,443 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:36,443 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:36,790 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:36,790 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:37,125 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:37,125 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:37,463 - ServerLogger - INFO - The frame was graded. The current grade is: -50
-2022-10-15 16:22:37,463 - ServerLogger - INFO - The grade was sent to client
-2022-10-15 16:22:37,684 - ServerLogger - INFO - Command received: Finish Simulation
-2022-10-15 16:22:37,806 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:25,675 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:25,675 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:26,016 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:26,016 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:26,366 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:26,366 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:26,720 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:26,720 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:27,040 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:27,040 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:27,378 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:27,378 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:27,723 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:27,723 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:28,067 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:28,067 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:28,400 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:28,400 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:28,738 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:28,738 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:29,080 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:29,081 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:29,454 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:29,454 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:29,820 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:29,820 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:30,024 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,172 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:30,172 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:30,499 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:30,499 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:30,530 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,561 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,592 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,623 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,669 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,700 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,731 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,762 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,793 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,825 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,855 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,864 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:30,864 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:30,901 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,933 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,964 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:30,995 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,027 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,059 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,090 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,121 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,153 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,184 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,199 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:31,200 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:31,230 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,261 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,293 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,323 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,355 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,387 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,597 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,600 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:31,600 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:31,778 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:31,960 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:32,232 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:32,232 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:32,964 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:32,964 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:33,423 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:33,636 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:33,636 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:33,648 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:33,914 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:34,070 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:41:34,321 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:34,321 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:34,368 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:34,870 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:34,915 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:34,928 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:34,928 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:34,946 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:34,977 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,007 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,039 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,069 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,100 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,145 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,176 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,206 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,237 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,269 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,300 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,345 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,375 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,405 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,435 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,466 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,497 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,528 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,575 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,603 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,634 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,635 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:35,635 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:35,665 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,697 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,727 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,774 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,804 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,837 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,866 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,897 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,928 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,960 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:35,991 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,038 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,069 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,099 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,131 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,162 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,194 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,224 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,231 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:36,231 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:36,255 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,301 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,332 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,362 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,393 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,423 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,455 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:41:36,848 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-15 23:41:36,848 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:37,408 - ServerLogger - INFO - The drone has collided! Number of "lives" left: 4. The current grade is: -50
+2022-10-15 23:41:37,409 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:37,409 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:38,026 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:38,026 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:38,607 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:38,607 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:39,171 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:39,171 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:39,752 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:39,752 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:40,350 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:40,350 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:40,972 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:40,972 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:41,572 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:41,572 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:42,194 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:42,194 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:42,815 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:42,815 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:41:43,410 - ServerLogger - INFO - The frame was graded. The current grade is: -50
+2022-10-15 23:41:43,410 - ServerLogger - INFO - The grade was sent to client
+2022-10-15 23:45:22,709 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:45:23,538 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:45:23,845 - ServerLogger - INFO - Command received: Move Left
+2022-10-15 23:45:24,798 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:45:25,555 - ServerLogger - INFO - Command received: Move Back
+2022-10-15 23:46:45,584 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:48:21,528 - ServerLogger - INFO - Command received: Move Up
+2022-10-15 23:48:40,184 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:48:40,624 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:48:55,645 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:48:57,541 - ServerLogger - INFO - Command received: Move Back
+2022-10-15 23:48:58,158 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:48:58,507 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:48:59,168 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,683 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,714 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,745 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,775 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,805 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,837 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,867 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,913 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,944 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:48:59,974 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,007 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,038 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,070 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,101 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,133 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,164 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,210 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,242 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,274 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,305 - ServerLogger - INFO - Command received: Turn left by 5 degrees
+2022-10-15 23:49:00,420 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:00,922 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:00,953 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,000 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,032 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,062 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,093 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,125 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,156 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,187 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,218 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,264 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,295 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,325 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,357 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,388 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,420 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,452 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,482 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,528 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,560 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,589 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,621 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,652 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,683 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,714 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,746 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,792 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,824 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,855 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,887 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,918 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,949 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:01,981 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:02,012 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:02,042 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:02,305 - ServerLogger - INFO - Command received: Move Forward
+2022-10-15 23:49:24,359 - ServerLogger - INFO - Command received: Move Left
+2022-10-15 23:49:24,632 - ServerLogger - INFO - Command received: Move Left
+2022-10-15 23:49:32,338 - ServerLogger - INFO - Command received: Move Left
+2022-10-15 23:49:33,491 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:39,481 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:49:39,802 - ServerLogger - INFO - Command received: Move Left
+2022-10-15 23:53:33,246 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:53:33,497 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:53:35,049 - ServerLogger - INFO - Command received: Turn right by 5 degrees
+2022-10-15 23:53:35,233 - ServerLogger - INFO - Command received: Move Right
+2022-10-15 23:53:35,406 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:53:36,073 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:53:39,129 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:53:41,222 - ServerLogger - INFO - Command received: Move Back
+2022-10-15 23:53:41,593 - ServerLogger - INFO - Command received: Hover
+2022-10-15 23:53:42,951 - ServerLogger - INFO - Command received: Move Back
+2022-10-15 23:53:45,822 - ServerLogger - INFO - Command received: Move Forward

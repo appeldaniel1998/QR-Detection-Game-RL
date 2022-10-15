@@ -45,6 +45,8 @@ class Grade(threading.Thread):
         self.unseenQR = list(range(1, numberOfAruco + 1))
         self.seenQR = []
 
+        self.firstCollisionAtStartOfSim = False
+
         self.lastKnowsDroneGPSLoc = self.client.getMultirotorState().gps_location
 
     def getCurrentGrade(self) -> float:
@@ -151,7 +153,7 @@ class Grade(threading.Thread):
             self.timeLastLocationRecorded = time.time()
 
         collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
-        if collision.has_collided:
+        if collision.has_collided and self.firstCollisionAtStartOfSim:
             self.timeLastLocationRecorded = time.time()
             self.numberOfLives -= 1
             self.currentPoints -= self.minusPointsForLifeLost
@@ -178,6 +180,8 @@ class Grade(threading.Thread):
 
             self.client.simSetVehiclePose(oldDronePos, True)
             self.client.hoverAsync().join()
+        else:
+            self.firstCollisionAtStartOfSim = True
 
     def grade(self, frame: np.ndarray) -> None:
         self.handleSeenArucoCodes(frame)
