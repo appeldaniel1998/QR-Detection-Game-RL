@@ -3,7 +3,6 @@ from CreateMap import createMap
 import logging
 from LoggerThread import LoggerThread
 from Server_ControlDrone import ServerThread
-from Grade import Grade
 
 if __name__ == '__main__':
     serverThread = ServerThread()  # Initiating connection to clientPC
@@ -14,9 +13,8 @@ if __name__ == '__main__':
     serverThread.logger = logger  # Assignment of logger to server thread (to be able to log from it to the same file and with the same settings)
     logger.info("Connected to instance of Airsim")  # Logging
 
-    client, numOfArucoOnMap, geodeticArucoCoordinates, originPosOfAruco, ueIds = createMap(client, logger)
+    client, numOfArucoOnMap, originPosOfAruco, ueIds = createMap(client, logger)
     serverThread.numOfAruco = numOfArucoOnMap
-    serverThread.geodeticArucoCoordinates = geodeticArucoCoordinates
     serverThread.originPosOfAruco = originPosOfAruco
     serverThread.ueIds = ueIds
 

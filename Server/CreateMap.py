@@ -52,7 +52,8 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
         position.position.z_val = (chosenLocation["zPos"] - playerStartPos[2]) / -100  # <--
         client.simSetObjectPose(ueIds[str(arucoId)], position)  # Set new location
 
-        gpsCoordinateOfAruco = pm.enu2geodetic(position.position.y_val,  # Converting Airsim coordinate system to GPS coordinates
+        # Converting Airsim coordinate system to GPS coordinates
+        gpsCoordinateOfAruco = pm.enu2geodetic(position.position.y_val,
                                                position.position.x_val,
                                                -position.position.z_val,
                                                originGPSCoordinates.latitude,
@@ -65,7 +66,7 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
         scale.y_val = chosenLocation["scaleY"]
         scale.z_val = chosenLocation["scaleZ"]  # <--
         client.simSetObjectScale(ueIds[str(arucoId)], scale)  # Set new scale
-    return client, geodeticArucoCoordinates
+    return client
 
 
 def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsim.MultirotorClient, float):
@@ -80,11 +81,11 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
 
     loadWeather(client, mapConfig["weather"])
 
-    client, geodeticArucoCoordinates = placeAruco(client,
-                                                  mapConfig["numberOfArucoToSpawn"],
-                                                  mapConfig["PossibleCubePositions"],
-                                                  mapConfig["existingCubeNames"],
-                                                  mapConfig["PlayerStartPosition"])
+    client = placeAruco(client,
+                        mapConfig["numberOfArucoToSpawn"],
+                        mapConfig["PossibleCubePositions"],
+                        mapConfig["existingCubeNames"],
+                        mapConfig["PlayerStartPosition"])
 
     logger.info("Created map")  # Logging
 
@@ -93,4 +94,4 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
     originArucoPos["y"] = (originArucoPos["y"] - mapConfig["PlayerStartPosition"][1]) / 100
     originArucoPos["z"] = (originArucoPos["z"] - mapConfig["PlayerStartPosition"][2]) / -100
 
-    return client, mapConfig["numberOfArucoToSpawn"], geodeticArucoCoordinates, originArucoPos, mapConfig["existingCubeNames"]
+    return client, mapConfig["numberOfArucoToSpawn"], originArucoPos, mapConfig["existingCubeNames"]

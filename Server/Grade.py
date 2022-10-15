@@ -7,10 +7,11 @@ import airsim
 import numpy as np
 import cv2
 import geopy.distance
+import pymap3d as pm
 
 
 class Grade(threading.Thread):
-    def __init__(self, numberOfAruco: int, clientSocket, clientAddress, logger: logging.Logger, geodeticArucoCoordinates: list, originPosOfAruco: dict, ueIds: dict):
+    def __init__(self, numberOfAruco: int, clientSocket, clientAddress, logger: logging.Logger, originPosOfAruco: dict, ueIds: dict):
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
 
@@ -18,9 +19,10 @@ class Grade(threading.Thread):
         self.clientSocket = clientSocket
         self.clientAddress = clientAddress
         self.logger = logger
-        self.geodeticArucoCoordinates = geodeticArucoCoordinates
         self.originPosOfAruco = originPosOfAruco
         self.ueIds = ueIds
+
+        self.timeArucoHeatZoneLastChecked: float = 0
 
         with open("CreatingConfigurationFiles/gradeConfig.json", "r") as file:
             gradeConfig = json.load(file)
@@ -28,8 +30,11 @@ class Grade(threading.Thread):
         # Params from JSON file
         self.currentPoints: float = gradeConfig["pointsAtStartOfGame"]
         self.gameTime: float = gradeConfig["gameTime"]  # In seconds
-        # self.timeForHeatZoneKill: float = gradeConfig["timeForHeatZoneKill"]  # In seconds
         self.pointsForQRDetected: float = gradeConfig["pointsForQRDetected"]  # The number of points the agent receives upon detecting correctly an Aruco QR code
+        self.droneRecognitionRadius: float = gradeConfig["droneRecognitionRadius"]
+        self.heatZoneRadius: float = gradeConfig["heatZoneRadius"]
+        self.minusPointsPerSecInHeatZone: float = gradeConfig["minusPointsPerSecInHeatZone"]
+        self.numberOfLives: int = gradeConfig["numberOfLives"]
 
         self.unseenQR = list(range(1, numberOfAruco + 1))
         self.seenQR = []
@@ -52,21 +57,40 @@ class Grade(threading.Thread):
         return self._stop_event.is_set()
 
     def run(self):
+        self.timeArucoHeatZoneLastChecked = time.time()
         while not self.stopped():
-            try:
-                airsimResponse = self.client.simGetImages([airsim.ImageRequest("0", airsim.ImageType.Scene, False, False)])[0]  # Get image from Airsim client
-                img1d = np.frombuffer(airsimResponse.image_data_uint8, dtype=np.uint8)  # get numpy array
-                frame = img1d.reshape((airsimResponse.height, airsimResponse.width, 3))  # reshape array to 4 channel image array H X W X 4
-                currPoints = self.grade(frame)
-                self.logger.info("The frame was graded. The current grade is: " + str(currPoints))
+            airsimResponse = self.client.simGetImages([airsim.ImageRequest("0", airsim.ImageType.Scene, False, False)])[0]  # Get image from Airsim client
+            img1d = np.frombuffer(airsimResponse.image_data_uint8, dtype=np.uint8)  # get numpy array
+            frame = img1d.reshape((airsimResponse.height, airsimResponse.width, 3))  # reshape array to 4 channel image array H X W X 4
+            self.grade(frame)
+            self.logger.info("The frame was graded. The current grade is: " + str(self.currentPoints))
 
-                self.clientSocket.sendto(str.encode(str(currPoints)), self.clientAddress)
-                self.logger.info("The grade was sent to client")
-                time.sleep(1)  # Max grades given per second: 1
-            except:
-                pass
+            self.clientSocket.sendto(str.encode(str(self.currentPoints)), self.clientAddress)
+            self.logger.info("The grade was sent to client")
+            time.sleep(0.2)  # Max grades given per second: 5
 
-    def grade(self, frame: np.ndarray) -> float:  # TODO: improve and finish grade() func
+    def findGPSCoordinatesOfAruco(self, arucoId):
+        pos = self.client.simGetObjectPose(self.ueIds[str(arucoId)])
+        originGPSCoordinates = self.client.getHomeGeoPoint()
+
+        # Converting Airsim coordinate system to GPS coordinates
+        gpsCoordinatesOfAruco = pm.enu2geodetic(pos.position.y_val,
+                                                pos.position.x_val,
+                                                -pos.position.z_val,
+                                                originGPSCoordinates.latitude,
+                                                originGPSCoordinates.longitude,
+                                                originGPSCoordinates.altitude)
+        return gpsCoordinatesOfAruco
+
+    def makeArucoDisappear(self, arucoId):
+        # When Aruco seen, make it disappear
+        position = self.client.simGetObjectPose(self.ueIds[str(arucoId)])  # Get current position of object. needed to keep the format identical
+        position.position.x_val = self.originPosOfAruco["x"]  # Changing location -->
+        position.position.y_val = self.originPosOfAruco["y"]
+        position.position.z_val = self.originPosOfAruco["z"]  # <--
+        self.client.simSetObjectPose(self.ueIds[str(arucoId)], position)  # Set new location to the "inf" location: origin location of all Aruco codes
+
+    def handleSeenArucoCodes(self, frame):
         arucoDict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_1000)
         arucoParams = cv2.aruco.DetectorParameters_create()
 
@@ -79,27 +103,49 @@ class Grade(threading.Thread):
             for i in range(len(ids)):
                 recognizedId = ids[i][0]  # Selecting the ID of aruco recognized
                 if recognizedId in self.unseenQR:
-                    distance = geopy.distance.distance((dronePos.latitude,  # Position of drone
-                                                        dronePos.longitude),
-                                                       (self.geodeticArucoCoordinates[recognizedId - 1][0],  # Position of potentially recognized Aruco code
-                                                        self.geodeticArucoCoordinates[recognizedId - 1][1])).m  # In meters
-                    self.logger.info("Distance to recognized aruco number " + str(recognizedId) + " is: " + str(distance))
-                    if distance <= 30:
+                    gpsCoordinatesOfAruco = self.findGPSCoordinatesOfAruco(recognizedId)
+                    distanceFromDroneToAruco = geopy.distance.distance((dronePos.latitude,  # Position of drone
+                                                                        dronePos.longitude),
+                                                                       (gpsCoordinatesOfAruco[0],  # Position of potentially recognized Aruco code
+                                                                        gpsCoordinatesOfAruco[1])).m  # In meters
+                    self.logger.info("Distance to recognized aruco number " + str(recognizedId) + " is: " + str(distanceFromDroneToAruco))
+                    if distanceFromDroneToAruco <= self.droneRecognitionRadius:
                         self.unseenQR.remove(recognizedId)
                         self.seenQR.append(recognizedId)
-
-                        # When Aruco seen, make it disappear -->
-                        position = self.client.simGetObjectPose(self.ueIds[str(recognizedId)])  # Get current position of object. needed to keep the format identical
-                        position.position.x_val = self.originPosOfAruco["x"]  # Changing location -->
-                        position.position.y_val = self.originPosOfAruco["y"]
-                        position.position.z_val = self.originPosOfAruco["z"]  # <--
-                        self.client.simSetObjectPose(self.ueIds[str(recognizedId)], position)  # Set new location to the "inf" location: origin location of all Aruco codes
-                        # <--
-
+                        self.makeArucoDisappear(recognizedId)
                         self.currentPoints += self.pointsForQRDetected
 
-        geoPoint = airsim.GeoPoint()
+    def handleInArucoHeatZone(self):
+        countMinusPoints = 0
+        for arucoIndex in range(len(self.unseenQR)):
+            gpsCoordinatesOfAruco = self.findGPSCoordinatesOfAruco(self.unseenQR[arucoIndex])
+            geoPointAruco = airsim.GeoPoint()
+            geoPointAruco.latitude = gpsCoordinatesOfAruco[0]
+            geoPointAruco.longitude = gpsCoordinatesOfAruco[1]
+            geoPointAruco.altitude = gpsCoordinatesOfAruco[2]
+            droneGeoPoint = self.client.getMultirotorState().gps_location
+            distanceFromDroneToAruco = geopy.distance.distance((droneGeoPoint.latitude,  # Position of drone
+                                                                droneGeoPoint.longitude),
+                                                               (gpsCoordinatesOfAruco[0],  # Position of potentially recognized Aruco code
+                                                                gpsCoordinatesOfAruco[1])).m  # In meters
+            if time.time() - self.timeArucoHeatZoneLastChecked >= 1 and \
+                    distanceFromDroneToAruco <= self.heatZoneRadius and \
+                    self.client.simTestLineOfSightBetweenPoints(geoPointAruco, droneGeoPoint):
+                # if checks: more than 1 second has passed since last check; distance from drone to aruco is within radius; drone in line of sight of aruco
+                countMinusPoints += 1  # Increase count of how many Arucos
+                self.logger.info("drone in range of aruco number:" + str(self.unseenQR[arucoIndex]) + " heat zone")
+
+        if countMinusPoints > 0:
+            self.logger.info("Time since last grade: " + str(time.time() - self.timeArucoHeatZoneLastChecked) + " seconds")
+            self.currentPoints -= (self.minusPointsPerSecInHeatZone * countMinusPoints)
+            self.timeArucoHeatZoneLastChecked = time.time()
+
+    def handleCollisions(self):  # TODO
+        pass
+
+    def grade(self, frame: np.ndarray) -> None:  # TODO: improve and finish grade() func
+        self.handleSeenArucoCodes(frame)
+        self.handleInArucoHeatZone()
+        self.handleCollisions()
 
         # collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
-
-        return self.currentPoints
