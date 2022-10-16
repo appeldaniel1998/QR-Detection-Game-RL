@@ -38,20 +38,21 @@ def placeAruco(client: airsim.MultirotorClient, numberOfArucoToPlace: int, possi
     +X is north, +Y is east, +Z is down (according to Airsim Doc)
     """
 
-    random.seed(0)  # random Seed TODO: remove this line
+    # random.seed(0)  # random Seed TODO: remove this line?
     arucos = []
     ArucoCode.playerStartPos = playerStartPos
     ArucoCode.ueIds = ueIds
     ArucoCode.airsimClient = client
 
-    for arucoId in range(1, numberOfArucoToPlace + 1):
+    for arucoId in range(1, numberOfArucoToPlace + 1):  # For every Aruco
         currRandomizedLocationID = random.randint(0, len(possibleLocations) - 1)  # Both inclusive
         chosenLocation = possibleLocations.pop(currRandomizedLocationID)
 
         currAruco = ArucoCode(arucoId, chosenLocation["xPos"], chosenLocation["yPos"], chosenLocation["zPos"],
                               chosenLocation["movementAxis"], chosenLocation["movementStart"], chosenLocation["movementEnd"])
-        arucos.append(currAruco)
-        currAruco.setAirsimPos(chosenLocation["xPos"], chosenLocation["yPos"], chosenLocation["zPos"])
+        arucos.append(currAruco)  # Add Aruco to a list to be returned  to the main function
+
+        currAruco.setAirsimPos(chosenLocation["xPos"], chosenLocation["yPos"], chosenLocation["zPos"])  # Set stating location to the Aruco
 
         scale = client.simGetObjectScale(ueIds[str(arucoId)])  # Get old scale
         scale.x_val = chosenLocation["scaleX"]  # Change scale -->
@@ -81,12 +82,12 @@ def createMap(client: airsim.MultirotorClient, logger: logging.Logger) -> (airsi
 
     logger.info("Created map")  # Logging
 
-    originArucoPos = mapConfig["originPosOfAruco"]
+    originArucoPos = mapConfig["originPosOfAruco"]  # Original position of the Aruco codes. To this location the arucos are to be transported after recognition (in place of despawn)
     originArucoPos["x"] = (originArucoPos["x"] - mapConfig["PlayerStartPosition"][0]) / 100
     originArucoPos["y"] = (originArucoPos["y"] - mapConfig["PlayerStartPosition"][1]) / 100
     originArucoPos["z"] = (originArucoPos["z"] - mapConfig["PlayerStartPosition"][2]) / -100
 
-    dynamicMapThread = DynamicMap(arucos, logger)
+    dynamicMapThread = DynamicMap(arucos, logger)  # Initialize and start the dynamic map thread, which moves the arucos in real time
     dynamicMapThread.start()
 
     return client, mapConfig["numberOfArucoToSpawn"], originArucoPos, mapConfig["existingCubeNames"], dynamicMapThread

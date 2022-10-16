@@ -1,6 +1,7 @@
 import threading
 import time
 import logging
+import airsim
 
 
 class LoggerThread(threading.Thread):
@@ -9,19 +10,25 @@ class LoggerThread(threading.Thread):
     """
 
     def __init__(self, client, name: str):
+        """
+        Constructor of logger thread
+        :param client: Airsim client
+        :param name: Name of file to save to (without extension)
+        """
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
-        self.client = client
+
+        self.client: airsim.MultirotorClient = client  # Airsim client
 
         #  Initiating logger -->
         self.logger = logging.getLogger("ServerLogger")
-        self.logger.setLevel(logging.DEBUG)
-        f_handler = logging.FileHandler(str(name) + '.log', 'w', encoding="utf-8")
-        logFormat = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        self.logger.setLevel(logging.DEBUG)  # Recording all levels of logs
+        f_handler = logging.FileHandler(str(name) + '.log', 'w', encoding="utf-8")  # Destination path and encoding
+        logFormat = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')  # Format of log
         f_handler.setFormatter(logFormat)
         self.logger.addHandler(f_handler)  # <--
 
-        self.logger.info("Logging initiated")
+        self.logger.info("Logging initiated")  # Logging
 
     def stop(self):
         """
@@ -42,9 +49,9 @@ class LoggerThread(threading.Thread):
             try:
                 state = self.client.getMultirotorState()  # Get Airsim state data
                 collision = self.client.simGetCollisionInfo()  # Get Airsim collision data
-                self.logger.info("State:\n" + str(state))
-                self.logger.info("Collision:\n" + str(collision))
-                time.sleep(1)
+                self.logger.info("State:\n" + str(state))  # Logging
+                self.logger.info("Collision:\n" + str(collision))  # Logging
+                time.sleep(1)  # Log once per second
             except:
                 pass
 
