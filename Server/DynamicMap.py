@@ -1,9 +1,6 @@
 import threading
-import time
 import logging
-
 import airsim
-
 from ArucoCode import ArucoCode
 
 

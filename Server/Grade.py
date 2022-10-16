@@ -34,7 +34,6 @@ class Grade(threading.Thread):
         :param logger: logger to log the needed information
         :param originPosOfAruco: "home" of aruco, where the aruco is placed after being recognised. Used in place of despawning the object
         :param ueIds: IDs of the object in UE4 which are the aruco codes
-        :param currentPoints:
         """
         threading.Thread.__init__(self)
         self._stop_event = threading.Event()
