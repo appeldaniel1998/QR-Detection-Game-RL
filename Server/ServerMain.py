@@ -36,4 +36,3 @@ if __name__ == '__main__':
     serverThread.join()
     loggerThread.stop()
     dynamicMapThread.stop()
-
