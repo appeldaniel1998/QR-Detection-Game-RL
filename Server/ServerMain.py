@@ -4,13 +4,6 @@ import logging
 from LoggerThread import LoggerThread
 from Server_ControlDrone import ServerThread
 
-# TODO fix or dismiss the following bugs
-"""
-Known bugs:
-1. Sometimes, while flying, the axis change mid flight and the "left" and "right" controls dont work as expected
-2. Sometimes, the drone starts with 1 collision and -50 points - FIXED by ignoring 1st collision
-"""
-
 if __name__ == '__main__':
     serverThread = ServerThread()  # Initiating connection to clientPC
 

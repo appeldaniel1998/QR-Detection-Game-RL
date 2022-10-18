@@ -1,10 +1,10 @@
-2022-10-16 23:15:19,696 - ServerLogger - INFO - Logging initiated
-2022-10-16 23:15:19,696 - ServerLogger - INFO - Connected to instance of Airsim
-2022-10-16 23:15:19,795 - ServerLogger - INFO - Created map
-2022-10-16 23:15:19,795 - ServerLogger - INFO - Dynamic map initiated
-2022-10-16 23:15:19,796 - ServerLogger - INFO - Simulation ready to start...
+2022-10-19 02:22:57,443 - ServerLogger - INFO - Logging initiated
+2022-10-19 02:22:57,443 - ServerLogger - INFO - Connected to instance of Airsim
+2022-10-19 02:22:57,513 - ServerLogger - INFO - Created map
+2022-10-19 02:22:57,513 - ServerLogger - INFO - Dynamic map initiated
+2022-10-19 02:22:57,514 - ServerLogger - INFO - Simulation ready to start...
 
-2022-10-16 23:15:19,799 - ServerLogger - INFO - State:
+2022-10-19 02:22:57,517 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -19,7 +19,7 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.35028076171875,
+    'gps_location': <GeoPoint> {   'altitude': 123.35184478759766,
     'latitude': 47.64146808088091,
     'longitude': -122.14016504425251},
     'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
@@ -30,17 +30,17 @@
     'z_val': 0.0},
     'linear_acceleration': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.46720314025878906},
+    'z_val': 0.8867378234863281},
     'linear_velocity': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.06768955290317535},
+    'z_val': 0.04955853894352913},
     'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
     'x_val': 0.0,
     'y_val': 0.0,
     'z_val': 0.0},
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': -1.340374231338501}},
+    'z_val': -1.3420006036758423}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -53,29 +53,30 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1665951063333339648}
-2022-10-16 23:15:19,800 - ServerLogger - INFO - Collision:
+    'timestamp': 1666135376779044096}
+2022-10-19 02:22:57,518 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': True,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
+    'impact_point': <Vector3r> {   'x_val': 0.2586809992790222,
+    'y_val': -0.25627198815345764,
+    'z_val': 0.393076628446579},
+    'normal': <Vector3r> {   'x_val': 3.5811910947813885e-07,
+    'y_val': -5.384696351029561e-07,
     'z_val': -1.0},
     'object_id': -1,
     'object_name': 'Landscape_0',
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:19,938 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:19,939 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:20,294 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:20,294 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:20,631 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:20,631 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:20,811 - ServerLogger - INFO - State:
+    'z_val': 0.1941790133714676},
+    'time_stamp': 1666135372677956608}
+2022-10-19 02:22:57,521 - ServerLogger - INFO - Command received: Move Forward
+2022-10-19 02:22:57,658 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:57,658 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:58,004 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:58,004 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:58,345 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:58,345 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:58,526 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -90,28 +91,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.32489013671875,
-    'latitude': 47.641468080880905,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -0.020233154296875},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -0.009579367004334927},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.3152159452438354}},
+    'gps_location': <GeoPoint> {   'altitude': 124.21935272216797,
+    'latitude': 47.641485224208495,
+    'longitude': -122.14016504425307},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -6.398388485706619e-10,
+    'y_val': -0.3411185145378113,
+    'z_val': -1.2964594020559161e-07},
+    'angular_velocity': <Vector3r> {   'x_val': -2.8147175257231538e-08,
+    'y_val': 0.3077109754085541,
+    'z_val': 2.0421535573689198e-09},
+    'linear_acceleration': <Vector3r> {   'x_val': 1.9715265035629272,
+    'y_val': -2.3578228081078123e-07,
+    'z_val': 1.1689462661743164},
+    'linear_velocity': <Vector3r> {   'x_val': 3.4631104469299316,
+    'y_val': -1.2034576002406538e-07,
+    'z_val': -0.452073335647583},
+    'orientation': <Quaternionr> {   'w_val': 0.993319571018219,
+    'x_val': -1.3184310532210475e-08,
+    'y_val': -0.11539608240127563,
+    'z_val': -2.230145845771858e-09},
+    'position': <Vector3r> {   'x_val': 1.9164702892303467,
+    'y_val': -4.356963501095379e-08,
+    'z_val': -2.2110073566436768}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -124,29 +125,29 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1665951064347361280}
-2022-10-16 23:15:20,813 - ServerLogger - INFO - Collision:
+    'timestamp': 1666135377787065600}
+2022-10-19 02:22:58,527 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
+    'impact_point': <Vector3r> {   'x_val': 0.2586809992790222,
+    'y_val': -0.25627198815345764,
+    'z_val': 0.393076628446579},
+    'normal': <Vector3r> {   'x_val': 3.5811910947813885e-07,
+    'y_val': -5.384696351029561e-07,
     'z_val': -1.0},
     'object_id': -1,
     'object_name': 'Landscape_0',
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:20,992 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:20,993 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:21,325 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:21,326 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:21,673 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:21,673 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:21,824 - ServerLogger - INFO - State:
+    'z_val': 0.1941790133714676},
+    'time_stamp': 1666135372677956608}
+2022-10-19 02:22:58,673 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:58,673 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:59,001 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:59,001 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:59,320 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:59,320 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:59,539 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -161,28 +162,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.3371353149414,
-    'latitude': 47.6414680808809,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.006175041198730469},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -0.0108077647164464},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.3274661302566528}},
+    'gps_location': <GeoPoint> {   'altitude': 124.57206726074219,
+    'latitude': 47.64150650320066,
+    'longitude': -122.140165044255},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -8.592281330876972e-10,
+    'y_val': -0.3313409090042114,
+    'z_val': 1.3101237072987715e-07},
+    'angular_velocity': <Vector3r> {   'x_val': 2.264186704792337e-08,
+    'y_val': -0.27039700746536255,
+    'z_val': -3.2334688260249322e-09},
+    'linear_acceleration': <Vector3r> {   'x_val': -3.6069815158843994,
+    'y_val': 3.4917661650979426e-07,
+    'z_val': 1.525801658630371},
+    'linear_velocity': <Vector3r> {   'x_val': 0.4567705988883972,
+    'y_val': -5.459144247765835e-08,
+    'z_val': 0.30686429142951965},
+    'orientation': <Quaternionr> {   'w_val': 0.9790688157081604,
+    'x_val': 1.687618578216643e-08,
+    'y_val': 0.2035295069217682,
+    'z_val': -1.391148352070104e-08},
+    'position': <Vector3r> {   'x_val': 4.273392200469971,
+    'y_val': -1.8866923312543804e-07,
+    'z_val': -2.5614511966705322}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -195,32 +196,29 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1665951065352382720}
-2022-10-16 23:15:21,824 - ServerLogger - INFO - Collision:
+    'timestamp': 1666135378801087232}
+2022-10-19 02:22:59,540 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
+    'impact_point': <Vector3r> {   'x_val': 0.2586809992790222,
+    'y_val': -0.25627198815345764,
+    'z_val': 0.393076628446579},
+    'normal': <Vector3r> {   'x_val': 3.5811910947813885e-07,
+    'y_val': -5.384696351029561e-07,
     'z_val': -1.0},
     'object_id': -1,
     'object_name': 'Landscape_0',
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:22,064 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:22,064 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:22,237 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:22,425 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:22,425 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:22,465 - ServerLogger - INFO - Command received: Move Right
-2022-10-16 23:15:22,639 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:22,781 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:22,783 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:22,827 - ServerLogger - INFO - State:
+    'z_val': 0.1941790133714676},
+    'time_stamp': 1666135372677956608}
+2022-10-19 02:22:59,622 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:59,622 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:22:59,955 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:22:59,955 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:00,271 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:00,271 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:00,561 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -235,28 +233,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.64293670654297,
-    'latitude': 47.641471833599134,
-    'longitude': -122.14016370929788},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 4.504194736480713,
-    'y_val': -5.314907073974609,
-    'z_val': -0.48765596747398376},
-    'angular_velocity': <Vector3r> {   'x_val': -2.4585227966308594,
-    'y_val': 0.5420142412185669,
-    'z_val': -0.2120826244354248},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.6068045496940613,
-    'y_val': -0.417400062084198,
-    'z_val': 2.528602123260498},
-    'linear_velocity': <Vector3r> {   'x_val': 1.1120952367782593,
-    'y_val': 0.5382514595985413,
-    'z_val': -0.13268522918224335},
-    'orientation': <Quaternionr> {   'w_val': 0.9981985092163086,
-    'x_val': -0.0309443436563015,
-    'y_val': 0.04246704652905464,
-    'z_val': 0.02896144427359104},
-    'position': <Vector3r> {   'x_val': 0.4205869436264038,
-    'y_val': 0.10192834585905075,
-    'z_val': -1.6336461305618286}},
+    'gps_location': <GeoPoint> {   'altitude': 124.18916320800781,
+    'latitude': 47.64149717965458,
+    'longitude': -122.1401650442537},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -4.951713483691833e-10,
+    'y_val': 0.2136911004781723,
+    'z_val': -2.5934867586840937e-09},
+    'angular_velocity': <Vector3r> {   'x_val': -7.152931402742979e-08,
+    'y_val': -0.3920435309410095,
+    'z_val': -1.363623880479281e-09},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.287099689245224,
+    'y_val': -2.2362168294876028e-07,
+    'z_val': -0.8959980010986328},
+    'linear_velocity': <Vector3r> {   'x_val': -1.9057390689849854,
+    'y_val': 1.3256631348212977e-07,
+    'z_val': 0.012106329202651978},
+    'orientation': <Quaternionr> {   'w_val': 0.9999030828475952,
+    'x_val': -1.074063860073693e-08,
+    'y_val': 0.01392453070729971,
+    'z_val': -1.4672400183712853e-08},
+    'position': <Vector3r> {   'x_val': 3.2296459674835205,
+    'y_val': -9.008262225052022e-08,
+    'z_val': -2.1794183254241943}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -269,30 +267,29 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1665951066339403776}
-2022-10-16 23:15:22,827 - ServerLogger - INFO - Collision:
+    'timestamp': 1666135379821108992}
+2022-10-19 02:23:00,561 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
+    'impact_point': <Vector3r> {   'x_val': 0.2586809992790222,
+    'y_val': -0.25627198815345764,
+    'z_val': 0.393076628446579},
+    'normal': <Vector3r> {   'x_val': 3.5811910947813885e-07,
+    'y_val': -5.384696351029561e-07,
     'z_val': -1.0},
     'object_id': -1,
     'object_name': 'Landscape_0',
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:23,001 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:23,136 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:23,136 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:23,494 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:23,501 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:23,501 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:23,688 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:23,830 - ServerLogger - INFO - State:
+    'z_val': 0.1941790133714676},
+    'time_stamp': 1666135372677956608}
+2022-10-19 02:23:00,593 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:00,593 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:00,915 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:00,915 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:01,263 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:01,263 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:01,570 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -307,28 +304,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 124.28523254394531,
-    'latitude': 47.64148628761537,
-    'longitude': -122.14016915138743},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.22230157256126404,
-    'y_val': -5.050741195678711,
-    'z_val': 0.973006546497345},
-    'angular_velocity': <Vector3r> {   'x_val': -0.016109524294734,
-    'y_val': 0.5352993011474609,
-    'z_val': 0.42546698451042175},
-    'linear_acceleration': <Vector3r> {   'x_val': -2.057206153869629,
-    'y_val': 0.69862300157547,
-    'z_val': -1.4553003311157227},
-    'linear_velocity': <Vector3r> {   'x_val': 2.2562639713287354,
-    'y_val': -0.4795008897781372,
-    'z_val': -0.10502450168132782},
-    'orientation': <Quaternionr> {   'w_val': 0.994949221611023,
-    'x_val': 0.033499203622341156,
-    'y_val': 0.08843731135129929,
-    'z_val': 0.0336562842130661},
-    'position': <Vector3r> {   'x_val': 2.0311033725738525,
-    'y_val': -0.31006157398223877,
-    'z_val': -2.275840997695923}},
+    'gps_location': <GeoPoint> {   'altitude': 124.32762908935547,
+    'latitude': 47.64148329448158,
+    'longitude': -122.14016504425393},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -7.465016452212758e-12,
+    'y_val': 0.32870933413505554,
+    'z_val': -5.729155864997448e-12},
+    'angular_velocity': <Vector3r> {   'x_val': 2.1306917119545687e-08,
+    'y_val': 0.0034028147347271442,
+    'z_val': 2.7641566813230156e-09},
+    'linear_acceleration': <Vector3r> {   'x_val': 1.6682032346725464,
+    'y_val': 1.4568155393135385e-07,
+    'z_val': 0.39793968200683594},
+    'linear_velocity': <Vector3r> {   'x_val': -0.8308988809585571,
+    'y_val': -5.81378962749568e-08,
+    'z_val': -0.0446128286421299},
+    'orientation': <Quaternionr> {   'w_val': 0.996174156665802,
+    'x_val': 8.629428727147115e-09,
+    'y_val': -0.08739019185304642,
+    'z_val': -1.071116439987918e-08},
+    'position': <Vector3r> {   'x_val': 1.689031720161438,
+    'y_val': -1.0715525178284224e-07,
+    'z_val': -2.3180625438690186}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -341,34 +338,29 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1665951067341425152}
-2022-10-16 23:15:23,831 - ServerLogger - INFO - Collision:
+    'timestamp': 1666135380829130496}
+2022-10-19 02:23:01,570 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
+    'impact_point': <Vector3r> {   'x_val': 0.2586809992790222,
+    'y_val': -0.25627198815345764,
+    'z_val': 0.393076628446579},
+    'normal': <Vector3r> {   'x_val': 3.5811910947813885e-07,
+    'y_val': -5.384696351029561e-07,
     'z_val': -1.0},
     'object_id': -1,
     'object_name': 'Landscape_0',
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:23,852 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:23,852 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:23,884 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:24,086 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:24,200 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:24,200 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:24,293 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:24,509 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:24,533 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:24,533 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:24,704 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:24,838 - ServerLogger - INFO - State:
+    'z_val': 0.1941790133714676},
+    'time_stamp': 1666135372677956608}
+2022-10-19 02:23:01,593 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:01,593 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:01,932 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:01,932 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:02,287 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:02,287 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:02,585 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -383,28 +375,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 124.38842010498047,
-    'latitude': 47.641498167424615,
-    'longitude': -122.14017264569434},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0667031779885292,
-    'y_val': 0.15450561046600342,
-    'z_val': -0.11682537943124771},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0856262817978859,
-    'y_val': -0.09354802966117859,
-    'z_val': 0.419301301240921},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.8792803287506104,
-    'y_val': 0.1721092164516449,
-    'z_val': 0.09671497344970703},
-    'linear_velocity': <Vector3r> {   'x_val': 0.618991494178772,
-    'y_val': -0.12089292705059052,
-    'z_val': 0.02585432678461075},
-    'orientation': <Quaternionr> {   'w_val': 0.9611924886703491,
-    'x_val': 0.020663738250732422,
-    'y_val': 0.04076509550213814,
-    'z_val': 0.2720666825771332},
-    'position': <Vector3r> {   'x_val': 3.347048759460449,
-    'y_val': -0.5715537667274475,
-    'z_val': -2.378636598587036}},
+    'gps_location': <GeoPoint> {   'altitude': 124.2651596069336,
+    'latitude': 47.641482498183215,
+    'longitude': -122.14016504425373},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 7.054503092795983e-10,
+    'y_val': -0.013439551927149296,
+    'z_val': 2.611610909752926e-07},
+    'angular_velocity': <Vector3r> {   'x_val': -1.8413745195289266e-08,
+    'y_val': 0.1562165468931198,
+    'z_val': -4.473114767478137e-09},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.6444267630577087,
+    'y_val': 3.540738546803368e-08,
+    'z_val': -0.1380472183227539},
+    'linear_velocity': <Vector3r> {   'x_val': 0.48322468996047974,
+    'y_val': 5.5137792998039004e-08,
+    'z_val': 0.06524346023797989},
+    'orientation': <Quaternionr> {   'w_val': 0.9994816780090332,
+    'x_val': 2.1256807425373836e-09,
+    'y_val': -0.0321924164891243,
+    'z_val': -1.155733020397065e-08},
+    'position': <Vector3r> {   'x_val': 1.6044420003890991,
+    'y_val': -9.212623552912191e-08,
+    'z_val': -2.2552573680877686}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -417,2708 +409,25 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1665951068346446592}
-2022-10-16 23:15:24,838 - ServerLogger - INFO - Collision:
+    'timestamp': 1666135381846152192}
+2022-10-19 02:23:02,586 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
+    'impact_point': <Vector3r> {   'x_val': 0.2586809992790222,
+    'y_val': -0.25627198815345764,
+    'z_val': 0.393076628446579},
+    'normal': <Vector3r> {   'x_val': 3.5811910947813885e-07,
+    'y_val': -5.384696351029561e-07,
     'z_val': -1.0},
     'object_id': -1,
     'object_name': 'Landscape_0',
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:24,875 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:24,875 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:24,905 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:25,111 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:25,219 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:25,219 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:25,348 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:25,542 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:25,563 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:25,564 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:25,747 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:25,849 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 124.35155487060547,
-    'latitude': 47.64150114461644,
-    'longitude': -122.14017350080185},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.03609396144747734,
-    'y_val': 0.03034099191427231,
-    'z_val': 0.19989818334579468},
-    'angular_velocity': <Vector3r> {   'x_val': -0.028856487944722176,
-    'y_val': -0.012258660979568958,
-    'z_val': 0.4468596577644348},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.21004076302051544,
-    'y_val': 0.041031837463378906,
-    'z_val': -0.022818565368652344},
-    'linear_velocity': <Vector3r> {   'x_val': 0.14447550475597382,
-    'y_val': -0.027573663741350174,
-    'z_val': 0.03026062436401844},
-    'orientation': <Quaternionr> {   'w_val': 0.883804976940155,
-    'x_val': 0.006805716548115015,
-    'y_val': 0.008425925858318806,
-    'z_val': 0.46773019433021545},
-    'position': <Vector3r> {   'x_val': 3.676642894744873,
-    'y_val': -0.6355279684066772,
-    'z_val': -2.3417603969573975}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951069354468096}
-2022-10-16 23:15:25,849 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:25,922 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:25,922 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:25,927 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:26,140 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:26,265 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:26,266 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:26,320 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:26,496 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:26,629 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:26,629 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:26,861 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 124.51722717285156,
-    'latitude': 47.641502242869265,
-    'longitude': -122.14017130433132},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.19098198413848877,
-    'y_val': 3.160172939300537,
-    'z_val': -1.1949403285980225},
-    'angular_velocity': <Vector3r> {   'x_val': -0.010120922699570656,
-    'y_val': 0.006322442553937435,
-    'z_val': 0.006269712932407856},
-    'linear_acceleration': <Vector3r> {   'x_val': 1.5150258541107178,
-    'y_val': 5.933981418609619,
-    'z_val': -3.5624189376831055},
-    'linear_velocity': <Vector3r> {   'x_val': 0.3962225615978241,
-    'y_val': 1.4055695533752441,
-    'z_val': -1.1606886386871338},
-    'orientation': <Quaternionr> {   'w_val': 0.7607049345970154,
-    'x_val': 0.1277904510498047,
-    'y_val': -0.17076338827610016,
-    'z_val': 0.6130558252334595},
-    'position': <Vector3r> {   'x_val': 3.7995002269744873,
-    'y_val': -0.46620699763298035,
-    'z_val': -2.510990858078003}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951070365489664}
-2022-10-16 23:15:26,861 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:26,998 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,030 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,036 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:27,036 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:27,077 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,107 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,138 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,170 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,202 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,233 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,264 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,295 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,326 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,373 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,404 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,436 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,444 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:27,444 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:27,466 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,497 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,528 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,559 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,590 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,639 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,669 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,701 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,732 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,762 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,799 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,825 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,843 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:27,843 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:27,855 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,873 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.325439453125,
-    'latitude': 47.64150956710982,
-    'longitude': -122.14013115253138},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.010771271772682667,
-    'y_val': -0.2774066925048828,
-    'z_val': -0.09350629150867462},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0009164221701212227,
-    'y_val': 0.18868212401866913,
-    'z_val': 0.04007522016763687},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.30720648169517517,
-    'y_val': 1.15451180934906,
-    'z_val': 0.49265098571777344},
-    'linear_velocity': <Vector3r> {   'x_val': 1.0551927089691162,
-    'y_val': 3.9333596229553223,
-    'z_val': -0.22214287519454956},
-    'orientation': <Quaternionr> {   'w_val': 0.7921128273010254,
-    'x_val': 0.042140014469623566,
-    'y_val': -0.054636988788843155,
-    'z_val': 0.6064621210098267},
-    'position': <Vector3r> {   'x_val': 4.615833282470703,
-    'y_val': 2.5584988594055176,
-    'z_val': -3.316399335861206}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951071376511232}
-2022-10-16 23:15:27,874 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:27,901 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,931 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,963 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:27,995 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,025 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,056 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,087 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,119 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,166 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,198 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,230 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,240 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:28,240 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:28,261 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,292 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,323 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,355 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,386 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,418 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,450 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,496 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,527 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,559 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,589 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,620 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:28,620 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:28,621 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,652 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,684 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,715 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,746 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,793 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,824 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,855 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,886 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,889 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.42218780517578,
-    'latitude': 47.64152006852212,
-    'longitude': -122.14007320020164},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.00014729381655342877,
-    'y_val': -0.061819810420274734,
-    'z_val': 0.02723041921854019},
-    'angular_velocity': <Vector3r> {   'x_val': -0.00014232963440008461,
-    'y_val': 0.03949720412492752,
-    'z_val': 0.0007385084754787385},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.06606949120759964,
-    'y_val': 0.24935972690582275,
-    'z_val': 0.0525970458984375},
-    'linear_velocity': <Vector3r> {   'x_val': 1.2158740758895874,
-    'y_val': 4.536318778991699,
-    'z_val': -0.03453105688095093},
-    'orientation': <Quaternionr> {   'w_val': 0.7935472726821899,
-    'x_val': 0.012514793314039707,
-    'y_val': -0.016243519261479378,
-    'z_val': 0.6081631183624268},
-    'position': <Vector3r> {   'x_val': 5.7839250564575195,
-    'y_val': 6.914985179901123,
-    'z_val': -3.412579298019409}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951072387532800}
-2022-10-16 23:15:28,890 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:28,918 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,949 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:28,982 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,007 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:29,007 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:29,011 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,043 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,090 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,120 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,151 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,182 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,213 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,245 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,276 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,307 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,354 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,380 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:29,381 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:29,384 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,415 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,447 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,478 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,510 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,542 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,573 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,604 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,651 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,682 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:29,730 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:29,731 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:29,734 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:29,905 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.46134185791016,
-    'latitude': 47.641531279146186,
-    'longitude': -122.14001130280494},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.05242028459906578,
-    'y_val': -9.78561019897461,
-    'z_val': 0.8546192646026611},
-    'angular_velocity': <Vector3r> {   'x_val': 0.02246018499135971,
-    'y_val': 1.3429468870162964,
-    'z_val': 0.21058091521263123},
-    'linear_acceleration': <Vector3r> {   'x_val': -1.2078462839126587,
-    'y_val': -4.549868583679199,
-    'z_val': -4.654703140258789},
-    'linear_velocity': <Vector3r> {   'x_val': 1.158871054649353,
-    'y_val': 4.3220977783203125,
-    'z_val': -0.4544944167137146},
-    'orientation': <Quaternionr> {   'w_val': 0.7782747149467468,
-    'x_val': -0.09322334080934525,
-    'y_val': 0.12333725392818451,
-    'z_val': 0.6085932850837708},
-    'position': <Vector3r> {   'x_val': 7.030226707458496,
-    'y_val': 11.56547737121582,
-    'z_val': -3.452965021133423}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951073398554368}
-2022-10-16 23:15:29,905 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:30,089 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:30,089 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:30,233 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,280 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,312 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,343 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,374 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,405 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,436 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,451 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:30,453 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:30,468 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,499 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,530 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,577 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,608 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,639 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,671 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,703 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,734 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,765 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,796 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,827 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,846 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:30,846 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:30,874 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,905 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,923 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 126.3497314453125,
-    'latitude': 47.64153697825472,
-    'longitude': -122.13998018590445},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.02126074954867363,
-    'y_val': 0.6577615141868591,
-    'z_val': 0.9282315969467163},
-    'angular_velocity': <Vector3r> {   'x_val': -0.20766304433345795,
-    'y_val': -0.12890475988388062,
-    'z_val': 2.2699856758117676},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.42554354667663574,
-    'y_val': -1.5177249908447266,
-    'z_val': 0.7498254776000977},
-    'linear_velocity': <Vector3r> {   'x_val': 0.29897022247314453,
-    'y_val': 1.0883140563964844,
-    'z_val': -0.2837084233760834},
-    'orientation': <Quaternionr> {   'w_val': 0.38878485560417175,
-    'x_val': -0.010920288972556591,
-    'y_val': 0.08459082990884781,
-    'z_val': 0.9173720479011536},
-    'position': <Vector3r> {   'x_val': 7.6613078117370605,
-    'y_val': 13.893959045410156,
-    'z_val': -4.34086275100708}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951074409575936}
-2022-10-16 23:15:30,924 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:30,936 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,969 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:30,999 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,030 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,061 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,093 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,125 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,156 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,204 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,235 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,266 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,297 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,327 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,358 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,389 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,424 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:31,425 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:31,435 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,467 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,498 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,529 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,561 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,593 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,624 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,656 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,687 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,719 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,750 - ServerLogger - INFO - Command received: Turn right by 5 degrees
-2022-10-16 23:15:31,940 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 126.4521484375,
-    'latitude': 47.64153837498915,
-    'longitude': -122.1399724230768},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.101142019033432,
-    'y_val': -0.13127385079860687,
-    'z_val': 0.015731364488601685},
-    'angular_velocity': <Vector3r> {   'x_val': 0.020847629755735397,
-    'y_val': 0.05401044711470604,
-    'z_val': 2.4960858821868896},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.10026225447654724,
-    'y_val': -0.3722396194934845,
-    'z_val': 0.053002357482910156},
-    'linear_velocity': <Vector3r> {   'x_val': 0.06334401667118073,
-    'y_val': 0.2563858926296234,
-    'z_val': -0.02318992093205452},
-    'orientation': <Quaternionr> {   'w_val': -0.7360737919807434,
-    'x_val': 0.017424095422029495,
-    'y_val': 0.009070387110114098,
-    'z_val': 0.6766162514686584},
-    'position': <Vector3r> {   'x_val': 7.815897464752197,
-    'y_val': 14.474774360656738,
-    'z_val': -4.442494869232178}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951075414597376}
-2022-10-16 23:15:31,941 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:32,000 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,083 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:32,083 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:32,438 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:32,438 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:32,513 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,544 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,576 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,608 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,639 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,671 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,701 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,734 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,764 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,790 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:32,790 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:32,811 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,842 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,873 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,904 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,936 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,955 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 126.77891540527344,
-    'latitude': 47.641548469929546,
-    'longitude': -122.13998439562071},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.3087218999862671,
-    'y_val': -0.16488555073738098,
-    'z_val': 1.9354721307754517},
-    'angular_velocity': <Vector3r> {   'x_val': 0.018262820318341255,
-    'y_val': 0.3251121938228607,
-    'z_val': -0.9773975610733032},
-    'linear_acceleration': <Vector3r> {   'x_val': 1.5919913053512573,
-    'y_val': -1.726525068283081,
-    'z_val': 0.7213897705078125},
-    'linear_velocity': <Vector3r> {   'x_val': 2.4389193058013916,
-    'y_val': -2.302661418914795,
-    'z_val': -0.8391352295875549},
-    'orientation': <Quaternionr> {   'w_val': -0.927668035030365,
-    'x_val': 0.057429924607276917,
-    'y_val': 0.11527124792337418,
-    'z_val': 0.350494384765625},
-    'position': <Vector3r> {   'x_val': 8.945426940917969,
-    'y_val': 13.567456245422363,
-    'z_val': -4.7717108726501465}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951076428619008}
-2022-10-16 23:15:32,956 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:32,968 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:32,999 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,030 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,061 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,108 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,140 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,144 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:33,144 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:33,171 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,203 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,233 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,264 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,295 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:33,380 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:33,502 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:33,502 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:33,819 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:33,820 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:33,888 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:33,919 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:33,951 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:33,969 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 127.54537963867188,
-    'latitude': 47.6415714556085,
-    'longitude': -122.1400174074879},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.08003673702478409,
-    'y_val': -0.7446378469467163,
-    'z_val': -4.995482444763184},
-    'angular_velocity': <Vector3r> {   'x_val': 0.027129681780934334,
-    'y_val': -0.27482596039772034,
-    'z_val': -0.2612032890319824},
-    'linear_acceleration': <Vector3r> {   'x_val': -2.0044970512390137,
-    'y_val': 1.9850873947143555,
-    'z_val': 1.8860411643981934},
-    'linear_velocity': <Vector3r> {   'x_val': 1.651857614517212,
-    'y_val': -1.627954125404358,
-    'z_val': -1.082829475402832},
-    'orientation': <Quaternionr> {   'w_val': -0.895215630531311,
-    'x_val': -0.05695045739412308,
-    'y_val': -0.15739363431930542,
-    'z_val': 0.41300472617149353},
-    'position': <Vector3r> {   'x_val': 11.498753547668457,
-    'y_val': 11.088871955871582,
-    'z_val': -5.538916110992432}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951077439640576}
-2022-10-16 23:15:33,969 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:33,981 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,013 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,060 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,092 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,123 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,155 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,166 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:34,167 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:34,187 - ServerLogger - INFO - Command received: Turn left by 5 degrees
-2022-10-16 23:15:34,366 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:34,534 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:34,534 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:34,873 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:34,904 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:34,935 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:34,935 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:34,936 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:34,966 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:34,984 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 128.1874542236328,
-    'latitude': 47.64157853891826,
-    'longitude': -122.14003705970713},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.1738189160823822,
-    'y_val': 0.3497137129306793,
-    'z_val': 3.8011555671691895},
-    'angular_velocity': <Vector3r> {   'x_val': 0.01748945564031601,
-    'y_val': 0.32418856024742126,
-    'z_val': 0.29272639751434326},
-    'linear_acceleration': <Vector3r> {   'x_val': -1.4087804555892944,
-    'y_val': -3.7798449993133545,
-    'z_val': -1.578139305114746},
-    'linear_velocity': <Vector3r> {   'x_val': -0.08578477054834366,
-    'y_val': -2.642829656600952,
-    'z_val': -0.7835363745689392},
-    'orientation': <Quaternionr> {   'w_val': -0.5376002788543701,
-    'x_val': 0.13656623661518097,
-    'y_val': 0.10137224942445755,
-    'z_val': 0.8258687257766724},
-    'position': <Vector3r> {   'x_val': 12.281098365783691,
-    'y_val': 9.609140396118164,
-    'z_val': -6.180075645446777}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951078453662208}
-2022-10-16 23:15:34,985 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:34,998 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,045 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,077 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,109 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,140 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,171 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,201 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,233 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,265 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,296 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,343 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,374 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:35,378 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:35,378 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:35,401 - ServerLogger - INFO - Command received: Move Right
-2022-10-16 23:15:35,733 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:35,733 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:35,859 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:35,999 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 129.24615478515625,
-    'latitude': 47.64156921521495,
-    'longitude': -122.1400806201852},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 1.066343069076538,
-    'y_val': -14.943373680114746,
-    'z_val': 0.7516394257545471},
-    'angular_velocity': <Vector3r> {   'x_val': 2.4053754806518555,
-    'y_val': 1.1811603307724,
-    'z_val': 0.03586636856198311},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.1862626075744629,
-    'y_val': 2.1344850063323975,
-    'z_val': 5.07926607131958},
-    'linear_velocity': <Vector3r> {   'x_val': -2.6033775806427,
-    'y_val': -2.4566195011138916,
-    'z_val': -1.2913954257965088},
-    'orientation': <Quaternionr> {   'w_val': -0.6200157403945923,
-    'x_val': -0.11604758352041245,
-    'y_val': -0.17068059742450714,
-    'z_val': 0.7569554448127747},
-    'position': <Vector3r> {   'x_val': 11.236875534057617,
-    'y_val': 6.336440563201904,
-    'z_val': -7.240334987640381}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951079467683840}
-2022-10-16 23:15:35,999 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:36,118 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:36,118 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:36,450 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:36,450 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:36,815 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:36,815 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:36,985 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:37,013 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 131.44302368164062,
-    'latitude': 47.64157088430315,
-    'longitude': -122.14008509322228},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 119.61847686767578,
-    'y_val': 62.34254455566406,
-    'z_val': 0.2098555713891983},
-    'angular_velocity': <Vector3r> {   'x_val': -0.44447046518325806,
-    'y_val': -0.4368746280670166,
-    'z_val': 0.17354810237884521},
-    'linear_acceleration': <Vector3r> {   'x_val': 1.9221501350402832,
-    'y_val': 0.1822758913040161,
-    'z_val': 2.0459580421447754},
-    'linear_velocity': <Vector3r> {   'x_val': 2.495251417160034,
-    'y_val': 0.581202507019043,
-    'z_val': -1.246899962425232},
-    'orientation': <Quaternionr> {   'w_val': -0.6167445182800293,
-    'x_val': -0.10213423520326614,
-    'y_val': 0.06703338027000427,
-    'z_val': 0.7776254415512085},
-    'position': <Vector3r> {   'x_val': 11.437744140625,
-    'y_val': 6.009450435638428,
-    'z_val': -9.43705940246582}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951080481705472}
-2022-10-16 23:15:37,014 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:37,227 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:37,227 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:37,624 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:37,624 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:37,718 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,001 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:38,003 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:38,030 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 131.8516845703125,
-    'latitude': 47.641600834816224,
-    'longitude': -122.14007705645005},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 4.749378681182861,
-    'y_val': 4.815369129180908,
-    'z_val': -0.4218752682209015},
-    'angular_velocity': <Vector3r> {   'x_val': -0.19390402734279633,
-    'y_val': -0.7189733982086182,
-    'z_val': -0.1076500192284584},
-    'linear_acceleration': <Vector3r> {   'x_val': -5.287614822387695,
-    'y_val': -6.025486946105957,
-    'z_val': -3.610300064086914},
-    'linear_velocity': <Vector3r> {   'x_val': 3.0326240062713623,
-    'y_val': -0.22037413716316223,
-    'z_val': -0.9544024467468262},
-    'orientation': <Quaternionr> {   'w_val': -0.6080002784729004,
-    'x_val': 0.2618645131587982,
-    'y_val': 0.04669881612062454,
-    'z_val': 0.7480520606040955},
-    'position': <Vector3r> {   'x_val': 14.769457817077637,
-    'y_val': 6.610971927642822,
-    'z_val': -9.844801902770996}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951081495727104}
-2022-10-16 23:15:38,030 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:38,233 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,264 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,296 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,327 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,358 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,381 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:38,383 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:38,389 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,420 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,452 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,484 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,530 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,561 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,593 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,624 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,655 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,686 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,719 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,752 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,783 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,796 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:38,796 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:38,814 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,846 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,893 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:38,924 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:39,036 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 133.226318359375,
-    'latitude': 47.64161096920437,
-    'longitude': -122.1401114690908},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.11351311206817627,
-    'y_val': -0.427871435880661,
-    'z_val': -0.3615776300430298},
-    'angular_velocity': <Vector3r> {   'x_val': 0.14570873975753784,
-    'y_val': 0.282097190618515,
-    'z_val': 0.11312469840049744},
-    'linear_acceleration': <Vector3r> {   'x_val': -1.2581452131271362,
-    'y_val': -1.4071128368377686,
-    'z_val': 1.2871570587158203},
-    'linear_velocity': <Vector3r> {   'x_val': 0.09244094789028168,
-    'y_val': -3.8385589122772217,
-    'z_val': -0.5497844219207764},
-    'orientation': <Quaternionr> {   'w_val': -0.6334215402603149,
-    'x_val': 0.11056200414896011,
-    'y_val': 0.01947859488427639,
-    'z_val': 0.7656198740005493},
-    'position': <Vector3r> {   'x_val': 15.887418746948242,
-    'y_val': 4.014251708984375,
-    'z_val': -11.218243598937988}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951082497748480}
-2022-10-16 23:15:39,037 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:39,070 - ServerLogger - INFO - Command received: Move Right
-2022-10-16 23:15:39,178 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:39,178 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:39,546 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:39,546 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:39,942 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:39,942 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:40,052 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 134.5142059326172,
-    'latitude': 47.6415934919289,
-    'longitude': -122.14015065903237},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.3212507367134094,
-    'y_val': 0.23899681866168976,
-    'z_val': -0.4162387251853943},
-    'angular_velocity': <Vector3r> {   'x_val': 0.3177356421947479,
-    'y_val': -0.1926567554473877,
-    'z_val': -0.12431386113166809},
-    'linear_acceleration': <Vector3r> {   'x_val': -1.7605655193328857,
-    'y_val': 1.3294070959091187,
-    'z_val': 1.8091702461242676},
-    'linear_velocity': <Vector3r> {   'x_val': -3.487652540206909,
-    'y_val': -1.841714859008789,
-    'z_val': -0.7656000852584839},
-    'orientation': <Quaternionr> {   'w_val': -0.6560555100440979,
-    'x_val': 0.03082456812262535,
-    'y_val': -0.13229234516620636,
-    'z_val': 0.7423878908157349},
-    'position': <Vector3r> {   'x_val': 13.933459281921387,
-    'y_val': 1.0754079818725586,
-    'z_val': -12.506786346435547}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951083511770112}
-2022-10-16 23:15:40,053 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:40,345 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:40,345 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:40,634 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:40,710 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:40,710 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:41,046 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:41,046 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:41,068 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 135.39556884765625,
-    'latitude': 47.641571121910154,
-    'longitude': -122.14016330903291},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -1.9600543975830078,
-    'y_val': -0.44147807359695435,
-    'z_val': 0.3074256181716919},
-    'angular_velocity': <Vector3r> {   'x_val': -0.15680064260959625,
-    'y_val': -0.23867616057395935,
-    'z_val': 0.00587082514539361},
-    'linear_acceleration': <Vector3r> {   'x_val': 8.391105651855469,
-    'y_val': 1.9497487545013428,
-    'z_val': -3.181507110595703},
-    'linear_velocity': <Vector3r> {   'x_val': 0.5506247282028198,
-    'y_val': 0.19675356149673462,
-    'z_val': -2.0068790912628174},
-    'orientation': <Quaternionr> {   'w_val': -0.5832205414772034,
-    'x_val': -0.2623220980167389,
-    'y_val': 0.11942819505929947,
-    'z_val': 0.7594589591026306},
-    'position': <Vector3r> {   'x_val': 11.458304405212402,
-    'y_val': 0.1309700459241867,
-    'z_val': -13.391854286193848}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951084525791744}
-2022-10-16 23:15:41,068 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:41,145 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,176 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,206 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,238 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,269 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,299 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,346 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,378 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,408 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,414 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:41,414 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:41,439 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,471 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,502 - ServerLogger - INFO - Command received: Move Left
-2022-10-16 23:15:41,788 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:41,788 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:41,937 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,081 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 136.69656372070312,
-    'latitude': 47.64159474856505,
-    'longitude': -122.14015542232276},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 22.138639450073242,
-    'y_val': 16.92896270751953,
-    'z_val': -0.23332983255386353},
-    'angular_velocity': <Vector3r> {   'x_val': -1.8534154891967773,
-    'y_val': -2.398918628692627,
-    'z_val': -0.0068244049325585365},
-    'linear_acceleration': <Vector3r> {   'x_val': -1.9366624355316162,
-    'y_val': -3.028843402862549,
-    'z_val': -4.682161331176758},
-    'linear_velocity': <Vector3r> {   'x_val': 3.584420680999756,
-    'y_val': 0.6075984239578247,
-    'z_val': -0.4740356504917145},
-    'orientation': <Quaternionr> {   'w_val': -0.6315107345581055,
-    'x_val': 0.11797842383384705,
-    'y_val': 0.039263688027858734,
-    'z_val': 0.7653323411941528},
-    'position': <Vector3r> {   'x_val': 14.094401359558105,
-    'y_val': 0.7248510718345642,
-    'z_val': -14.688240051269531}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951085536813312}
-2022-10-16 23:15:42,082 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:42,151 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:42,153 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:42,452 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,485 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,515 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,520 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:42,520 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:42,546 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,579 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,610 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,640 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,672 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,703 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,734 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,781 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,813 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,844 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,875 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,906 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,924 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:42,925 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:42,937 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:42,968 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,000 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,031 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,078 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,096 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.2001953125,
-    'latitude': 47.64160936010446,
-    'longitude': -122.14018109647103},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.06326515972614288,
-    'y_val': -0.4774323105812073,
-    'z_val': -0.057842981070280075},
-    'angular_velocity': <Vector3r> {   'x_val': 0.15578284859657288,
-    'y_val': 0.36217811703681946,
-    'z_val': 0.15158280730247498},
-    'linear_acceleration': <Vector3r> {   'x_val': -1.4494820833206177,
-    'y_val': -1.738802433013916,
-    'z_val': 1.9403529167175293},
-    'linear_velocity': <Vector3r> {   'x_val': 0.30705416202545166,
-    'y_val': -3.5538852214813232,
-    'z_val': -0.8097701072692871},
-    'orientation': <Quaternionr> {   'w_val': -0.6219006180763245,
-    'x_val': 0.13895221054553986,
-    'y_val': 0.030022012069821358,
-    'z_val': 0.7700848579406738},
-    'position': <Vector3r> {   'x_val': 15.709165573120117,
-    'y_val': -1.216855764389038,
-    'z_val': -16.192907333374023}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951086550834944}
-2022-10-16 23:15:43,096 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:43,109 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,140 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,171 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,202 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,234 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,264 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,295 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,314 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:43,314 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:43,342 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,373 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,403 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,435 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,467 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,499 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,529 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,559 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,607 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,638 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,669 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,698 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:43,698 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:43,701 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,732 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,764 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,796 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,828 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,859 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,890 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,936 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,968 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:43,999 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,030 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,061 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,072 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:44,072 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:44,093 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,110 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.52117919921875,
-    'latitude': 47.64160737880405,
-    'longitude': -122.14023691952438},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.07111525535583496,
-    'y_val': -0.11958901584148407,
-    'z_val': 0.07367130368947983},
-    'angular_velocity': <Vector3r> {   'x_val': 0.04927336797118187,
-    'y_val': 0.0751839280128479,
-    'z_val': -0.005574919283390045},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.40722495317459106,
-    'y_val': -0.4139713644981384,
-    'z_val': 0.1648092269897461},
-    'linear_velocity': <Vector3r> {   'x_val': -0.5677628517150879,
-    'y_val': -4.524857997894287,
-    'z_val': -0.09406547993421555},
-    'orientation': <Quaternionr> {   'w_val': -0.6411396265029907,
-    'x_val': 0.03510059043765068,
-    'y_val': 0.007368737366050482,
-    'z_val': 0.7665857076644897},
-    'position': <Vector3r> {   'x_val': 15.486247062683105,
-    'y_val': -5.414451599121094,
-    'z_val': -16.511741638183594}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951087561856512}
-2022-10-16 23:15:44,111 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:44,123 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,155 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,186 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,233 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,264 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,294 - ServerLogger - INFO - Command received: Move Forward
-2022-10-16 23:15:44,451 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:44,451 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:44,885 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:44,885 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:45,125 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.56871032714844,
-    'latitude': 47.64160105492252,
-    'longitude': -122.14029918539858},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.01673588715493679,
-    'y_val': -0.023850884288549423,
-    'z_val': -0.002749138977378607},
-    'angular_velocity': <Vector3r> {   'x_val': 0.011426161974668503,
-    'y_val': 0.01533125527203083,
-    'z_val': -0.0020648513454943895},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.09269314259290695,
-    'y_val': -0.08552196621894836,
-    'z_val': 0.027919769287109375},
-    'linear_velocity': <Vector3r> {   'x_val': -0.7818004488945007,
-    'y_val': -4.734349727630615,
-    'z_val': -0.021013610064983368},
-    'orientation': <Quaternionr> {   'w_val': -0.6428496241569519,
-    'x_val': 0.01227352675050497,
-    'y_val': 0.005220295395702124,
-    'z_val': 0.765876293182373},
-    'position': <Vector3r> {   'x_val': 14.78248405456543,
-    'y_val': -10.093888282775879,
-    'z_val': -16.559049606323242}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951088566877952}
-2022-10-16 23:15:45,125 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:45,238 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:45,238 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:45,594 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:45,594 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:45,911 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:45,911 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:46,137 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 139.07225036621094,
-    'latitude': 47.6415948547966,
-    'longitude': -122.14034983410532},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.10324303060770035,
-    'y_val': 0.13581350445747375,
-    'z_val': -0.00053099897922948},
-    'angular_velocity': <Vector3r> {   'x_val': -0.026403045281767845,
-    'y_val': -0.33915576338768005,
-    'z_val': -8.597650594310835e-05},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.07007274031639099,
-    'y_val': 2.50970721244812,
-    'z_val': 2.344386577606201},
-    'linear_velocity': <Vector3r> {   'x_val': -0.5348642468452454,
-    'y_val': -2.200453042984009,
-    'z_val': -0.09258762747049332},
-    'orientation': <Quaternionr> {   'w_val': -0.6374520063400269,
-    'x_val': -0.1058163270354271,
-    'y_val': -0.11888338625431061,
-    'z_val': 0.7538730502128601},
-    'position': <Vector3r> {   'x_val': 14.093867301940918,
-    'y_val': -13.892165184020996,
-    'z_val': -17.062808990478516}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951089577899520}
-2022-10-16 23:15:46,137 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:46,216 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:46,216 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:46,564 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:46,565 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:46,916 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:46,916 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:47,148 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.76609802246094,
-    'latitude': 47.64158960415321,
-    'longitude': -122.1403653980735},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.011410948820412159,
-    'y_val': 0.14579804241657257,
-    'z_val': 2.9257718779263087e-05},
-    'angular_velocity': <Vector3r> {   'x_val': 0.025887463241815567,
-    'y_val': -0.11165639013051987,
-    'z_val': 6.244659016374499e-05},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.20426803827285767,
-    'y_val': 1.0537725687026978,
-    'z_val': -0.3197355270385742},
-    'linear_velocity': <Vector3r> {   'x_val': -0.6700037717819214,
-    'y_val': -0.37476304173469543,
-    'z_val': 0.2923703193664551},
-    'orientation': <Quaternionr> {   'w_val': -0.646607518196106,
-    'x_val': -0.025659531354904175,
-    'y_val': -0.045907411724328995,
-    'z_val': 0.7610078454017639},
-    'position': <Vector3r> {   'x_val': 13.509668350219727,
-    'y_val': -15.056196212768555,
-    'z_val': -16.75548553466797}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951090585921024}
-2022-10-16 23:15:47,149 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:47,278 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:47,278 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:47,637 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:47,637 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:47,985 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:47,985 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:48,162 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.6043243408203,
-    'latitude': 47.64158278813172,
-    'longitude': -122.14036532870583},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0119226835668087,
-    'y_val': 0.03994476795196533,
-    'z_val': -4.053895463584922e-05},
-    'angular_velocity': <Vector3r> {   'x_val': 0.020984798669815063,
-    'y_val': -0.026369942352175713,
-    'z_val': 2.333107295271475e-05},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.0444776825606823,
-    'y_val': 0.3879096210002899,
-    'z_val': -0.11456298828125},
-    'linear_velocity': <Vector3r> {   'x_val': -0.8018267750740051,
-    'y_val': 0.2796365022659302,
-    'z_val': 0.06464211642742157},
-    'orientation': <Quaternionr> {   'w_val': -0.6474005579948425,
-    'x_val': -0.010778754949569702,
-    'y_val': -0.016484234482049942,
-    'z_val': 0.761895477771759},
-    'position': <Vector3r> {   'x_val': 12.75142765045166,
-    'y_val': -15.049018859863281,
-    'z_val': -16.594396591186523}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951091596942592}
-2022-10-16 23:15:48,163 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:48,316 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:48,316 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:48,648 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:48,648 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:48,986 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:48,988 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:49,177 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.57485961914062,
-    'latitude': 47.64157550013428,
-    'longitude': -122.14035941804293},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.006917154416441917,
-    'y_val': 0.007138637360185385,
-    'z_val': -6.288747044891352e-06},
-    'angular_velocity': <Vector3r> {   'x_val': 0.011048264801502228,
-    'y_val': -0.006345089059323072,
-    'z_val': 3.270286015322199e-06},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.08735564351081848,
-    'y_val': 0.22290754318237305,
-    'z_val': -0.018856048583984375},
-    'linear_velocity': <Vector3r> {   'x_val': -0.7739880084991455,
-    'y_val': 0.5711715221405029,
-    'z_val': 0.008863023482263088},
-    'orientation': <Quaternionr> {   'w_val': -0.6474043130874634,
-    'x_val': -0.01061125285923481,
-    'y_val': -0.005988315679132938,
-    'z_val': 0.7620494365692139},
-    'position': <Vector3r> {   'x_val': 11.941187858581543,
-    'y_val': -14.60400390625,
-    'z_val': -16.565105438232422}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951092610964224}
-2022-10-16 23:15:49,178 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:49,335 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:49,335 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:49,701 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:49,701 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:50,070 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:50,070 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:50,189 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.5712127685547,
-    'latitude': 47.64156900709438,
-    'longitude': -122.14035040816925},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.002797905821353197,
-    'y_val': 0.00015938143769744784,
-    'z_val': -9.612689382265671e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 0.006463062018156052,
-    'y_val': -0.0036298620980232954,
-    'z_val': 7.408017950183421e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.161088228225708,
-    'y_val': 0.16439922153949738,
-    'z_val': -0.0022439956665039062},
-    'linear_velocity': <Vector3r> {   'x_val': -0.6453311443328857,
-    'y_val': 0.7636154294013977,
-    'z_val': 0.0009876826079562306},
-    'orientation': <Quaternionr> {   'w_val': -0.6473673582077026,
-    'x_val': -0.011655041016638279,
-    'y_val': -0.0013085122918710113,
-    'z_val': 0.7620879411697388},
-    'position': <Vector3r> {   'x_val': 11.219637870788574,
-    'y_val': -13.92640495300293,
-    'z_val': -16.561479568481445}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951093618985728}
-2022-10-16 23:15:50,189 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:50,456 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:50,456 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:50,815 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:50,815 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:51,164 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:51,164 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:51,203 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.5707550048828,
-    'latitude': 47.641563938061566,
-    'longitude': -122.14033909123172},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0015652305446565151,
-    'y_val': -0.0008413600153289735,
-    'z_val': -4.016077070900792e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 0.004398064687848091,
-    'y_val': -0.00414635194465518,
-    'z_val': 4.5365570144895173e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.20544619858264923,
-    'y_val': 0.11712360382080078,
-    'z_val': 0.00019168853759765625},
-    'linear_velocity': <Vector3r> {   'x_val': -0.45772260427474976,
-    'y_val': 0.9065226912498474,
-    'z_val': 0.0003084646014031023},
-    'orientation': <Quaternionr> {   'w_val': -0.6473363041877747,
-    'x_val': -0.01193331927061081,
-    'y_val': 0.0019957309123128653,
-    'z_val': 0.762108564376831},
-    'position': <Vector3r> {   'x_val': 10.656594276428223,
-    'y_val': -13.075594902038574,
-    'z_val': -16.561025619506836}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951094633007360}
-2022-10-16 23:15:51,204 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:51,532 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:51,532 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:51,884 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:51,884 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:52,219 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.5718231201172,
-    'latitude': 47.64156074727105,
-    'longitude': -122.14032624550298},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.002230340149253607,
-    'y_val': 0.01014452800154686,
-    'z_val': -4.6217681415328116e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0026272123213857412,
-    'y_val': -0.007742803543806076,
-    'z_val': 7.210331318674434e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.22405938804149628,
-    'y_val': 0.018817927688360214,
-    'z_val': 0.00045680999755859375},
-    'linear_velocity': <Vector3r> {   'x_val': -0.23780764639377594,
-    'y_val': 0.9793495535850525,
-    'z_val': -0.002552236430346966},
-    'orientation': <Quaternionr> {   'w_val': -0.6472975015640259,
-    'x_val': -0.009502226486802101,
-    'y_val': 0.00644602719694376,
-    'z_val': 0.7621510028839111},
-    'position': <Vector3r> {   'x_val': 10.302481651306152,
-    'y_val': -12.110116958618164,
-    'z_val': -16.562110900878906}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951095647028992}
-2022-10-16 23:15:52,219 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:52,245 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:52,245 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:52,620 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:52,620 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:52,982 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:52,982 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:53,232 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.57308959960938,
-    'latitude': 47.64155962373891,
-    'longitude': -122.14031307477632},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0015253254678100348,
-    'y_val': 0.0026686368510127068,
-    'z_val': -4.139628799748607e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0006164623773656785,
-    'y_val': -0.0018818122334778309,
-    'z_val': 8.029441289636452e-08},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.2316025346517563,
-    'y_val': -0.024880558252334595,
-    'z_val': 0.003170013427734375},
-    'linear_velocity': <Vector3r> {   'x_val': -0.006658538244664669,
-    'y_val': 0.9712271094322205,
-    'z_val': 0.00047856170567683876},
-    'orientation': <Quaternionr> {   'w_val': -0.6472748517990112,
-    'x_val': -0.008404296822845936,
-    'y_val': 0.008410032838582993,
-    'z_val': 0.7621640563011169},
-    'position': <Vector3r> {   'x_val': 10.178252220153809,
-    'y_val': -11.120461463928223,
-    'z_val': -16.56336212158203}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951096658050560}
-2022-10-16 23:15:53,232 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:53,342 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:53,343 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:53,681 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:53,681 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:54,042 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:54,042 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:54,248 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.57130432128906,
-    'latitude': 47.64156063426446,
-    'longitude': -122.14030013164077},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0006340742693282664,
-    'y_val': 0.0006189754931256175,
-    'z_val': 2.442364177568379e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0004166860308032483,
-    'y_val': -0.00043269438901916146,
-    'z_val': 2.1867093025207396e-08},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.23011067509651184,
-    'y_val': -0.03477349877357483,
-    'z_val': 0.0012302398681640625},
-    'linear_velocity': <Vector3r> {   'x_val': 0.22872886061668396,
-    'y_val': 0.939573347568512,
-    'z_val': 0.002646086271852255},
-    'orientation': <Quaternionr> {   'w_val': -0.6472755074501038,
-    'x_val': -0.008028466254472733,
-    'y_val': 0.008745529688894749,
-    'z_val': 0.7621637582778931},
-    'position': <Vector3r> {   'x_val': 10.291312217712402,
-    'y_val': -10.147976875305176,
-    'z_val': -16.561574935913086}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951097675072256}
-2022-10-16 23:15:54,249 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:54,420 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:54,421 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:54,786 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:54,786 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:55,156 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:55,156 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:55,261 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.5681915283203,
-    'latitude': 47.64156375622051,
-    'longitude': -122.14028772989329},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0001463251537643373,
-    'y_val': -0.033806439489126205,
-    'z_val': -9.81986545411928e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0007284310995601118,
-    'y_val': -0.00688935536891222,
-    'z_val': -5.0917115856918826e-08},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.22254247963428497,
-    'y_val': -0.04015409201383591,
-    'z_val': -0.0039081573486328125},
-    'linear_velocity': <Vector3r> {   'x_val': 0.4580877423286438,
-    'y_val': 0.9033401012420654,
-    'z_val': 0.0029431984294205904},
-    'orientation': <Quaternionr> {   'w_val': -0.6472761631011963,
-    'x_val': -0.0075677200220525265,
-    'y_val': 0.008731222711503506,
-    'z_val': 0.7621679902076721},
-    'position': <Vector3r> {   'x_val': 10.639116287231445,
-    'y_val': -9.216187477111816,
-    'z_val': -16.558469772338867}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951098686093824}
-2022-10-16 23:15:55,261 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:55,542 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:55,542 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:55,942 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:55,942 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:56,275 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.5682373046875,
-    'latitude': 47.64156890121784,
-    'longitude': -122.14027605722762},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0015386298764497042,
-    'y_val': 0.0038806432858109474,
-    'z_val': -1.5206514092369616e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0016219773096963763,
-    'y_val': -0.007982601411640644,
-    'z_val': -2.71046218358606e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.1957806795835495,
-    'y_val': -0.13129787147045135,
-    'z_val': 0.000171661376953125},
-    'linear_velocity': <Vector3r> {   'x_val': 0.6702128052711487,
-    'y_val': 0.8153153657913208,
-    'z_val': -0.0016496633179485798},
-    'orientation': <Quaternionr> {   'w_val': -0.647229790687561,
-    'x_val': -0.0035404525697231293,
-    'y_val': 0.011465117335319519,
-    'z_val': 0.7622005343437195},
-    'position': <Vector3r> {   'x_val': 11.211801528930664,
-    'y_val': -8.339338302612305,
-    'z_val': -16.558523178100586}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951099697115392}
-2022-10-16 23:15:56,276 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:56,302 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:56,302 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:56,660 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:56,660 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:57,036 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:57,036 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:57,289 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.56951904296875,
-    'latitude': 47.64157586331471,
-    'longitude': -122.14026609603867},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0014809867134317756,
-    'y_val': 0.0015270545845851302,
-    'z_val': 2.035452411064398e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0032146063167601824,
-    'y_val': -0.005464104004204273,
-    'z_val': -4.0277168977809197e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.1598985493183136,
-    'y_val': -0.189802885055542,
-    'z_val': 0.0006742477416992188},
-    'linear_velocity': <Vector3r> {   'x_val': 0.8515640497207642,
-    'y_val': 0.6502093076705933,
-    'z_val': -0.0008112989016808569},
-    'orientation': <Quaternionr> {   'w_val': -0.6471900343894958,
-    'x_val': -0.0002211330720456317,
-    'y_val': 0.012670314870774746,
-    'z_val': 0.7622233629226685},
-    'position': <Vector3r> {   'x_val': 11.986431121826172,
-    'y_val': -7.5913238525390625,
-    'z_val': -16.559795379638672}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951100711137024}
-2022-10-16 23:15:57,289 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:57,380 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:57,380 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:57,739 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:57,739 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:58,126 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:58,126 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:58,298 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.5706329345703,
-    'latitude': 47.641584229067576,
-    'longitude': -122.14025874016652},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.012464211322367191,
-    'y_val': 0.0020052006002515554,
-    'z_val': -3.9401406581873744e-08},
-    'angular_velocity': <Vector3r> {   'x_val': -0.013569715432822704,
-    'y_val': -0.003975996281951666,
-    'z_val': -1.2985049124836223e-06},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.06800244003534317,
-    'y_val': -0.22072000801563263,
-    'z_val': -0.005448341369628906},
-    'linear_velocity': <Vector3r> {   'x_val': 0.9796463847160339,
-    'y_val': 0.4399368464946747,
-    'z_val': -0.003287125611677766},
-    'orientation': <Quaternionr> {   'w_val': -0.6471502184867859,
-    'x_val': 0.004378944169729948,
-    'y_val': 0.010946910828351974,
-    'z_val': 0.7622712850570679},
-    'position': <Vector3r> {   'x_val': 12.916967391967773,
-    'y_val': -7.039215564727783,
-    'z_val': -16.560928344726562}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951101719158528}
-2022-10-16 23:15:58,298 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:58,488 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:58,488 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:58,880 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:58,880 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:59,264 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:59,264 - ServerLogger - INFO - The grade was sent to client
-2022-10-16 23:15:59,314 - ServerLogger - INFO - State:
-<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'normal': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'object_id': -1,
-    'object_name': '',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 138.57403564453125,
-    'latitude': 47.641593337174896,
-    'longitude': -122.14025432901471},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.005103632342070341,
-    'y_val': 0.002212745603173971,
-    'z_val': 7.986348578015168e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0035526545252650976,
-    'y_val': -0.001534166862256825,
-    'z_val': -3.020749943516421e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.013502843677997589,
-    'y_val': -0.23362469673156738,
-    'z_val': 0.004534721374511719},
-    'linear_velocity': <Vector3r> {   'x_val': 0.9984411001205444,
-    'y_val': 0.20830152928829193,
-    'z_val': -0.001794046489521861},
-    'orientation': <Quaternionr> {   'w_val': -0.64710932970047,
-    'x_val': 0.007995684631168842,
-    'y_val': 0.00885412935167551,
-    'z_val': 0.76230388879776},
-    'position': <Vector3r> {   'x_val': 13.929716110229492,
-    'y_val': -6.708444595336914,
-    'z_val': -16.56432342529297}},
-    'landed_state': 1,
-    'rc_data': <RCData> {   'is_initialized': False,
-    'is_valid': False,
-    'left_z': 0.0,
-    'pitch': 0.0,
-    'right_z': 0.0,
-    'roll': 0.0,
-    'switches': 0,
-    'throttle': 0.0,
-    'timestamp': 0,
-    'vendor_id': '',
-    'yaw': 0.0},
-    'timestamp': 1665951102736180224}
-2022-10-16 23:15:59,315 - ServerLogger - INFO - Collision:
-<CollisionInfo> {   'has_collided': False,
-    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
-    'y_val': 0.31564638018608093,
-    'z_val': 0.3930765390396118},
-    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
-    'y_val': -2.0812269241332615e-08,
-    'z_val': -1.0},
-    'object_id': -1,
-    'object_name': 'Landscape_0',
-    'penetration_depth': 0.0,
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.19417966902256012},
-    'time_stamp': 1665951059193251328}
-2022-10-16 23:15:59,628 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-16 23:15:59,628 - ServerLogger - INFO - The grade was sent to client
+    'z_val': 0.1941790133714676},
+    'time_stamp': 1666135372677956608}
+2022-10-19 02:23:02,627 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:02,627 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:02,961 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-10-19 02:23:02,961 - ServerLogger - INFO - The grade was sent to client
+2022-10-19 02:23:03,203 - ServerLogger - INFO - Command received: Finish Simulation
+2022-10-19 02:23:03,295 - ServerLogger - INFO - The frame was graded. The current grade is: 0

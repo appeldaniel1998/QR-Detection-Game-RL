@@ -100,8 +100,12 @@ class Grade(threading.Thread):
             self.grade(frame)  # Grade the frame
             self.logger.info("The frame was graded. The current grade is: " + str(self.currentPoints))  # Logging
 
-            self.clientSocket.sendto(str.encode(str(self.currentPoints)), self.clientAddress)  # Send grade to client
-            self.logger.info("The grade was sent to client")  # Logging
+            try:  # In case of sending grade after socket was closed
+                self.clientSocket.sendto(str.encode(str(self.currentPoints)), self.clientAddress)  # Send grade to client
+                self.logger.info("The grade was sent to client")  # Logging
+            except:
+                pass
+
             time.sleep(0.2)  # Max grades given per second: 5
         return self.currentPoints  # return current number of points
 

@@ -1,5 +1,6 @@
 import logging
 import socket
+import sys
 import time
 import keyboard
 import pickle
@@ -254,6 +255,6 @@ if __name__ == '__main__':
             gradeReceiverThread.stop()
             UDPSocketSend.close()
 
-            break
+            sys.exit()
 
         time.sleep(2)

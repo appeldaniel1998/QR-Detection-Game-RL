@@ -11,10 +11,6 @@ from Parameters import *
 import pickle
 
 
-# localIP = "192.168.1.246"
-# localPort = 20001
-
-
 class ServerThread(threading.Thread):
     """
     A Thread class to handle connection to client PC on local network, receive commands from it and move the drone accordingly
@@ -112,8 +108,8 @@ class ServerThread(threading.Thread):
                 elif commandReceived == "left":
                     self.logger.info("Command received: Move Left")  # Logging
                     horizontalSpeedMultiplier = dataReceived[1]  # Vector speed of the movement (decoded)
-                    xSpeed = -np.sin(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier  # Calculating the x and y components of the vector of speed
-                    ySpeed = -np.cos(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
+                    xSpeed = np.cos(np.deg2rad(self.cameraAngleDeg - 90)) * horizontalSpeedMultiplier  # Calculating the x and y components of the vector of speed
+                    ySpeed = np.sin(np.deg2rad(self.cameraAngleDeg - 90)) * horizontalSpeedMultiplier
                     zSpeed = 0  # Vertical
                     self.client.moveByVelocityAsync(xSpeed, ySpeed, zSpeed, 1, airsim.DrivetrainType.MaxDegreeOfFreedom,
                                                     airsim.YawMode(False, self.cameraAngleDeg))  # Sending command to Airsim client
@@ -121,8 +117,8 @@ class ServerThread(threading.Thread):
                 elif commandReceived == "right":
                     self.logger.info("Command received: Move Right")  # Logging
                     horizontalSpeedMultiplier = dataReceived[1]  # Vector speed of the movement (decoded)
-                    xSpeed = np.sin(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier  # Calculating the x and y components of the vector of speed
-                    ySpeed = np.cos(np.deg2rad(self.cameraAngleDeg)) * horizontalSpeedMultiplier
+                    xSpeed = np.cos(np.deg2rad(self.cameraAngleDeg + 90)) * horizontalSpeedMultiplier  # Calculating the x and y components of the vector of speed
+                    ySpeed = np.sin(np.deg2rad(self.cameraAngleDeg + 90)) * horizontalSpeedMultiplier
                     zSpeed = 0  # Vertical
                     self.client.moveByVelocityAsync(xSpeed, ySpeed, zSpeed, 1, airsim.DrivetrainType.MaxDegreeOfFreedom,
                                                     airsim.YawMode(False, self.cameraAngleDeg))  # Sending command to Airsim client
