@@ -1,21 +1,708 @@
-2022-10-19 02:22:55,029 - clientLogger - INFO - Logging initiated
-2022-10-19 02:22:55,030 - clientLogger - INFO - Grade receiving initiated
-2022-10-19 02:22:57,255 - clientLogger - INFO - forward sent
-2022-10-19 02:22:57,658 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:58,004 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:58,345 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:58,673 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:59,001 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:59,320 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:59,622 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:22:59,955 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:00,271 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:00,593 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:00,915 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:01,263 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:01,593 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:01,933 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:02,287 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:02,627 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:02,961 - clientLogger - INFO - Grade received: 0.0
-2022-10-19 02:23:03,203 - clientLogger - INFO - finishedSim sent
+2022-10-22 20:02:22,849 - clientLogger - INFO - Logging initiated
+2022-10-22 20:02:22,850 - clientLogger - INFO - Grade receiving initiated
+2022-10-22 20:02:24,283 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:24,623 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:24,988 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:25,356 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:25,709 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:26,069 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:26,470 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:26,799 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:27,163 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:27,539 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:27,951 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:28,278 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:28,595 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:28,953 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:29,352 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:29,687 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:30,047 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:30,438 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:30,771 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:31,125 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:31,534 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:31,863 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:32,196 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:32,561 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:32,895 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:33,233 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:33,599 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:33,955 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:34,308 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:34,670 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:35,051 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:35,411 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:35,751 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:35,924 - clientLogger - INFO - forward sent
+2022-10-22 20:02:36,113 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:36,536 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:36,661 - clientLogger - INFO - right sent
+2022-10-22 20:02:36,847 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:37,193 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:37,571 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:37,911 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:38,245 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:38,606 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:38,947 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:39,305 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:39,658 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:39,991 - clientLogger - INFO - right sent
+2022-10-22 20:02:40,004 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:40,357 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:40,603 - clientLogger - INFO - forward sent
+2022-10-22 20:02:40,721 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:41,045 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:41,284 - clientLogger - INFO - forward sent
+2022-10-22 20:02:41,399 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:41,731 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:41,785 - clientLogger - INFO - right sent
+2022-10-22 20:02:42,082 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:42,166 - clientLogger - INFO - forward sent
+2022-10-22 20:02:42,415 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:42,453 - clientLogger - INFO - left sent
+2022-10-22 20:02:42,742 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:42,960 - clientLogger - INFO - right sent
+2022-10-22 20:02:43,055 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:43,347 - clientLogger - INFO - forward sent
+2022-10-22 20:02:43,382 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:43,733 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:44,075 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:44,416 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:44,747 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:44,793 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,076 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:45,301 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,332 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,363 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,395 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:45,396 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,427 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,473 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,504 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,535 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,566 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,597 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,628 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,660 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,692 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,735 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:45,740 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,771 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,801 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,832 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,863 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,894 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,926 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,956 - clientLogger - INFO - up sent
+2022-10-22 20:02:45,987 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,036 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,066 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,084 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:46,097 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,128 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,158 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,190 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,220 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,252 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,299 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,329 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,361 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,393 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:46,393 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,423 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,454 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,486 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,517 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,549 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,596 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,627 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,659 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,689 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,720 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,752 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,763 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:46,782 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,814 - clientLogger - INFO - up sent
+2022-10-22 20:02:46,909 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,108 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:47,422 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,450 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:47,454 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,484 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,517 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,548 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,578 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,609 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,642 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,672 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,719 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,750 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,780 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,798 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:47,812 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,844 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,875 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,906 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,937 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:47,984 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,015 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,047 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,078 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,110 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,141 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,148 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:48,174 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,204 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,235 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,476 - clientLogger - INFO - turnRight sent
+2022-10-22 20:02:48,680 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:49,512 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:49,734 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,167 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:50,247 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,280 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,310 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,340 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,371 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,401 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,432 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,480 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,510 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,541 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,571 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,603 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,635 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,665 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,696 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,743 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,774 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,805 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,836 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,867 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,898 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,929 - clientLogger - INFO - forward sent
+2022-10-22 20:02:50,961 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,008 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,039 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,071 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,101 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,123 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:51,132 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,164 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,196 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,227 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,259 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,305 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,336 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,367 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,398 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,430 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,460 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,491 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,521 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,568 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,599 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,630 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,662 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,693 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,723 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,755 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,785 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,832 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,863 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,893 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,923 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,954 - clientLogger - INFO - forward sent
+2022-10-22 20:02:51,964 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:51,985 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,017 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,063 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,094 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,125 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,156 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,187 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,218 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,249 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,281 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,328 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,359 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,390 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,421 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,452 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,483 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,515 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,546 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,577 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,624 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,655 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,686 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,718 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,749 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,781 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,792 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:52,811 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,842 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,888 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,920 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,951 - clientLogger - INFO - forward sent
+2022-10-22 20:02:52,982 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,012 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,043 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,075 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,107 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,139 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,186 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,217 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,248 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,279 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,311 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,343 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,375 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,405 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,436 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,484 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,515 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,546 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,577 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,608 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,614 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:53,640 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,669 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,714 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,745 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,777 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,809 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,839 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,870 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,901 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,931 - clientLogger - INFO - forward sent
+2022-10-22 20:02:53,978 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,008 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,040 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,071 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,102 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,134 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,166 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,196 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,227 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,274 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,304 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,335 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,366 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,397 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,428 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,460 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,471 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:54,507 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,537 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,569 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,599 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,630 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,662 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,693 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,724 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,770 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,802 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,833 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,864 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,896 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,927 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,960 - clientLogger - INFO - forward sent
+2022-10-22 20:02:54,989 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,022 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,068 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,098 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,130 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,160 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,192 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,222 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,255 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,285 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,320 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:55,331 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,363 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,394 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,425 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,456 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,488 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,518 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,549 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,596 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,626 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,658 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,689 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,721 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,753 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,784 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,815 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,847 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,878 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,925 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,956 - clientLogger - INFO - forward sent
+2022-10-22 20:02:55,987 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,018 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,050 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,082 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,113 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,143 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,168 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:56,175 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,222 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,254 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,285 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,316 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,347 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,379 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,410 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,440 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,471 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,518 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,549 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,580 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,612 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,642 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,674 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,705 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,735 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,781 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,813 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,844 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,874 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,906 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,937 - clientLogger - INFO - forward sent
+2022-10-22 20:02:56,958 - clientLogger - INFO - Grade received: 0.0
+2022-10-22 20:02:56,968 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,014 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,045 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,076 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,107 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,140 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,171 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,202 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,233 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,265 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,311 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,342 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,374 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,406 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,438 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,469 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,500 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,531 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,563 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,594 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,641 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,673 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,704 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,736 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,767 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,770 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:02:57,798 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,831 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,861 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,893 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,924 - clientLogger - INFO - forward sent
+2022-10-22 20:02:57,970 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,001 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,033 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,065 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,095 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,126 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,157 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,188 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,234 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,265 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,296 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,327 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,358 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,388 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,418 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,464 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,495 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,526 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,556 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,587 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,588 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:02:58,618 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,664 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,696 - clientLogger - INFO - forward sent
+2022-10-22 20:02:58,727 - clientLogger - INFO - forward sent
+2022-10-22 20:02:59,341 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:00,027 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:00,425 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:00,822 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:01,392 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:02,006 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:02,555 - clientLogger - INFO - Grade received: -1.0
+2022-10-22 20:03:03,171 - clientLogger - INFO - Grade received: -2.0
+2022-10-22 20:03:03,661 - clientLogger - INFO - forward sent
+2022-10-22 20:03:03,823 - clientLogger - INFO - Grade received: -2.0
+2022-10-22 20:03:04,177 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,209 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,239 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,270 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,301 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,332 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,364 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,394 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,426 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,473 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,504 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,535 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,538 - clientLogger - INFO - Grade received: -2.0
+2022-10-22 20:03:04,567 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,597 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,628 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,659 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,705 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,737 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,768 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,798 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,830 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,860 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,892 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,923 - clientLogger - INFO - forward sent
+2022-10-22 20:03:04,953 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,001 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,031 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,062 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,093 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,124 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,156 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,186 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,233 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,263 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,294 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,325 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,356 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,377 - clientLogger - INFO - Grade received: -2.0
+2022-10-22 20:03:05,387 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,418 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,450 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,496 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,526 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,557 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,587 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,617 - clientLogger - INFO - forward sent
+2022-10-22 20:03:05,666 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,118 - clientLogger - INFO - Grade received: -2.0
+2022-10-22 20:03:06,177 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,209 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,239 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,270 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,301 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,333 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,379 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,411 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,443 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,475 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,505 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,530 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:06,538 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,568 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,601 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,630 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,677 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,707 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,738 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,769 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,800 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,830 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,862 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,894 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,940 - clientLogger - INFO - left sent
+2022-10-22 20:03:06,971 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,002 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,035 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,066 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,098 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,128 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,159 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,178 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:07,191 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,223 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,269 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,299 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,330 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,361 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,392 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,423 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,454 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,500 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,532 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,564 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,595 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,627 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,658 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,688 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,719 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,765 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,797 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,828 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,830 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:07,860 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,892 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,922 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,954 - clientLogger - INFO - left sent
+2022-10-22 20:03:07,985 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,016 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,063 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,094 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,125 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,156 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,187 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,220 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,249 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,281 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,311 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,357 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,390 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,420 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,450 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,477 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:08,481 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,513 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,544 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,576 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,621 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,653 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,683 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,715 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,746 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,776 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,807 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,853 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,885 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,917 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,947 - clientLogger - INFO - left sent
+2022-10-22 20:03:08,978 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,010 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,040 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,071 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,103 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:09,118 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,148 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,179 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,210 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,242 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,273 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,305 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,336 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,381 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,412 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,444 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,475 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,507 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,538 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,569 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,600 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,631 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,679 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,709 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,724 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:09,740 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,770 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,802 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,832 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,877 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,908 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,939 - clientLogger - INFO - left sent
+2022-10-22 20:03:09,970 - clientLogger - INFO - left sent
+2022-10-22 20:03:10,002 - clientLogger - INFO - left sent
+2022-10-22 20:03:10,089 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,357 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:10,595 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,625 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,658 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,688 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,735 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,766 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,796 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,827 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,858 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,889 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,919 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,940 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:10,966 - clientLogger - INFO - forward sent
+2022-10-22 20:03:10,997 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,030 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,060 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,091 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,123 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,154 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,184 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,230 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,261 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,292 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,324 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,355 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,385 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,417 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,448 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,480 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,526 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,558 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,588 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,594 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:11,620 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,651 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,681 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,713 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,759 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,790 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,821 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,851 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,883 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,914 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,945 - clientLogger - INFO - forward sent
+2022-10-22 20:03:11,977 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,008 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,056 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,087 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,118 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,149 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,181 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,187 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:12,211 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,243 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,274 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,320 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,351 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,382 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,415 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,446 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,478 - clientLogger - INFO - forward sent
+2022-10-22 20:03:12,722 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:13,015 - clientLogger - INFO - down sent
+2022-10-22 20:03:13,167 - clientLogger - INFO - down sent
+2022-10-22 20:03:13,235 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:13,341 - clientLogger - INFO - down sent
+2022-10-22 20:03:13,487 - clientLogger - INFO - down sent
+2022-10-22 20:03:13,554 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:13,651 - clientLogger - INFO - down sent
+2022-10-22 20:03:13,818 - clientLogger - INFO - down sent
+2022-10-22 20:03:13,966 - clientLogger - INFO - down sent
+2022-10-22 20:03:14,000 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:14,122 - clientLogger - INFO - down sent
+2022-10-22 20:03:14,291 - clientLogger - INFO - down sent
+2022-10-22 20:03:14,449 - clientLogger - INFO - down sent
+2022-10-22 20:03:14,559 - clientLogger - INFO - Grade received: -3.0
+2022-10-22 20:03:14,611 - clientLogger - INFO - down sent
+2022-10-22 20:03:14,769 - clientLogger - INFO - down sent
+2022-10-22 20:03:14,953 - clientLogger - INFO - down sent
+2022-10-22 20:03:15,114 - clientLogger - INFO - Grade received: 7.0
+2022-10-22 20:03:15,135 - clientLogger - INFO - down sent
+2022-10-22 20:03:15,311 - clientLogger - INFO - down sent
+2022-10-22 20:03:15,505 - clientLogger - INFO - down sent
+2022-10-22 20:03:15,721 - clientLogger - INFO - Grade received: 7.0
+2022-10-22 20:03:16,301 - clientLogger - INFO - Grade received: 7.0
+2022-10-22 20:03:16,790 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:17,336 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:17,850 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:18,365 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:18,862 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:19,398 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:19,901 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:20,422 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:20,953 - clientLogger - INFO - Grade received: 6.0
+2022-10-22 20:03:21,228 - clientLogger - INFO - finishedSim sent
