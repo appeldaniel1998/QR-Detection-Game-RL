@@ -2,10 +2,11 @@ import numpy as np
 import cv2
 
 
-def createQRAndSaveToFiles(path: str, size: int = 400, whiteBorder: int = 20) -> None:
+def createQRAndSaveToFiles(path: str, numberOfAruco: int = 20, size: int = 400, whiteBorder: int = 20) -> None:
     """
     function to generate aruco codes with white borders around, and save them to a folder specified (has to exist)
     Aruco IDs are consecutive from 1
+    :param numberOfAruco: Number of Aruco codes to generate
     :param path: Path to save the images
     :param size: Size of Images
     :param whiteBorder: Size of white border around Arucos
@@ -40,7 +41,7 @@ def createQRAndSaveToFiles(path: str, size: int = 400, whiteBorder: int = 20) ->
     # load the ArUCo dictionary
     arucoDict = cv2.aruco.Dictionary_get(ARUCO_DICT["DICT_4X4_100"])
 
-    for i in range(currId, currId + 20):
+    for i in range(currId, currId + numberOfAruco):
         tag = np.zeros((size, size), dtype="uint8")
         cv2.aruco.drawMarker(arucoDict, i, size, tag, 1)
         tagWithBorder = np.zeros((size + 2 * whiteBorder, size + 2 * whiteBorder), dtype="uint8")
