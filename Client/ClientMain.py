@@ -3,10 +3,54 @@ import socket
 import sys
 import time
 import pickle
-
-from Client.ExecutedFunction import functionToExecute
+import keyboard
 from Client_GradeReceiveThread import GradeReceiverThread
 from Parameters import *
+
+
+def functionToExecute() -> None:
+    """
+    Method to be executed upon run of the program
+    :return: None
+    """
+    # using keyboard to control the drone. Can be changed
+    keyboard.add_hotkey('w', forward, timeout=0)
+    keyboard.add_hotkey('s', back, timeout=0)
+    keyboard.add_hotkey('a', left, timeout=0)
+    keyboard.add_hotkey('d', right, timeout=0)
+    keyboard.add_hotkey('e', turnRight, timeout=0)
+    keyboard.add_hotkey('q', turnLeft, timeout=0)
+    keyboard.add_hotkey('page up', up, timeout=0)
+    keyboard.add_hotkey('page down', down, timeout=0)
+    keyboard.add_hotkey('space', hover, timeout=0)
+    keyboard.add_hotkey('esc', finishExecution, timeout=0)  # Quitting the program when pressed
+
+    # goto(x=-5.5, y=-5.9, z=-1.1, velocity=5.4, hasToFinish=True)
+    # goto function is available but not bound to key
+
+
+def dummyCircles() -> None:
+    goto(6470, -1460, 2000, 4)
+    time.sleep(10)
+    turnLeft(90)
+    time.sleep(2)
+    while True:
+        goto(5850, -3720, 2000, 4)
+        time.sleep(20)
+        turnLeft(90)
+        time.sleep(2)
+        goto(-3870, -4350, 2000, 4)
+        time.sleep(20)
+        turnLeft(90)
+        time.sleep(2)
+        goto(-3870, 5450, 2000, 4)
+        time.sleep(20)
+        turnLeft(90)
+        time.sleep(2)
+        goto(4580, 5450, 2000, 4)
+        time.sleep(20)
+
+
 
 
 def forward(horizontalSpeedMultiplier: int = 5):
@@ -230,7 +274,7 @@ if __name__ == '__main__':
 
     finishExec = False  # Flag to stop simulation (updated in method finishExecution() when needed)
 
-    functionToExecute()  # The function to be executed for movements (to be edited)
+    dummyCircles()  # The function to be executed for movements (to be edited)
 
     while True:  # Checking for flag finishing the execution, otherwise a forever loop
         # Stops execution on 2 conditions: Either the command was received via the flag above, or the gradeReceiverThread has stopped

@@ -18,6 +18,7 @@ class DynamicMap(threading.Thread):
         self._stop_event = threading.Event()
 
         self.arucos: list[ArucoCode] = arucos
+        self.fullArucoList: list[ArucoCode] = arucos
         self.moveBy: int = 5  # speed of aruco movement
         self.logger: logging.Logger = logger
 
@@ -42,8 +43,8 @@ class DynamicMap(threading.Thread):
         :return:
         """
         while not self.stopped():  # Thread stops upon call to stop() method above
-            for i in range(len(self.arucos)):  # For every item in the arucos list
-                arucoCurrPose = self.client.simGetObjectPose(ArucoCode.ueIds[str(self.arucos[i].arucoId)])
+            for i in range(len(self.arucos)-1):  # For every item in the arucos list
+                arucoCurrPose = self.client.simGetObjectPose(ArucoCode.ueIds[str(self.fullArucoList[i].arucoId)])
                 if 16100 <= (arucoCurrPose.position.x_val * 100) + ArucoCode.playerStartPos[0] <= 17450 and \
                         -6200 <= (arucoCurrPose.position.y_val * 100) + ArucoCode.playerStartPos[1] <= -4850 and \
                         50 <= (arucoCurrPose.position.z_val * -100) + ArucoCode.playerStartPos[2] <= 550:

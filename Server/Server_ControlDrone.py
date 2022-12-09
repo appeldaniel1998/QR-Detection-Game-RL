@@ -1,3 +1,4 @@
+import json
 import logging
 import threading
 import socket
@@ -9,6 +10,8 @@ import numpy as np
 from Grade import Grade
 from Parameters import *
 import pickle
+
+from Server.ArucoCode import ArucoCode
 
 
 class ServerThread(threading.Thread):
@@ -56,6 +59,11 @@ class ServerThread(threading.Thread):
         self.clientAddressRecv = bytesAddressPair[1]  # socket for receiving commands
 
         self.cameraAngleDeg = 0  # current angle of the drone
+
+        with open("CreatingConfigurationFiles/mapConfig.json", "r") as file:  # Read info from file
+            mapConfig = json.load(file)
+
+        self.playerStartPos = mapConfig["PlayerStartPosition"]
 
     def stop(self):
         """
@@ -163,13 +171,13 @@ class ServerThread(threading.Thread):
 
                 elif commandReceived == "hover":
                     self.logger.info("Command received: Hover")  # Logging
-                    self.client.hoverAsync()  # Hover
+                    self.client.hoverAsync()  # HoverClient
 
                 elif commandReceived == "goto":
                     self.logger.info("Command received: goto")  # Logging
-                    x = dataReceived[1]  # x destination coordinate
-                    y = dataReceived[2]  # y destination coordinate
-                    z = dataReceived[3]  # z destination coordinate
+                    x = (dataReceived[1] - self.playerStartPos[0]) / 100  # x destination coordinate
+                    y = (dataReceived[2] - self.playerStartPos[1]) / 100  # y destination coordinate
+                    z = (dataReceived[3] - self.playerStartPos[2]) / -100  # z destination coordinate
                     velocity = dataReceived[4]  # speed of movement
                     hasToFinish = dataReceived[5]  # Whether the action should be stoppable while running
                     if hasToFinish:  # yes

@@ -1,10 +1,10 @@
-2022-10-21 23:47:22,842 - ServerLogger - INFO - Logging initiated
-2022-10-21 23:47:22,842 - ServerLogger - INFO - Connected to instance of Airsim
-2022-10-21 23:47:22,900 - ServerLogger - INFO - Created map
-2022-10-21 23:47:22,900 - ServerLogger - INFO - Dynamic map initiated
-2022-10-21 23:47:22,901 - ServerLogger - INFO - Simulation ready to start...
+2022-12-10 01:28:35,571 - ServerLogger - INFO - Logging initiated
+2022-12-10 01:28:35,571 - ServerLogger - INFO - Connected to instance of Airsim
+2022-12-10 01:28:35,629 - ServerLogger - INFO - Created map
+2022-12-10 01:28:35,629 - ServerLogger - INFO - Dynamic map initiated
+2022-12-10 01:28:35,630 - ServerLogger - INFO - Simulation ready to start...
 
-2022-10-21 23:47:22,904 - ServerLogger - INFO - State:
+2022-12-10 01:28:35,634 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -19,7 +19,7 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34734344482422,
+    'gps_location': <GeoPoint> {   'altitude': 123.35404968261719,
     'latitude': 47.641468080880905,
     'longitude': -122.14016504425251},
     'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
@@ -30,17 +30,17 @@
     'z_val': 0.0},
     'linear_acceleration': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.000324249267578125},
+    'z_val': 0.9632339477539062},
     'linear_velocity': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': -0.0003386476601008326},
+    'z_val': 0.03791983425617218},
     'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
     'x_val': 0.0,
     'y_val': 0.0,
     'z_val': 0.0},
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': -1.3376429080963135}},
+    'z_val': -1.3442366123199463}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -53,8 +53,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385242584699648}
-2022-10-21 23:47:22,905 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628499846541568}
+2022-12-10 01:28:35,635 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': True,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -67,15 +67,38 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:23,111 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:23,112 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:23,471 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:23,471 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:23,830 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:23,830 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:23,920 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:35,637 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:28:35,776 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:35,776 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:36,102 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:36,102 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:36,445 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:36,445 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:36,785 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:36,785 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:37,118 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:37,118 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:37,475 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:37,475 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:37,821 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:37,821 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:38,148 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:38,148 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:38,472 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:38,472 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:38,793 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:38,793 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:39,119 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:39,119 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:39,448 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:39,448 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:39,789 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:39,789 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:40,109 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:40,109 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:40,410 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -90,28 +113,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34756469726562,
-    'latitude': 47.641468080880905,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.00011920928955078125},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -0.0001310174266109243},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.337862253189087}},
+    'gps_location': <GeoPoint> {   'altitude': 125.89912414550781,
+    'latitude': 47.641470851073606,
+    'longitude': -122.14015898497628},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.05208401009440422,
+    'y_val': 0.037433210760354996,
+    'z_val': -0.00019054852600675076},
+    'angular_velocity': <Vector3r> {   'x_val': -0.031047126278281212,
+    'y_val': 0.021264176815748215,
+    'z_val': 6.27007830189541e-05},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.375823438167572,
+    'y_val': 0.555551290512085,
+    'z_val': 0.41117191314697266},
+    'linear_velocity': <Vector3r> {   'x_val': 0.5950371623039246,
+    'y_val': 0.8790135383605957,
+    'z_val': -3.9231207370758057},
+    'orientation': <Quaternionr> {   'w_val': 0.9993612766265869,
+    'x_val': 0.029611758887767792,
+    'y_val': -0.02000395394861698,
+    'z_val': 0.0002678970922715962},
+    'position': <Vector3r> {   'x_val': 0.30978885293006897,
+    'y_val': 0.45794326066970825,
+    'z_val': -3.901191234588623}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -124,8 +147,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385243586721024}
-2022-10-21 23:47:23,921 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628500860563200}
+2022-12-10 01:28:40,410 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -138,15 +161,17 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:24,225 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:24,225 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:24,567 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:24,567 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:24,921 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:24,921 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:24,935 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:40,425 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:40,425 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:40,780 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:40,780 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:41,096 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:41,096 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:41,418 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:41,418 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:41,419 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -161,28 +186,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34764862060547,
-    'latitude': 47.6414680808809,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 2.6702880859375e-05},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -5.168400093680248e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.337946891784668}},
+    'gps_location': <GeoPoint> {   'altitude': 140.66513061523438,
+    'latitude': 47.64149986669866,
+    'longitude': -122.14009546135127},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.13053973019123077,
+    'y_val': -0.08917385339736938,
+    'z_val': -6.516864959849045e-05},
+    'angular_velocity': <Vector3r> {   'x_val': 0.0715639740228653,
+    'y_val': -0.04982833191752434,
+    'z_val': 0.00010131839371751994},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.9571467041969299,
+    'y_val': -1.4124623537063599,
+    'z_val': -1.9430408477783203},
+    'linear_velocity': <Vector3r> {   'x_val': 0.11832939088344574,
+    'y_val': 0.1783684641122818,
+    'z_val': 1.0489903688430786},
+    'orientation': <Quaternionr> {   'w_val': 0.9974108338356018,
+    'x_val': -0.059500668197870255,
+    'y_val': 0.04038282111287117,
+    'z_val': 0.0007385060307569802},
+    'position': <Vector3r> {   'x_val': 3.5344932079315186,
+    'y_val': 5.229178428649902,
+    'z_val': -18.65226173400879}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -195,8 +220,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385244597742592}
-2022-10-21 23:47:24,935 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628505627664896}
+2022-12-10 01:28:41,420 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -209,13 +234,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:25,306 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:25,306 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:25,662 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:25,662 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:25,948 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:41,750 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:41,750 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:42,083 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:42,083 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:42,418 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:42,418 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:42,423 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -230,28 +257,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34768676757812,
-    'latitude': 47.64146808088091,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.239776611328125e-05},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.860559859778732e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.3379802703857422}},
+    'gps_location': <GeoPoint> {   'altitude': 140.25196838378906,
+    'latitude': 47.64149800478704,
+    'longitude': -122.14009951245556},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.08525026589632034,
+    'y_val': 0.059744033962488174,
+    'z_val': -0.00012234890891704708},
+    'angular_velocity': <Vector3r> {   'x_val': 0.1139000877737999,
+    'y_val': -0.07671495527029037,
+    'z_val': 0.00024121759633999318},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.02826596423983574,
+    'y_val': -0.0486016646027565,
+    'z_val': -0.3563680648803711},
+    'linear_velocity': <Vector3r> {   'x_val': -0.3739912211894989,
+    'y_val': -0.5547794103622437,
+    'z_val': 0.037990640848875046},
+    'orientation': <Quaternionr> {   'w_val': 0.9999960660934448,
+    'x_val': -0.0023254072293639183,
+    'y_val': 0.0013225277652963996,
+    'z_val': 0.0008603821625001729},
+    'position': <Vector3r> {   'x_val': 3.325993537902832,
+    'y_val': 4.922562122344971,
+    'z_val': -18.242143630981445}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -264,8 +291,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385245605764096}
-2022-10-21 23:47:25,949 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628506629686272}
+2022-12-10 01:28:42,423 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -278,15 +305,16 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:26,010 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:26,010 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:26,361 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:26,361 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:26,718 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:26,718 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:26,959 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:42,746 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:42,746 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:42,763 - ServerLogger - INFO - Command received: Turn left
+2022-12-10 01:28:43,070 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:43,070 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:43,409 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:43,409 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:43,438 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -301,28 +329,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34768676757812,
-    'latitude': 47.641468080880905,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -4.76837158203125e-06},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.9629853341029957e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.3379851579666138}},
+    'gps_location': <GeoPoint> {   'altitude': 140.2235565185547,
+    'latitude': 47.64149535502534,
+    'longitude': -122.14010535023458},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.07142280787229538,
+    'y_val': -0.09863025695085526,
+    'z_val': -0.7570105195045471},
+    'angular_velocity': <Vector3r> {   'x_val': -0.044554274529218674,
+    'y_val': -0.020900724455714226,
+    'z_val': -2.3127026557922363},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.22007593512535095,
+    'y_val': 0.3339749872684479,
+    'z_val': -0.019171714782714844},
+    'linear_velocity': <Vector3r> {   'x_val': -0.1603887975215912,
+    'y_val': -0.23859231173992157,
+    'z_val': 0.03874493017792702},
+    'orientation': <Quaternionr> {   'w_val': 0.8688628077507019,
+    'x_val': 0.020200004801154137,
+    'y_val': -0.0013100323267281055,
+    'z_val': -0.49463897943496704},
+    'position': <Vector3r> {   'x_val': 3.0320169925689697,
+    'y_val': 4.484843730926514,
+    'z_val': -18.213735580444336}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -335,8 +363,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385246610785536}
-2022-10-21 23:47:26,959 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628507643707904}
+2022-12-10 01:28:43,439 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -349,15 +377,13 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:27,065 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:27,065 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:27,406 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:27,408 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:27,761 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:27,761 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:27,970 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:43,808 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:43,808 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:44,267 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:44,267 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:44,453 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -372,28 +398,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34769439697266,
-    'latitude': 47.64146808088091,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 1.1444091796875e-05},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.931660335685592e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.337988018989563}},
+    'gps_location': <GeoPoint> {   'altitude': 140.1752471923828,
+    'latitude': 47.641494561484286,
+    'longitude': -122.1401070467886},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.014878099784255028,
+    'y_val': 0.013857983984053135,
+    'z_val': 0.2264067530632019},
+    'angular_velocity': <Vector3r> {   'x_val': -0.00598683999851346,
+    'y_val': -0.011642638593912125,
+    'z_val': -0.05602503940463066},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.04107024893164635,
+    'y_val': 0.10153815150260925,
+    'z_val': -0.0710916519165039},
+    'linear_velocity': <Vector3r> {   'x_val': -0.042299915105104446,
+    'y_val': -0.049627382308244705,
+    'z_val': 0.007943199016153812},
+    'orientation': <Quaternionr> {   'w_val': 0.5748257040977478,
+    'x_val': 0.004635914694517851,
+    'y_val': 0.003007835242897272,
+    'z_val': -0.8182571530342102},
+    'position': <Vector3r> {   'x_val': 2.944141387939453,
+    'y_val': 4.357928276062012,
+    'z_val': -18.165515899658203}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -406,8 +432,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385247615806976}
-2022-10-21 23:47:27,971 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628508657729536}
+2022-12-10 01:28:44,454 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -420,15 +446,44 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:28,111 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:28,111 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:28,463 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:28,463 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:28,823 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:28,823 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:28,980 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:44,765 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:44,765 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:44,778 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:28:45,293 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:45,293 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:45,733 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:45,733 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:46,175 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:46,175 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:46,656 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:46,656 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:47,110 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:47,112 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:47,555 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:47,555 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:47,965 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:47,965 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:48,353 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:48,353 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:48,773 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:48,773 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:49,155 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:49,155 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:49,528 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:49,528 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:49,902 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:49,902 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:50,263 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:50,263 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:50,663 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:50,663 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:51,057 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:51,057 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:51,449 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:51,449 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:51,677 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -443,28 +498,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34769439697266,
-    'latitude': 47.64146808088091,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.9554108803276904e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.337988018989563}},
+    'gps_location': <GeoPoint> {   'altitude': 140.64149475097656,
+    'latitude': 47.64149270857678,
+    'longitude': -122.14011608689785},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.004709616769105196,
+    'y_val': 0.07160155475139618,
+    'z_val': 0.0020672024693340063},
+    'angular_velocity': <Vector3r> {   'x_val': -0.028182590380311012,
+    'y_val': 0.3158952295780182,
+    'z_val': -0.00029736189753748477},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.5922937393188477,
+    'y_val': -2.272883176803589,
+    'z_val': 1.4621515274047852},
+    'linear_velocity': <Vector3r> {   'x_val': -0.5494534969329834,
+    'y_val': -1.9883003234863281,
+    'z_val': -0.5796749591827393},
+    'orientation': <Quaternionr> {   'w_val': 0.5643191337585449,
+    'x_val': -0.10438021272420883,
+    'y_val': -0.089515320956707,
+    'z_val': -0.8140244483947754},
+    'position': <Vector3r> {   'x_val': 2.736605405807495,
+    'y_val': 3.6728262901306152,
+    'z_val': -18.633541107177734}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -477,8 +532,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385248620828416}
-2022-10-21 23:47:28,981 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628509668751104}
+2022-12-10 01:28:51,677 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -491,15 +546,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:29,215 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:29,215 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:29,608 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:29,609 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:29,960 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:29,960 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:29,998 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:51,810 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:51,810 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:52,117 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:52,117 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:52,440 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:52,440 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:52,690 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -514,28 +569,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34769439697266,
-    'latitude': 47.64146808088091,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.9554108803276904e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.337988018989563}},
+    'gps_location': <GeoPoint> {   'altitude': 140.82862854003906,
+    'latitude': 47.64143387762591,
+    'longitude': -122.14043325348068},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.11075138300657272,
+    'y_val': 0.2134387493133545,
+    'z_val': 0.0003685390984173864},
+    'angular_velocity': <Vector3r> {   'x_val': 0.016771340742707253,
+    'y_val': -0.18187491595745087,
+    'z_val': -1.8468315829522908e-05},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.1359546035528183,
+    'y_val': 1.7754557132720947,
+    'z_val': 0.23052501678466797},
+    'linear_velocity': <Vector3r> {   'x_val': -0.5547720789909363,
+    'y_val': -0.8048528432846069,
+    'z_val': 0.22167393565177917},
+    'orientation': <Quaternionr> {   'w_val': 0.5726114511489868,
+    'x_val': 0.0464496873319149,
+    'y_val': 0.07860291004180908,
+    'z_val': -0.8147270679473877},
+    'position': <Vector3r> {   'x_val': -3.8045451641082764,
+    'y_val': -20.156373977661133,
+    'z_val': -18.818235397338867}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -548,8 +603,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385249601849344}
-2022-10-21 23:47:29,998 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628516883905024}
+2022-12-10 01:28:52,690 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -562,13 +617,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:30,344 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:30,344 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:30,711 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:30,711 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:31,010 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:52,780 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:52,780 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:53,125 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:53,125 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:53,508 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:53,508 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:53,701 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -583,28 +640,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 123.34769439697266,
-    'latitude': 47.64146808088091,
-    'longitude': -122.14016504425251},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'angular_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.9554108803276904e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.9999998807907104,
-    'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': 0.0},
-    'position': <Vector3r> {   'x_val': 0.0,
-    'y_val': 0.0,
-    'z_val': -1.337988018989563}},
+    'gps_location': <GeoPoint> {   'altitude': 140.64151000976562,
+    'latitude': 47.64142804081951,
+    'longitude': -122.14043499521713},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.008749722503125668,
+    'y_val': 0.06795787811279297,
+    'z_val': -8.925037400331348e-05},
+    'angular_velocity': <Vector3r> {   'x_val': 0.054141391068696976,
+    'y_val': -0.04321608319878578,
+    'z_val': 7.854085561120883e-05},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.051313042640686035,
+    'y_val': 0.7244536876678467,
+    'z_val': -0.1711893081665039},
+    'linear_velocity': <Vector3r> {   'x_val': -0.7186222076416016,
+    'y_val': 0.37485986948013306,
+    'z_val': 0.09765812009572983},
+    'orientation': <Quaternionr> {   'w_val': 0.5749941468238831,
+    'x_val': 0.018613092601299286,
+    'y_val': 0.031195344403386116,
+    'z_val': -0.8173508048057556},
+    'position': <Vector3r> {   'x_val': -4.454006671905518,
+    'y_val': -20.283710479736328,
+    'z_val': -18.631481170654297}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -617,8 +674,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385250609870848}
-2022-10-21 23:47:31,011 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628517888926464}
+2022-12-10 01:28:53,702 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -631,17 +688,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:31,039 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:31,039 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:31,110 - ServerLogger - INFO - Command received: Move Forward
-2022-10-21 23:47:31,415 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:31,415 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:31,779 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:31,779 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:31,869 - ServerLogger - INFO - Command received: Move Left
-2022-10-21 23:47:32,026 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:53,892 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:53,892 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:54,275 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:54,275 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:54,665 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:54,665 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:54,715 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -656,28 +711,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 124.16755676269531,
-    'latitude': 47.64148218446346,
-    'longitude': -122.14016512374327},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 5.439763069152832,
-    'y_val': -18.749698638916016,
-    'z_val': 0.923151969909668},
-    'angular_velocity': <Vector3r> {   'x_val': -1.694204330444336,
-    'y_val': 2.254387617111206,
-    'z_val': 0.09006695449352264},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.24727323651313782,
-    'y_val': -4.318989276885986,
-    'z_val': -4.2429609298706055},
-    'linear_velocity': <Vector3r> {   'x_val': 3.07486891746521,
-    'y_val': -0.2067202627658844,
-    'z_val': -0.6042923927307129},
-    'orientation': <Quaternionr> {   'w_val': 0.988225519657135,
-    'x_val': -0.15119801461696625,
-    'y_val': 0.0065097687765955925,
-    'z_val': -0.0225207582116127},
-    'position': <Vector3r> {   'x_val': 1.577340006828308,
-    'y_val': -0.006573863327503204,
-    'z_val': -2.1596457958221436}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6018524169922,
+    'latitude': 47.6414219019648,
+    'longitude': -122.14042626870376},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.02005069889128208,
+    'y_val': 0.003795999102294445,
+    'z_val': -2.3428037820849568e-05},
+    'angular_velocity': <Vector3r> {   'x_val': 0.035657621920108795,
+    'y_val': -0.014170952141284943,
+    'z_val': 1.7991525965044275e-05},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.2945510447025299,
+    'y_val': 0.3410876989364624,
+    'z_val': -0.03141975402832031},
+    'linear_velocity': <Vector3r> {   'x_val': -0.5886969566345215,
+    'y_val': 0.8786657452583313,
+    'z_val': 0.0050358097068965435},
+    'orientation': <Quaternionr> {   'w_val': 0.5747917890548706,
+    'x_val': 0.022167513146996498,
+    'y_val': 0.005803470499813557,
+    'z_val': -0.8179787993431091},
+    'position': <Vector3r> {   'x_val': -5.136174201965332,
+    'y_val': -19.626466751098633,
+    'z_val': -18.59209632873535}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -690,8 +745,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385251617892352}
-2022-10-21 23:47:32,026 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628518887947776}
+2022-12-10 01:28:54,715 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -704,18 +759,13 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:32,127 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:32,128 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:32,301 - ServerLogger - INFO - Command received: Move Right
-2022-10-21 23:47:32,481 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:32,481 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:32,712 - ServerLogger - INFO - Command received: Move Left
-2022-10-21 23:47:32,835 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:32,835 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:32,958 - ServerLogger - INFO - Command received: Move Forward
-2022-10-21 23:47:33,038 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:55,048 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:55,048 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:55,412 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:55,412 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:55,727 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -730,28 +780,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.22644805908203,
-    'latitude': 47.64149873448358,
-    'longitude': -122.14018285676288},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -64.89746856689453,
-    'y_val': 27.495004653930664,
-    'z_val': -0.3057902157306671},
-    'angular_velocity': <Vector3r> {   'x_val': 1.0648802518844604,
-    'y_val': -2.57700777053833,
-    'z_val': -0.02206357568502426},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.1545514315366745,
-    'y_val': -0.48923438787460327,
-    'z_val': 4.643894672393799},
-    'linear_velocity': <Vector3r> {   'x_val': 0.8635067939758301,
-    'y_val': -0.966458797454834,
-    'z_val': -0.2487792819738388},
-    'orientation': <Quaternionr> {   'w_val': 0.9987581968307495,
-    'x_val': -0.04578675329685211,
-    'y_val': 0.011311768554151058,
-    'z_val': 0.016051393002271652},
-    'position': <Vector3r> {   'x_val': 3.4108285903930664,
-    'y_val': -1.3413715362548828,
-    'z_val': -3.2175090312957764}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6036834716797,
+    'latitude': 47.641418253257235,
+    'longitude': -122.1404126843221},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.014583557844161987,
+    'y_val': -0.00717180734500289,
+    'z_val': -2.884099330913159e-06},
+    'angular_velocity': <Vector3r> {   'x_val': 0.018413597717881203,
+    'y_val': -0.018226383253932,
+    'z_val': 8.890771823644172e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.48632436990737915,
+    'y_val': 0.1049569770693779,
+    'z_val': 0.0026912689208984375},
+    'linear_velocity': <Vector3r> {   'x_val': -0.17916736006736755,
+    'y_val': 1.102483868598938,
+    'z_val': -0.003183893859386444},
+    'orientation': <Quaternionr> {   'w_val': 0.5744620561599731,
+    'x_val': 0.023542381823062897,
+    'y_val': -0.009632484056055546,
+    'z_val': -0.8181359171867371},
+    'position': <Vector3r> {   'x_val': -5.5406341552734375,
+    'y_val': -18.60502815246582,
+    'z_val': -18.59396743774414}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -764,8 +814,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385252625913856}
-2022-10-21 23:47:33,038 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628519898969344}
+2022-12-10 01:28:55,727 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -778,18 +828,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:33,171 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:33,172 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:33,531 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:33,531 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:33,667 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:33,869 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:33,879 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:33,880 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:34,040 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,053 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:55,775 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:55,775 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:56,159 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:56,159 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:56,537 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:56,537 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:56,740 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -804,28 +851,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.77029418945312,
-    'latitude': 47.641518912162375,
-    'longitude': -122.14019231474762},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.1888786256313324,
-    'y_val': -3.633864164352417,
-    'z_val': -0.050039421766996384},
-    'angular_velocity': <Vector3r> {   'x_val': -0.04842458665370941,
-    'y_val': 0.25834083557128906,
-    'z_val': 0.3854787349700928},
-    'linear_acceleration': <Vector3r> {   'x_val': -2.882218360900879,
-    'y_val': 0.5830870270729065,
-    'z_val': -1.0418195724487305},
-    'linear_velocity': <Vector3r> {   'x_val': 2.509848117828369,
-    'y_val': -0.36465394496917725,
-    'z_val': -0.4578402638435364},
-    'orientation': <Quaternionr> {   'w_val': 0.9899360537528992,
-    'x_val': 0.03312087804079056,
-    'y_val': 0.12630996108055115,
-    'z_val': 0.05454827845096588},
-    'position': <Vector3r> {   'x_val': 5.659246444702148,
-    'y_val': -2.0502657890319824,
-    'z_val': -3.7619597911834717}},
+    'gps_location': <GeoPoint> {   'altitude': 140.60520935058594,
+    'latitude': 47.64141895900783,
+    'longitude': -122.14039763312725},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.013164704665541649,
+    'y_val': -0.003880624193698168,
+    'z_val': -6.672486506431596e-06},
+    'angular_velocity': <Vector3r> {   'x_val': 0.004561323206871748,
+    'y_val': -0.0243027675896883,
+    'z_val': 4.27615259468439e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.5177319049835205,
+    'y_val': -0.13674461841583252,
+    'z_val': 0.001659393310546875},
+    'linear_velocity': <Vector3r> {   'x_val': 0.3422463536262512,
+    'y_val': 1.087180495262146,
+    'z_val': -5.686714575858787e-05},
+    'orientation': <Quaternionr> {   'w_val': 0.5741686820983887,
+    'x_val': 0.017912736162543297,
+    'y_val': -0.02062917686998844,
+    'z_val': -0.8182811141014099},
+    'position': <Vector3r> {   'x_val': -5.460604190826416,
+    'y_val': -17.47408676147461,
+    'z_val': -18.59547996520996}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -838,8 +885,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385253633935360}
-2022-10-21 23:47:34,054 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628520912990976}
+2022-12-10 01:28:56,741 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -852,32 +899,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:34,235 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:34,235 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:34,551 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,577 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:34,578 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:34,582 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,600 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,630 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,659 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,692 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,726 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,767 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,786 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,809 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,843 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,879 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,904 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:34,932 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:34,932 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:34,949 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,015 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,029 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,049 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,066 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:56,903 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:56,903 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:57,301 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:57,301 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:57,682 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:57,682 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:57,756 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -892,28 +922,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 126.00564575195312,
-    'latitude': 47.641531865851576,
-    'longitude': -122.14019498106221},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.005288340151309967,
-    'y_val': 0.347553014755249,
-    'z_val': 1.7843998670578003},
-    'angular_velocity': <Vector3r> {   'x_val': -0.1163681149482727,
-    'y_val': -0.07482291013002396,
-    'z_val': 2.0588810443878174},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.9476172924041748,
-    'y_val': 0.1383322775363922,
-    'z_val': 0.15923023223876953},
-    'linear_velocity': <Vector3r> {   'x_val': 0.6660878658294678,
-    'y_val': -0.09201937168836594,
-    'z_val': -0.01204716693609953},
-    'orientation': <Quaternionr> {   'w_val': 0.9050617814064026,
-    'x_val': 0.026969388127326965,
-    'y_val': 0.04105492681264877,
-    'z_val': 0.42243385314941406},
-    'position': <Vector3r> {   'x_val': 7.093969821929932,
-    'y_val': -2.249798536300659,
-    'z_val': -3.9959757328033447}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6048126220703,
+    'latitude': 47.6414243487797,
+    'longitude': -122.1403844302171},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.01172823179513216,
+    'y_val': 0.0023165494203567505,
+    'z_val': -6.875140570627991e-06},
+    'angular_velocity': <Vector3r> {   'x_val': -0.008227843791246414,
+    'y_val': -0.025220127776265144,
+    'z_val': -3.1811443932383554e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.41288134455680847,
+    'y_val': -0.36536699533462524,
+    'z_val': 0.0001220703125},
+    'linear_velocity': <Vector3r> {   'x_val': 0.82475346326828,
+    'y_val': 0.8292742371559143,
+    'z_val': 0.0003010573564097285},
+    'orientation': <Quaternionr> {   'w_val': 0.5738627910614014,
+    'x_val': 0.006851682905107737,
+    'y_val': -0.0271748136729002,
+    'z_val': -0.8184718489646912},
+    'position': <Vector3r> {   'x_val': -4.859892845153809,
+    'y_val': -16.482755661010742,
+    'z_val': -18.5950870513916}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -926,8 +956,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385254641956864}
-2022-10-21 23:47:35,066 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628521927012608}
+2022-12-10 01:28:57,757 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -940,17 +970,13 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:35,094 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,112 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,150 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,177 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:35,345 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:35,345 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:35,977 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:35,977 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:36,081 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:58,074 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:58,074 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:58,456 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:58,456 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:58,765 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -965,28 +991,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.97149658203125,
-    'latitude': 47.64153506295881,
-    'longitude': -122.14019559752244},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.010956351645290852,
-    'y_val': -0.05401260405778885,
-    'z_val': -1.6735719442367554},
-    'angular_velocity': <Vector3r> {   'x_val': -0.02258247137069702,
-    'y_val': 0.025261474773287773,
-    'z_val': -0.6884990334510803},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.23069091141223907,
-    'y_val': 0.028067104518413544,
-    'z_val': -0.05164527893066406},
-    'linear_velocity': <Vector3r> {   'x_val': 0.15774379670619965,
-    'y_val': -0.018626565113663673,
-    'z_val': 0.005264601204544306},
-    'orientation': <Quaternionr> {   'w_val': 0.4256935715675354,
-    'x_val': 0.011136188171803951,
-    'y_val': 0.0036756780464202166,
-    'z_val': 0.9047914147377014},
-    'position': <Vector3r> {   'x_val': 7.447913646697998,
-    'y_val': -2.2958998680114746,
-    'z_val': -3.9617745876312256}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6048126220703,
+    'latitude': 47.64143341804337,
+    'longitude': -122.1403761736351},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.009218618273735046,
+    'y_val': 0.008587970398366451,
+    'z_val': -2.8326337542239344e-06},
+    'angular_velocity': <Vector3r> {   'x_val': -0.018907874822616577,
+    'y_val': -0.019690031185746193,
+    'z_val': -8.385703949898016e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.20412461459636688,
+    'y_val': -0.527865469455719,
+    'z_val': 0.000194549560546875},
+    'linear_velocity': <Vector3r> {   'x_val': 1.1426246166229248,
+    'y_val': 0.37154752016067505,
+    'z_val': 0.000263700116192922},
+    'orientation': <Quaternionr> {   'w_val': 0.5735310912132263,
+    'x_val': -0.006617072504013777,
+    'y_val': -0.028132913634181023,
+    'z_val': -0.818673849105835},
+    'position': <Vector3r> {   'x_val': -3.8505666255950928,
+    'y_val': -15.863703727722168,
+    'z_val': -18.5950870513916}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -999,8 +1025,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385255640978176}
-2022-10-21 23:47:36,084 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628522935034112}
+2022-12-10 01:28:58,765 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1013,16 +1039,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:36,124 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:36,368 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:36,572 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:36,619 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:36,619 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:36,832 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:37,050 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:37,095 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:28:58,835 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:58,835 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:59,239 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:59,239 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:59,632 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:28:59,632 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:28:59,775 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1037,28 +1062,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.96745300292969,
-    'latitude': 47.64153581246245,
-    'longitude': -122.14019572845869},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.00918515957891941,
-    'y_val': -0.008152160793542862,
-    'z_val': -0.0020889260340481997},
-    'angular_velocity': <Vector3r> {   'x_val': -0.004227000288665295,
-    'y_val': 0.0068036639131605625,
-    'z_val': 0.4755793511867523},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.05361472815275192,
-    'y_val': 0.006463397294282913,
-    'z_val': -0.000705718994140625},
-    'linear_velocity': <Vector3r> {   'x_val': 0.03672432154417038,
-    'y_val': -0.004278992302715778,
-    'z_val': 0.00408813264220953},
-    'orientation': <Quaternionr> {   'w_val': 0.3339005410671234,
-    'x_val': 0.002674751216545701,
-    'y_val': 0.0005994979874230921,
-    'z_val': 0.9426043033599854},
-    'position': <Vector3r> {   'x_val': 7.5308837890625,
-    'y_val': -2.3056955337524414,
-    'z_val': -3.9577343463897705}},
+    'gps_location': <GeoPoint> {   'altitude': 140.60435485839844,
+    'latitude': 47.64144434886453,
+    'longitude': -122.14037493479628},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.005174633581191301,
+    'y_val': 0.012798506766557693,
+    'z_val': 5.757028247899143e-06},
+    'angular_velocity': <Vector3r> {   'x_val': -0.026298485696315765,
+    'y_val': -0.008671944960951805,
+    'z_val': -6.829159246990457e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.06199134886264801,
+    'y_val': -0.5816675424575806,
+    'z_val': 0.00016880035400390625},
+    'linear_velocity': <Vector3r> {   'x_val': 1.2170277833938599,
+    'y_val': -0.1999061107635498,
+    'z_val': 0.0003766058071050793},
+    'orientation': <Quaternionr> {   'w_val': 0.5731809735298157,
+    'x_val': -0.019286397844552994,
+    'y_val': -0.022851478308439255,
+    'z_val': -0.8188830018043518},
+    'position': <Vector3r> {   'x_val': -2.6349904537200928,
+    'y_val': -15.772324562072754,
+    'z_val': -18.594623565673828}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1071,8 +1096,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385256639999488}
-2022-10-21 23:47:37,095 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628523946055680}
+2022-12-10 01:28:59,775 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1085,12 +1110,13 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:37,263 - ServerLogger - INFO - Command received: Turn right
-2022-10-21 23:47:37,290 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:37,290 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:38,111 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:00,054 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:00,054 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:00,406 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:00,406 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:00,787 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1105,28 +1131,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.96370697021484,
-    'latitude': 47.64153598709249,
-    'longitude': -122.14019575811265},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0008718495955690742,
-    'y_val': -0.002595423487946391,
-    'z_val': 0.1406216025352478},
-    'angular_velocity': <Vector3r> {   'x_val': -0.0007222745916806161,
-    'y_val': 0.0017058402299880981,
-    'z_val': -0.09653788805007935},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.01241650152951479,
-    'y_val': 0.0014029095182195306,
-    'z_val': -0.00043964385986328125},
-    'linear_velocity': <Vector3r> {   'x_val': 0.00850440002977848,
-    'y_val': -0.0009638516348786652,
-    'z_val': 0.0034466609358787537},
-    'orientation': <Quaternionr> {   'w_val': 0.2546553313732147,
-    'x_val': 0.0006276245694607496,
-    'y_val': 9.164210496237502e-05,
-    'z_val': 0.967031717300415},
-    'position': <Vector3r> {   'x_val': 7.550215244293213,
-    'y_val': -2.3079137802124023,
-    'z_val': -3.953988552093506}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6038360595703,
+    'latitude': 47.64145468831025,
+    'longitude': -122.1403814280118},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0006118987803347409,
+    'y_val': 0.013506238348782063,
+    'z_val': 9.430083082406782e-06},
+    'angular_velocity': <Vector3r> {   'x_val': -0.02874142676591873,
+    'y_val': 0.004945835098624229,
+    'z_val': 1.1248672535657533e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.3287554681301117,
+    'y_val': -0.5037436485290527,
+    'z_val': 6.771087646484375e-05},
+    'linear_velocity': <Vector3r> {   'x_val': 1.0176975727081299,
+    'y_val': -0.7583954334259033,
+    'z_val': 0.00030598524608649313},
+    'orientation': <Quaternionr> {   'w_val': 0.5728154182434082,
+    'x_val': -0.028165096417069435,
+    'y_val': -0.011846731416881084,
+    'z_val': -0.8191147446632385},
+    'position': <Vector3r> {   'x_val': -1.485986351966858,
+    'y_val': -16.26191520690918,
+    'z_val': -18.594104766845703}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1139,8 +1165,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385257642020864}
-2022-10-21 23:47:38,111 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628524954077184}
+2022-12-10 01:29:00,787 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1153,13 +1179,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:38,142 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:38,142 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:38,968 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:38,969 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:39,116 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:00,798 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:00,798 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:01,208 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:01,208 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:01,597 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:01,597 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:01,801 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1174,28 +1202,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.93348693847656,
-    'latitude': 47.6415360258623,
-    'longitude': -122.14019576288804},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.0004926317487843335,
-    'y_val': 0.00036711612483486533,
-    'z_val': 0.005531244445592165},
-    'angular_velocity': <Vector3r> {   'x_val': -0.00013742265582550317,
-    'y_val': 0.0003518361772876233,
-    'z_val': -0.0013665346195921302},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.004964493215084076,
-    'y_val': 0.001765156863257289,
-    'z_val': -0.05856513977050781},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0011385508114472032,
-    'y_val': 0.0004026458482258022,
-    'z_val': 0.0025855775456875563},
-    'orientation': <Quaternionr> {   'w_val': 0.2658238112926483,
-    'x_val': 0.0002657817676663399,
-    'y_val': -1.941910340974573e-05,
-    'z_val': 0.9640216827392578},
-    'position': <Vector3r> {   'x_val': 7.554503440856934,
-    'y_val': -2.3082685470581055,
-    'z_val': -3.923774242401123}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6038360595703,
+    'latitude': 47.64146210452649,
+    'longitude': -122.14039469076313},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.007710726000368595,
+    'y_val': 0.011300724931061268,
+    'z_val': 5.1279830586281605e-06},
+    'angular_velocity': <Vector3r> {   'x_val': -0.024594632908701897,
+    'y_val': 0.017647024244070053,
+    'z_val': 9.124360076384619e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.5393372774124146,
+    'y_val': -0.3005248010158539,
+    'z_val': -0.0003871917724609375},
+    'linear_velocity': <Vector3r> {   'x_val': 0.5702704191207886,
+    'y_val': -1.1752090454101562,
+    'z_val': -0.00010956281039398164},
+    'orientation': <Quaternionr> {   'w_val': 0.572421669960022,
+    'x_val': -0.03131045773625374,
+    'y_val': 0.0028120302595198154,
+    'z_val': -0.8193566203117371},
+    'position': <Vector3r> {   'x_val': -0.6627469062805176,
+    'y_val': -17.259761810302734,
+    'z_val': -18.594104766845703}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1208,8 +1236,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385258641042176}
-2022-10-21 23:47:39,118 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628525968098816}
+2022-12-10 01:29:01,802 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1222,11 +1250,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:39,750 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:39,750 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:40,130 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:01,985 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:01,985 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:02,337 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:02,337 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:02,715 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:02,715 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:02,811 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1241,28 +1273,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.94340515136719,
-    'latitude': 47.641536019386315,
-    'longitude': -122.14019574964432},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -5.320023774402216e-05,
-    'y_val': -0.00025203911354765296,
-    'z_val': 9.23547922866419e-05},
-    'angular_velocity': <Vector3r> {   'x_val': 5.5559379688929766e-05,
-    'y_val': 0.00041227060137316585,
-    'z_val': -2.282122841279488e-05},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.0012362523702904582,
-    'y_val': -0.0005704484647139907,
-    'z_val': 0.0042438507080078125},
-    'linear_velocity': <Vector3r> {   'x_val': -0.0019440457690507174,
-    'y_val': 0.0011621024459600449,
-    'z_val': -0.012581792660057545},
-    'orientation': <Quaternionr> {   'w_val': 0.2659841477870941,
-    'x_val': 5.2473147661658004e-05,
-    'y_val': 4.506689583649859e-05,
-    'z_val': 0.9639774560928345},
-    'position': <Vector3r> {   'x_val': 7.553774356842041,
-    'y_val': -2.3072710037231445,
-    'z_val': -3.933736801147461}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6038360595703,
+    'latitude': 47.641464624610975,
+    'longitude': -122.14041193003},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.013160113245248795,
+    'y_val': 0.007286731153726578,
+    'z_val': -3.8980779208941385e-06},
+    'angular_velocity': <Vector3r> {   'x_val': -0.013783695176243782,
+    'y_val': 0.027225861325860023,
+    'z_val': 1.0040938832389656e-05},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.6388498544692993,
+    'y_val': -0.01785420998930931,
+    'z_val': 0.0012578964233398438},
+    'linear_velocity': <Vector3r> {   'x_val': -0.03644190728664398,
+    'y_val': -1.3405171632766724,
+    'z_val': 0.0003288854786660522},
+    'orientation': <Quaternionr> {   'w_val': 0.5720011591911316,
+    'x_val': -0.027570467442274094,
+    'y_val': 0.01754879765212536,
+    'z_val': -0.8196014761924744},
+    'position': <Vector3r> {   'x_val': -0.384365051984787,
+    'y_val': -18.555660247802734,
+    'z_val': -18.594099044799805}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1275,8 +1307,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385259652063744}
-2022-10-21 23:47:40,131 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628526979120384}
+2022-12-10 01:29:02,811 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1289,11 +1321,13 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:40,522 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:40,522 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:41,145 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:03,101 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:03,101 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:03,464 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:03,464 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:03,825 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1308,28 +1342,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.95316314697266,
-    'latitude': 47.64153600034886,
-    'longitude': -122.1401957421848},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.00016406114445999265,
-    'y_val': -0.0002631572133395821,
-    'z_val': 1.8274024569109315e-06},
-    'angular_velocity': <Vector3r> {   'x_val': -0.00011450512829469517,
-    'y_val': 0.00010717751865740865,
-    'z_val': -3.8218144027268863e-07},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0011443872936069965,
-    'y_val': -0.0017265514470636845,
-    'z_val': 0.0053005218505859375},
-    'linear_velocity': <Vector3r> {   'x_val': -0.0018467979971319437,
-    'y_val': -0.0002514203079044819,
-    'z_val': -0.006722113583236933},
-    'orientation': <Quaternionr> {   'w_val': 0.2659860849380493,
-    'x_val': -7.99045228632167e-05,
-    'y_val': 6.925408524693921e-05,
-    'z_val': 0.9639769196510315},
-    'position': <Vector3r> {   'x_val': 7.551657676696777,
-    'y_val': -2.3067147731781006,
-    'z_val': -3.9434759616851807}},
+    'gps_location': <GeoPoint> {   'altitude': 140.6031951904297,
+    'latitude': 47.64146136507417,
+    'longitude': -122.14042944815299},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.015434999018907547,
+    'y_val': 0.0013750913785770535,
+    'z_val': -1.0905461749644019e-05},
+    'angular_velocity': <Vector3r> {   'x_val': 0.0012455793330445886,
+    'y_val': 0.031874265521764755,
+    'z_val': 1.8216576336271828e-06},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.5942749381065369,
+    'y_val': 0.2863590121269226,
+    'z_val': -0.00034236907958984375},
+    'linear_velocity': <Vector3r> {   'x_val': -0.6746339797973633,
+    'y_val': -1.203383445739746,
+    'z_val': 0.0006402377039194107},
+    'orientation': <Quaternionr> {   'w_val': 0.5715606808662415,
+    'x_val': -0.016951298341155052,
+    'y_val': 0.02894231304526329,
+    'z_val': -0.8198740482330322},
+    'position': <Vector3r> {   'x_val': -0.7486897110939026,
+    'y_val': -19.87160873413086,
+    'z_val': -18.593454360961914}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1342,8 +1376,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385260657085184}
-2022-10-21 23:47:41,145 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628527993142016}
+2022-12-10 01:29:03,826 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1356,13 +1390,16 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:41,231 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:41,231 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:41,984 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:41,985 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:42,158 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:03,832 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:03,832 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:04,204 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:04,204 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:04,552 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:04,554 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:04,788 - ServerLogger - INFO - Command received: Turn left
+2022-12-10 01:29:04,837 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1377,28 +1414,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.95773315429688,
-    'latitude': 47.6415359904034,
-    'longitude': -122.14019575471134},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.00024387471785303205,
-    'y_val': -7.783524051774293e-05,
-    'z_val': 2.5915076662386127e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -0.000149224724736996,
-    'y_val': -0.00012693367898464203,
-    'z_val': -1.2362366241802647e-08},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0017248897347599268,
-    'y_val': -0.0003212429000996053,
-    'z_val': 0.0025653839111328125},
-    'linear_velocity': <Vector3r> {   'x_val': -0.0002636851277202368,
-    'y_val': -0.0013988722348585725,
-    'z_val': -0.0028726989403367043},
-    'orientation': <Quaternionr> {   'w_val': 0.2659860849380493,
-    'x_val': -8.903272828320041e-05,
-    'y_val': -7.871142770454753e-06,
-    'z_val': 0.9639769196510315},
-    'position': <Vector3r> {   'x_val': 7.550556659698486,
-    'y_val': -2.30765962600708,
-    'z_val': -3.9480371475219727}},
+    'gps_location': <GeoPoint> {   'altitude': 140.60157775878906,
+    'latitude': 47.64145275679169,
+    'longitude': -122.14044308307034},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -8.475781440734863,
+    'y_val': 0.17318716645240784,
+    'z_val': -7.168379306793213},
+    'angular_velocity': <Vector3r> {   'x_val': 1.1373639106750488,
+    'y_val': 0.6616101264953613,
+    'z_val': -0.21404244005680084},
+    'linear_acceleration': <Vector3r> {   'x_val': -0.12351464480161667,
+    'y_val': 0.4731774628162384,
+    'z_val': 1.7573566436767578},
+    'linear_velocity': <Vector3r> {   'x_val': -1.1834990978240967,
+    'y_val': -0.781557559967041,
+    'z_val': 0.08439933508634567},
+    'orientation': <Quaternionr> {   'w_val': 0.5693825483322144,
+    'x_val': 0.011614114977419376,
+    'y_val': 0.02758827432990074,
+    'z_val': -0.8215275406837463},
+    'position': <Vector3r> {   'x_val': -1.7073336839675903,
+    'y_val': -20.89491081237793,
+    'z_val': -18.591598510742188}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1411,8 +1448,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385261656106496}
-2022-10-21 23:47:42,158 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628529004163584}
+2022-12-10 01:29:04,837 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1425,11 +1462,13 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:42,731 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:42,731 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:43,169 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:04,895 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:04,895 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:05,256 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:05,256 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:05,850 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1444,28 +1483,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.95962524414062,
-    'latitude': 47.64153599470919,
-    'longitude': -122.1401957715372},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.00022170429292600602,
-    'y_val': -0.00010378032311564311,
-    'z_val': 7.827371177882014e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 3.6015032947034342e-06,
-    'y_val': -0.00017042778199538589,
-    'z_val': -8.854078359377127e-09},
-    'linear_acceleration': <Vector3r> {   'x_val': 0.0007544466061517596,
-    'y_val': 0.0011902042897418141,
-    'z_val': 0.001071929931640625},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0010677608661353588,
-    'y_val': -0.000872796808835119,
-    'z_val': -0.0011569662019610405},
-    'orientation': <Quaternionr> {   'w_val': 0.2659860849380493,
-    'x_val': -2.0694198610726744e-05,
-    'y_val': -6.8799672590103e-05,
-    'z_val': 0.9639769196510315},
-    'position': <Vector3r> {   'x_val': 7.551039695739746,
-    'y_val': -2.308922290802002,
-    'z_val': -3.9499218463897705}},
+    'gps_location': <GeoPoint> {   'altitude': 140.61338806152344,
+    'latitude': 47.64144571862445,
+    'longitude': -122.14044917501377},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.07391776889562607,
+    'y_val': 0.062266428023576736,
+    'z_val': 5.212045192718506},
+    'angular_velocity': <Vector3r> {   'x_val': 0.058858055621385574,
+    'y_val': -0.062153782695531845,
+    'z_val': 0.033732376992702484},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.553711473941803,
+    'y_val': 0.3107055425643921,
+    'z_val': -0.24427509307861328},
+    'linear_velocity': <Vector3r> {   'x_val': -0.37850114703178406,
+    'y_val': -0.20803146064281464,
+    'z_val': 0.0012820742558687925},
+    'orientation': <Quaternionr> {   'w_val': -0.1051659882068634,
+    'x_val': 0.025588341057300568,
+    'y_val': 0.018139461055397987,
+    'z_val': -0.9939599633216858},
+    'position': <Vector3r> {   'x_val': -2.487464189529419,
+    'y_val': -21.3509578704834,
+    'z_val': -18.6036376953125}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1478,8 +1517,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385262652127744}
-2022-10-21 23:47:43,169 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628530012185088}
+2022-12-10 01:29:05,852 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1492,11 +1531,280 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:43,480 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:43,481 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:44,183 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:29:06,040 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:06,040 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:06,771 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:06,771 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:06,801 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:29:07,723 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:07,723 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:08,506 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:08,506 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:09,362 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:09,363 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:10,226 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:10,226 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:11,035 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:11,035 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:11,816 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:11,816 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:12,567 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:12,567 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:13,298 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:13,298 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:13,990 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 55.08874981001456
+2022-12-10 01:29:14,010 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:14,010 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:14,710 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:29:14,710 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:15,384 - ServerLogger - INFO - Distance to recognized aruco number 6 is: 28.511004042310685
+2022-12-10 01:29:15,402 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:15,402 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:16,062 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:16,062 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:16,713 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:16,714 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:17,370 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:17,370 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:18,013 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:18,013 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:18,648 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:18,648 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:19,266 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:19,266 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:19,862 - ServerLogger - INFO - The frame was graded. The current grade is: 10
+2022-12-10 01:29:19,862 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:20,432 - ServerLogger - INFO - drone in range of aruco number:10 heat zone
+2022-12-10 01:29:20,432 - ServerLogger - INFO - Time since last grade: 44.79521894454956 seconds
+2022-12-10 01:29:20,433 - ServerLogger - INFO - The frame was graded. The current grade is: 9
+2022-12-10 01:29:20,433 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:20,953 - ServerLogger - INFO - The frame was graded. The current grade is: 9
+2022-12-10 01:29:20,953 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:21,458 - ServerLogger - INFO - The frame was graded. The current grade is: 9
+2022-12-10 01:29:21,458 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:22,028 - ServerLogger - INFO - drone in range of aruco number:10 heat zone
+2022-12-10 01:29:22,028 - ServerLogger - INFO - Time since last grade: 1.5951533317565918 seconds
+2022-12-10 01:29:22,029 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:29:22,029 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:22,575 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:29:22,575 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:23,075 - ServerLogger - INFO - drone in range of aruco number:10 heat zone
+2022-12-10 01:29:23,075 - ServerLogger - INFO - Time since last grade: 1.0475640296936035 seconds
+2022-12-10 01:29:23,075 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:23,075 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:23,557 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:23,557 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:24,011 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:24,011 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:24,428 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:24,428 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:24,897 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:24,897 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:25,386 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:25,386 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:25,837 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:25,837 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:26,284 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:26,285 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:26,722 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:26,723 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:27,143 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:27,143 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:27,559 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:27,559 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:27,954 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:27,955 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:28,391 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:28,391 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:28,813 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:28,813 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:29,219 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:29,219 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:29,609 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:29,609 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:29,985 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:29,985 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:30,393 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:30,393 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:30,768 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:30,768 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:31,139 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:31,139 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:31,499 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:31,499 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:31,862 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:31,862 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:32,206 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:32,206 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:32,580 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:32,582 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:32,943 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:32,943 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:33,118 - ServerLogger - INFO - Command received: Turn left
+2022-12-10 01:29:33,118 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:29:33,270 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:33,270 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:33,566 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:33,566 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:33,861 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:33,861 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:34,162 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:34,162 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:34,473 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:34,473 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:34,795 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:34,795 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:35,116 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:35,116 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:35,431 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:35,431 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:35,770 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:35,770 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:36,119 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:36,119 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:36,470 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:36,470 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:36,820 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:36,820 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:37,143 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:37,143 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:37,488 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:37,488 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:37,817 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:37,817 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:38,139 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:38,139 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:38,475 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:38,475 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:38,797 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:38,797 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:39,117 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:39,117 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:39,452 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:39,452 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:39,790 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:39,790 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:40,104 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:40,104 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:40,433 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:40,433 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:40,766 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:40,766 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:41,095 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:41,095 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:41,425 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:41,425 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:41,767 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:41,767 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:42,095 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:42,095 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:42,433 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:42,433 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:42,767 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:42,767 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:43,107 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:43,107 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:43,442 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:43,442 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:43,785 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:43,785 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:44,123 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:44,123 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:44,456 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:44,456 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:44,793 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:44,793 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:45,140 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:45,140 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:45,477 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:45,477 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:45,822 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:45,822 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:46,166 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:46,166 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:46,517 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:46,517 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:46,866 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:46,866 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:47,207 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:47,207 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:47,553 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:47,553 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:47,888 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:47,888 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:48,397 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:48,397 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:48,837 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:48,840 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:49,194 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:49,194 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:49,565 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:49,565 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:49,886 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:49,886 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:50,221 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:50,221 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:50,557 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:50,557 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:50,915 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:50,915 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:51,267 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:51,267 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:51,635 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:51,636 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:51,973 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:51,973 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:52,358 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:52,359 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:52,729 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:52,729 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:53,089 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:53,089 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:53,428 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:53,428 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:53,747 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:53,747 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:54,083 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:54,084 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:54,395 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:54,395 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:54,730 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:54,730 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:55,069 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:55,069 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:55,405 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:55,405 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:55,749 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:55,749 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:56,075 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:56,076 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:56,407 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:56,407 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:56,743 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:56,743 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:57,060 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:57,060 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:57,383 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:57,384 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:57,707 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:57,707 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:58,026 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:58,026 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:58,364 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:58,364 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:58,680 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:58,680 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:59,008 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:59,008 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:59,343 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:59,343 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:59,663 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:59,663 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:29:59,980 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:29:59,980 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:00,105 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1511,28 +1819,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.96038818359375,
-    'latitude': 47.641536005649556,
-    'longitude': -122.14019577439598},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -4.4340858948999085e-06,
-    'y_val': 6.300948007265106e-05,
-    'z_val': 2.614988261484541e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 0.00013012863928452134,
-    'y_val': -5.009755113860592e-05,
-    'z_val': 2.871133331083797e-09},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.0006727302679792047,
-    'y_val': 0.0011435106862336397,
-    'z_val': 0.0004291534423828125},
-    'linear_velocity': <Vector3r> {   'x_val': 0.0010787034407258034,
-    'y_val': 0.0004464858502615243,
-    'z_val': -0.00045197803410701454},
-    'orientation': <Quaternionr> {   'w_val': 0.2659860849380493,
-    'x_val': 4.869847543886863e-05,
-    'y_val': -4.691323192673735e-05,
-    'z_val': 0.9639769196510315},
-    'position': <Vector3r> {   'x_val': 7.552256107330322,
-    'y_val': -2.3091330528259277,
-    'z_val': -3.9506781101226807}},
+    'gps_location': <GeoPoint> {   'altitude': 140.58584594726562,
+    'latitude': 47.6414442771796,
+    'longitude': -122.14045045976992},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -17.631444931030273,
+    'y_val': 47.80144119262695,
+    'z_val': 0.06325476616621017},
+    'angular_velocity': <Vector3r> {   'x_val': 0.39458775520324707,
+    'y_val': -2.433896780014038,
+    'z_val': 0.010592198930680752},
+    'linear_acceleration': <Vector3r> {   'x_val': -1.134614109992981,
+    'y_val': 0.03801499307155609,
+    'z_val': -3.238241195678711},
+    'linear_velocity': <Vector3r> {   'x_val': 0.010247585363686085,
+    'y_val': -0.007448552176356316,
+    'z_val': 0.03743375092744827},
+    'orientation': <Quaternionr> {   'w_val': -0.08358447253704071,
+    'x_val': -0.04712964966893196,
+    'y_val': -0.0024955812841653824,
+    'z_val': -0.9953824877738953},
+    'position': <Vector3r> {   'x_val': -2.6465582847595215,
+    'y_val': -21.446895599365234,
+    'z_val': -18.575979232788086}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1545,8 +1853,9 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385263660149248}
-2022-10-21 23:47:44,184 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628531026206720}
+2022-12-10 01:30:00,105 - ServerLogger - INFO - Command received: Turn left
+2022-12-10 01:30:00,105 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1559,13 +1868,16 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:44,185 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:44,185 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:44,916 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:44,916 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:45,197 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:30:00,106 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:30:00,315 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:00,315 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:00,624 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:00,624 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:00,908 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:00,908 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:01,127 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1580,28 +1892,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.96067810058594,
-    'latitude': 47.641536011186204,
-    'longitude': -122.14019576309096},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -8.868171426001936e-05,
-    'y_val': 0.00022238641395233572,
-    'z_val': -2.616361598484218e-07},
-    'angular_velocity': <Vector3r> {   'x_val': 9.777008381206542e-05,
-    'y_val': 8.223075565183535e-05,
-    'z_val': 1.073372168924891e-09},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.0011291987029835582,
-    'y_val': -5.068891914561391e-05,
-    'z_val': 0.0001316070556640625},
-    'linear_velocity': <Vector3r> {   'x_val': 5.740490814787336e-05,
-    'y_val': 0.0010325807379558682,
-    'z_val': -0.00017551430210005492},
-    'orientation': <Quaternionr> {   'w_val': 0.2659860849380493,
-    'x_val': 5.4733100114390254e-05,
-    'y_val': 1.7979444237425923e-05,
-    'z_val': 0.9639769196510315},
-    'position': <Vector3r> {   'x_val': 7.552868366241455,
-    'y_val': -2.308281898498535,
-    'z_val': -3.950970411300659}},
+    'gps_location': <GeoPoint> {   'altitude': 141.622314453125,
+    'latitude': 47.6405792125418,
+    'longitude': -122.13916129981115},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.046074435114860535,
+    'y_val': 0.35788896679878235,
+    'z_val': 0.001054361229762435},
+    'angular_velocity': <Vector3r> {   'x_val': -0.2253521978855133,
+    'y_val': -0.28878042101860046,
+    'z_val': -0.0018307544523850083},
+    'linear_acceleration': <Vector3r> {   'x_val': 1.399375557899475,
+    'y_val': -1.982733130455017,
+    'z_val': 1.8604621887207031},
+    'linear_velocity': <Vector3r> {   'x_val': 2.5838088989257812,
+    'y_val': 0.2812679708003998,
+    'z_val': 0.08054841309785843},
+    'orientation': <Quaternionr> {   'w_val': -0.04934849217534065,
+    'x_val': 0.09313908964395523,
+    'y_val': -0.11585056781768799,
+    'z_val': -0.9876580834388733},
+    'position': <Vector3r> {   'x_val': -98.8213119506836,
+    'y_val': 75.42610931396484,
+    'z_val': -19.611173629760742}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1614,8 +1926,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385264668170752}
-2022-10-21 23:47:45,197 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628584667351040}
+2022-12-10 01:30:01,128 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1628,11 +1940,15 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:45,661 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:45,661 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:46,207 - ServerLogger - INFO - State:
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:30:01,211 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:01,211 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:01,519 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:01,519 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:01,841 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:01,841 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:02,151 - ServerLogger - INFO - State:
 <MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
@@ -1647,28 +1963,28 @@
     'y_val': 0.0,
     'z_val': 0.0},
     'time_stamp': 0},
-    'gps_location': <GeoPoint> {   'altitude': 125.96078491210938,
-    'latitude': 47.64153600740361,
-    'longitude': -122.14019575208737},
-    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.0001640611735638231,
-    'y_val': -2.594508077891078e-05,
-    'z_val': -2.6063568725476216e-07},
-    'angular_velocity': <Vector3r> {   'x_val': -2.556442268542014e-05,
-    'y_val': 0.00011089142208220437,
-    'z_val': 1.4808094306317798e-08},
-    'linear_acceleration': <Vector3r> {   'x_val': -0.0004130023007746786,
-    'y_val': -0.0009109168313443661,
-    'z_val': 7.534027099609375e-05},
-    'linear_velocity': <Vector3r> {   'x_val': -0.0007795451674610376,
-    'y_val': 0.00047589154564775527,
-    'z_val': -7.623323472216725e-05},
-    'orientation': <Quaternionr> {   'w_val': 0.2659860849380493,
-    'x_val': 7.774850018904544e-06,
-    'y_val': 5.037975643062964e-05,
-    'z_val': 0.9639769196510315},
-    'position': <Vector3r> {   'x_val': 7.552445411682129,
-    'y_val': -2.3074567317962646,
-    'z_val': -3.951080560684204}},
+    'gps_location': <GeoPoint> {   'altitude': 141.14015197753906,
+    'latitude': 47.64060738355323,
+    'longitude': -122.1391677475021},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.016651825979351997,
+    'y_val': 0.11299774050712585,
+    'z_val': 0.000775412714574486},
+    'angular_velocity': <Vector3r> {   'x_val': -0.1263119876384735,
+    'y_val': -0.04789295420050621,
+    'z_val': -0.000338119687512517},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.412236750125885,
+    'y_val': -0.4629000425338745,
+    'z_val': -0.21125507354736328},
+    'linear_velocity': <Vector3r> {   'x_val': 3.3934414386749268,
+    'y_val': -0.9687177538871765,
+    'z_val': 0.5424183011054993},
+    'orientation': <Quaternionr> {   'w_val': -0.05071891099214554,
+    'x_val': 0.025577543303370476,
+    'y_val': -0.022147348150610924,
+    'z_val': -0.9981396794319153},
+    'position': <Vector3r> {   'x_val': -95.68666076660156,
+    'y_val': 74.93779754638672,
+    'z_val': -19.127668380737305}},
     'landed_state': 1,
     'rc_data': <RCData> {   'is_initialized': False,
     'is_valid': False,
@@ -1681,8 +1997,8 @@
     'timestamp': 0,
     'vendor_id': '',
     'yaw': 0.0},
-    'timestamp': 1666385265664192000}
-2022-10-21 23:47:46,208 - ServerLogger - INFO - Collision:
+    'timestamp': 1670628585687372800}
+2022-12-10 01:30:02,151 - ServerLogger - INFO - Collision:
 <CollisionInfo> {   'has_collided': False,
     'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
     'y_val': 0.31564638018608093,
@@ -1695,9 +2011,365 @@
     'penetration_depth': 0.0,
     'position': <Vector3r> {   'x_val': 0.0,
     'y_val': 0.0,
-    'z_val': 0.19725137948989868},
-    'time_stamp': 1666385232378481920}
-2022-10-21 23:47:46,373 - ServerLogger - INFO - The frame was graded. The current grade is: 0
-2022-10-21 23:47:46,373 - ServerLogger - INFO - The grade was sent to client
-2022-10-21 23:47:46,986 - ServerLogger - INFO - Command received: Finish Simulation
-2022-10-21 23:47:47,103 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:30:02,170 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:02,170 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:02,498 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:02,498 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:02,809 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:02,809 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:03,129 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:03,129 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:03,471 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:03,471 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:03,820 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:03,820 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:04,156 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:04,157 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:04,522 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:04,522 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:04,859 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:04,859 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:05,204 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:05,204 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:05,567 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:05,567 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:05,925 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:05,925 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:06,299 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:06,299 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:06,688 - ServerLogger - INFO - The frame was graded. The current grade is: 7
+2022-12-10 01:30:06,688 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:07,052 - ServerLogger - INFO - drone in range of aruco number:4 heat zone
+2022-12-10 01:30:07,062 - ServerLogger - INFO - Time since last grade: 43.98669075965881 seconds
+2022-12-10 01:30:07,062 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:07,062 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:07,440 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:07,440 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:07,824 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:07,824 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:08,218 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:08,218 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:08,619 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:08,619 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:08,986 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:08,986 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:09,373 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:09,373 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:09,767 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:09,767 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:10,186 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:10,186 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:10,618 - ServerLogger - INFO - The frame was graded. The current grade is: 6
+2022-12-10 01:30:10,618 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:11,048 - ServerLogger - INFO - drone in range of aruco number:1 heat zone
+2022-12-10 01:30:11,064 - ServerLogger - INFO - drone in range of aruco number:8 heat zone
+2022-12-10 01:30:11,067 - ServerLogger - INFO - Time since last grade: 4.005041837692261 seconds
+2022-12-10 01:30:11,068 - ServerLogger - INFO - The frame was graded. The current grade is: 4
+2022-12-10 01:30:11,068 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:11,476 - ServerLogger - INFO - The frame was graded. The current grade is: 4
+2022-12-10 01:30:11,476 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:11,900 - ServerLogger - INFO - The frame was graded. The current grade is: 4
+2022-12-10 01:30:11,900 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:12,318 - ServerLogger - INFO - drone in range of aruco number:1 heat zone
+2022-12-10 01:30:12,332 - ServerLogger - INFO - drone in range of aruco number:7 heat zone
+2022-12-10 01:30:12,342 - ServerLogger - INFO - Time since last grade: 1.272594928741455 seconds
+2022-12-10 01:30:12,342 - ServerLogger - INFO - The frame was graded. The current grade is: 2
+2022-12-10 01:30:12,342 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:12,812 - ServerLogger - INFO - The frame was graded. The current grade is: 2
+2022-12-10 01:30:12,813 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:13,302 - ServerLogger - INFO - The frame was graded. The current grade is: 2
+2022-12-10 01:30:13,302 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:13,799 - ServerLogger - INFO - drone in range of aruco number:9 heat zone
+2022-12-10 01:30:13,801 - ServerLogger - INFO - Time since last grade: 1.4594590663909912 seconds
+2022-12-10 01:30:13,802 - ServerLogger - INFO - The frame was graded. The current grade is: 1
+2022-12-10 01:30:13,802 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:14,314 - ServerLogger - INFO - The frame was graded. The current grade is: 1
+2022-12-10 01:30:14,314 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:14,756 - ServerLogger - INFO - The frame was graded. The current grade is: 1
+2022-12-10 01:30:14,756 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:15,170 - ServerLogger - INFO - drone in range of aruco number:1 heat zone
+2022-12-10 01:30:15,185 - ServerLogger - INFO - drone in range of aruco number:7 heat zone
+2022-12-10 01:30:15,193 - ServerLogger - INFO - Time since last grade: 1.3917055130004883 seconds
+2022-12-10 01:30:15,194 - ServerLogger - INFO - The frame was graded. The current grade is: -1
+2022-12-10 01:30:15,194 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:15,618 - ServerLogger - INFO - The frame was graded. The current grade is: -1
+2022-12-10 01:30:15,618 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:16,061 - ServerLogger - INFO - The frame was graded. The current grade is: -1
+2022-12-10 01:30:16,061 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:16,530 - ServerLogger - INFO - drone in range of aruco number:1 heat zone
+2022-12-10 01:30:16,543 - ServerLogger - INFO - drone in range of aruco number:7 heat zone
+2022-12-10 01:30:16,549 - ServerLogger - INFO - drone in range of aruco number:9 heat zone
+2022-12-10 01:30:16,550 - ServerLogger - INFO - Time since last grade: 1.356142520904541 seconds
+2022-12-10 01:30:16,551 - ServerLogger - INFO - The frame was graded. The current grade is: -4
+2022-12-10 01:30:16,551 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:17,022 - ServerLogger - INFO - The frame was graded. The current grade is: -4
+2022-12-10 01:30:17,022 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:17,523 - ServerLogger - INFO - The frame was graded. The current grade is: -4
+2022-12-10 01:30:17,523 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:18,053 - ServerLogger - INFO - drone in range of aruco number:9 heat zone
+2022-12-10 01:30:18,056 - ServerLogger - INFO - Time since last grade: 1.5055370330810547 seconds
+2022-12-10 01:30:18,056 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:18,056 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:18,602 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:18,602 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:19,183 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:19,183 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:19,780 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:19,780 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:20,397 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:20,397 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:20,922 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:20,922 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:21,459 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:21,459 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:22,004 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:22,004 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:22,557 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:22,557 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:23,043 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:30:23,045 - ServerLogger - INFO - State:
+<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
+    'impact_point': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.0},
+    'normal': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.0},
+    'object_id': -1,
+    'object_name': '',
+    'penetration_depth': 0.0,
+    'position': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.0},
+    'time_stamp': 0},
+    'gps_location': <GeoPoint> {   'altitude': 141.04403686523438,
+    'latitude': 47.64063974321773,
+    'longitude': -122.13918130242564},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': -0.07887474447488785,
+    'y_val': -0.0012934611877426505,
+    'z_val': 5.537514152820222e-05},
+    'angular_velocity': <Vector3r> {   'x_val': -0.07286076247692108,
+    'y_val': -0.02378379926085472,
+    'z_val': -5.539029007195495e-05},
+    'linear_acceleration': <Vector3r> {   'x_val': 0.21234352886676788,
+    'y_val': 0.6407903432846069,
+    'z_val': -0.3084888458251953},
+    'linear_velocity': <Vector3r> {   'x_val': 3.7016358375549316,
+    'y_val': -0.8539832234382629,
+    'z_val': -0.04066767916083336},
+    'orientation': <Quaternionr> {   'w_val': -0.049758270382881165,
+    'x_val': 0.013405181467533112,
+    'y_val': 0.0319053940474987,
+    'z_val': -0.9981615543365479},
+    'position': <Vector3r> {   'x_val': -92.08781433105469,
+    'y_val': 73.91952514648438,
+    'z_val': -19.03335952758789}},
+    'landed_state': 1,
+    'rc_data': <RCData> {   'is_initialized': False,
+    'is_valid': False,
+    'left_z': 0.0,
+    'pitch': 0.0,
+    'right_z': 0.0,
+    'roll': 0.0,
+    'switches': 0,
+    'throttle': 0.0,
+    'timestamp': 0,
+    'vendor_id': '',
+    'yaw': 0.0},
+    'timestamp': 1670628586695394304}
+2022-12-10 01:30:23,046 - ServerLogger - INFO - Collision:
+<CollisionInfo> {   'has_collided': False,
+    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
+    'y_val': 0.31564638018608093,
+    'z_val': 0.3930765390396118},
+    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
+    'y_val': -2.0812269241332615e-08,
+    'z_val': -1.0},
+    'object_id': -1,
+    'object_name': 'Landscape_0',
+    'penetration_depth': 0.0,
+    'position': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:30:23,103 - ServerLogger - INFO - The frame was graded. The current grade is: -5
+2022-12-10 01:30:23,103 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:23,696 - ServerLogger - INFO - drone in range of aruco number:5 heat zone
+2022-12-10 01:30:23,706 - ServerLogger - INFO - drone in range of aruco number:9 heat zone
+2022-12-10 01:30:23,709 - ServerLogger - INFO - Time since last grade: 5.651371955871582 seconds
+2022-12-10 01:30:23,709 - ServerLogger - INFO - The frame was graded. The current grade is: -7
+2022-12-10 01:30:23,709 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:24,335 - ServerLogger - INFO - The frame was graded. The current grade is: -7
+2022-12-10 01:30:24,335 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:24,930 - ServerLogger - INFO - Distance to recognized aruco number 9 is: 27.308202223841043
+2022-12-10 01:30:24,949 - ServerLogger - INFO - The frame was graded. The current grade is: 3
+2022-12-10 01:30:24,949 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:25,532 - ServerLogger - INFO - drone in range of aruco number:5 heat zone
+2022-12-10 01:30:25,535 - ServerLogger - INFO - Time since last grade: 1.8263792991638184 seconds
+2022-12-10 01:30:25,536 - ServerLogger - INFO - The frame was graded. The current grade is: 2
+2022-12-10 01:30:25,536 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:26,153 - ServerLogger - INFO - The frame was graded. The current grade is: 2
+2022-12-10 01:30:26,153 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:26,751 - ServerLogger - INFO - drone in range of aruco number:5 heat zone
+2022-12-10 01:30:26,755 - ServerLogger - INFO - Time since last grade: 1.220219612121582 seconds
+2022-12-10 01:30:26,756 - ServerLogger - INFO - The frame was graded. The current grade is: 1
+2022-12-10 01:30:26,756 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:27,343 - ServerLogger - INFO - The frame was graded. The current grade is: 1
+2022-12-10 01:30:27,343 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:27,956 - ServerLogger - INFO - drone in range of aruco number:5 heat zone
+2022-12-10 01:30:27,963 - ServerLogger - INFO - Time since last grade: 1.206428050994873 seconds
+2022-12-10 01:30:27,964 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:30:27,964 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:28,692 - ServerLogger - INFO - The frame was graded. The current grade is: 0
+2022-12-10 01:30:28,692 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:29,412 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 54.83346157739902
+2022-12-10 01:30:29,426 - ServerLogger - INFO - drone in range of aruco number:5 heat zone
+2022-12-10 01:30:29,430 - ServerLogger - INFO - Time since last grade: 1.4665911197662354 seconds
+2022-12-10 01:30:29,430 - ServerLogger - INFO - The frame was graded. The current grade is: -1
+2022-12-10 01:30:29,430 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:30,048 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 53.61344198353788
+2022-12-10 01:30:30,065 - ServerLogger - INFO - The frame was graded. The current grade is: -1
+2022-12-10 01:30:30,065 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:30,714 - ServerLogger - INFO - drone in range of aruco number:5 heat zone
+2022-12-10 01:30:30,723 - ServerLogger - INFO - Time since last grade: 1.2922401428222656 seconds
+2022-12-10 01:30:30,723 - ServerLogger - INFO - The frame was graded. The current grade is: -2
+2022-12-10 01:30:30,723 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:31,419 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 53.744538199549005
+2022-12-10 01:30:31,440 - ServerLogger - INFO - The frame was graded. The current grade is: -2
+2022-12-10 01:30:31,440 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:32,123 - ServerLogger - INFO - The frame was graded. The current grade is: -2
+2022-12-10 01:30:32,123 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:32,840 - ServerLogger - INFO - The frame was graded. The current grade is: -2
+2022-12-10 01:30:32,840 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:33,560 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 49.759531147470604
+2022-12-10 01:30:33,563 - ServerLogger - INFO - Distance to recognized aruco number 5 is: 25.193694113258605
+2022-12-10 01:30:33,582 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:33,582 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:34,313 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 50.883156248183965
+2022-12-10 01:30:34,323 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:34,323 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:35,095 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:35,095 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:35,885 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:35,885 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:36,656 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 49.73329814740219
+2022-12-10 01:30:36,670 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:36,670 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:37,492 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:37,492 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:38,418 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:38,418 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:39,375 - ServerLogger - INFO - Distance to recognized aruco number 3 is: 50.76286969289619
+2022-12-10 01:30:39,389 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:39,390 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:40,287 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:40,287 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:41,145 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:41,145 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:42,005 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:42,006 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:42,895 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:42,895 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:43,792 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:43,792 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:44,687 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:44,687 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:45,568 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:45,568 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:46,448 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:46,448 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:47,310 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:47,310 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:48,160 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:48,160 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:48,536 - ServerLogger - INFO - Command received: Turn left
+2022-12-10 01:30:48,538 - ServerLogger - INFO - State:
+<MultirotorState> {   'collision': <CollisionInfo> {   'has_collided': False,
+    'impact_point': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.0},
+    'normal': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.0},
+    'object_id': -1,
+    'object_name': '',
+    'penetration_depth': 0.0,
+    'position': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.0},
+    'time_stamp': 0},
+    'gps_location': <GeoPoint> {   'altitude': 141.546875,
+    'latitude': 47.64134339495487,
+    'longitude': -122.13920420069157},
+    'kinematics_estimated': <KinematicsState> {   'angular_acceleration': <Vector3r> {   'x_val': 0.24255195260047913,
+    'y_val': -0.088008351624012,
+    'z_val': -0.0005977211985737085},
+    'angular_velocity': <Vector3r> {   'x_val': -0.2587853968143463,
+    'y_val': 0.23618201911449432,
+    'z_val': 0.0016228605527430773},
+    'linear_acceleration': <Vector3r> {   'x_val': -1.8584914207458496,
+    'y_val': -1.5546948909759521,
+    'z_val': 1.6996231079101562},
+    'linear_velocity': <Vector3r> {   'x_val': 0.6118472814559937,
+    'y_val': -2.5352327823638916,
+    'z_val': 0.10936006158590317},
+    'orientation': <Quaternionr> {   'w_val': -0.03220943361520767,
+    'x_val': -0.10736143589019775,
+    'y_val': -0.09860016405582428,
+    'z_val': -0.9887942671775818},
+    'position': <Vector3r> {   'x_val': -13.861014366149902,
+    'y_val': 72.19286346435547,
+    'z_val': -19.536426544189453}},
+    'landed_state': 1,
+    'rc_data': <RCData> {   'is_initialized': False,
+    'is_valid': False,
+    'left_z': 0.0,
+    'pitch': 0.0,
+    'right_z': 0.0,
+    'roll': 0.0,
+    'switches': 0,
+    'throttle': 0.0,
+    'timestamp': 0,
+    'vendor_id': '',
+    'yaw': 0.0},
+    'timestamp': 1670628607548839168}
+2022-12-10 01:30:48,538 - ServerLogger - INFO - Command received: goto
+2022-12-10 01:30:48,538 - ServerLogger - INFO - Collision:
+<CollisionInfo> {   'has_collided': False,
+    'impact_point': <Vector3r> {   'x_val': -0.22481729090213776,
+    'y_val': 0.31564638018608093,
+    'z_val': 0.3930765390396118},
+    'normal': <Vector3r> {   'x_val': -2.092225592775776e-08,
+    'y_val': -2.0812269241332615e-08,
+    'z_val': -1.0},
+    'object_id': -1,
+    'object_name': 'Landscape_0',
+    'penetration_depth': 0.0,
+    'position': <Vector3r> {   'x_val': 0.0,
+    'y_val': 0.0,
+    'z_val': 0.19403371214866638},
+    'time_stamp': 1670628495730453760}
+2022-12-10 01:30:49,040 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:49,040 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:49,906 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:49,906 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:50,736 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:50,736 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:51,568 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:51,568 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:52,365 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:52,365 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:53,116 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:53,116 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:53,842 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:53,842 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:54,563 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:54,563 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:55,252 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:55,252 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:55,915 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:55,915 - ServerLogger - INFO - The grade was sent to client
+2022-12-10 01:30:56,574 - ServerLogger - INFO - The frame was graded. The current grade is: 8
+2022-12-10 01:30:56,574 - ServerLogger - INFO - The grade was sent to client

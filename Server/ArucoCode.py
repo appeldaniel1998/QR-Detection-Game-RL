@@ -28,11 +28,11 @@ class ArucoCode:
 
     def setAirsimPos(self, xPos, yPos, zPos):
         """
-        Given x, y, z coordinates (in YE4 coordinate system), the method sets and moves the Aruco, converting to Airsim coordinate system, and setting the new position.
+        Given x, y, z coordinates (in UE4 coordinate system), the method sets and moves the Aruco, converting to Airsim coordinate system, and setting the new position.
         The Method updates the current position of the Aruco code as well.
-        :param: xPos: X coordinate (in YE4 coordinate system)
-        :param: yPos: Y coordinate (in YE4 coordinate system)
-        :param: zPos: Z coordinate (in YE4 coordinate system)
+        :param: xPos: X coordinate (in UE4 coordinate system)
+        :param: yPos: Y coordinate (in UE4 coordinate system)
+        :param: zPos: Z coordinate (in UE4 coordinate system)
         :return:
         """
         self.xPos = xPos
